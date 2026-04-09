@@ -27,10 +27,6 @@ export default function ToggleLang() {
   // This assumes your paths look like /en/... or /fr/..., and you want to replace the locale in the path.
   function changeLocale(locale: string) {
     if (locale === currentLocale) return;
-    // // For locale-prefixed routes: replace the first segment with the new locale
-    // const segments = pathname.split('/');
-    // segments[1] = locale; // ['','en','foo'] -> ['','fr','foo']
-    // const newPath = segments.join('/') || '/';
 
     router.push(
       {
@@ -46,17 +42,18 @@ export default function ToggleLang() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">
+        <Button variant="toggleLang">
           {locales.find((l) => l.code === currentLocale)?.label ||
             currentLocale}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent align={currentLocale === "ar" ? "end" : "start"}>
         {locales.map((locale) => (
           <DropdownMenuItem
             key={locale.code}
             onClick={() => changeLocale(locale.code)}
             disabled={locale.code === currentLocale}
+            className={locale.code === "ar" ? "font-tajawal" : ""}
           >
             {locale.label}
           </DropdownMenuItem>

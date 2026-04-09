@@ -27,6 +27,17 @@ const badgeVariants = cva(
           "bg-lime-200/15 text-lime-700 dark:bg-lime-200/10 dark:text-lime-300",
         reactQuery:
           "bg-rose-300/15 text-rose-500 dark:bg-rose-400/10 dark:text-rose-300",
+        html: "bg-orange-100 text-orange-700 dark:bg-orange-300/20 dark:text-orange-800",
+        css: "bg-blue-100 text-blue-700 dark:bg-blue-300/20 dark:text-blue-300",
+        js: "bg-yellow-100 text-yellow-700 dark:bg-yellow-300/20 dark:text-yellow-300",
+        sass: "bg-pink-100 text-pink-700 dark:bg-pink-300/20 dark:text-pink-300",
+        bootstrap:
+          "bg-purple-100 text-purple-700 dark:bg-purple-300/20 dark:text-purple-300",
+        wordpress:
+          "bg-blue-200/40 text-blue-900 dark:bg-blue-200/10 dark:text-blue-200",
+        salla:
+          "bg-green-200/40 text-green-900 dark:bg-green-200/10 dark:text-green-200",
+        zid: "bg-yellow-300/30 text-yellow-900 dark:bg-yellow-300/10 dark:text-yellow-300",
       },
     },
     defaultVariants: {
