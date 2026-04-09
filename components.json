@@ -13,9 +13,9 @@
   "iconLibrary": "lucide",
   "rtl": true,
   "aliases": {
-    "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "components": "@/shared",
+    "utils": "@/shared/lib/utils/tailwind-merge",
+    "ui": "@/shared/ui",
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
