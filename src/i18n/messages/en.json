@@ -4,5 +4,23 @@
   },
   "about": {
     "title": "Hi in About Page"
+  },
+  "layout": {
+    "logo": {
+      "name": "Hady Mohamed"
+    },
+    "nav": {
+      "work": "Projects",
+      "about": "About",
+      "services": "Services",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "footer": {
+      "decorated-text": "Be unique",
+      "copy-right": "Hady Mohamed. All rights reserved.",
+      "made-with": "Made with",
+      "and-next": "and Next.js"
+    }
   }
 }

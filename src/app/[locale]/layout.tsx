@@ -10,8 +10,16 @@ import {
   Tajawal,
 } from "next/font/google";
 import { Metadata } from "next";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import ToggleLang from "@/shared/components/toggle-lang";
+import Logo from "./_components/logo";
+import Nav from "./_components/nav";
+import DecoratedFooterText from "./_components/decorated-footer-text";
+import CurrentDate from "@/shared/components/current-date";
 
 type Props = {
   children: React.ReactNode;
@@ -53,6 +61,9 @@ export function generateStaticParams() {
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
+  // Translation
+  const t = await getTranslations("layout.footer");
+
   // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -72,15 +83,43 @@ export default async function LocaleLayout({ children, params }: Props) {
       suppressHydrationWarning
     >
       <body
-        className="min-h-full flex flex-col font-space-grotesk rtl:font-tajawal bg-slate-50 dark:bg-bg text-bg dark:text-amber-50"
+        className="min-h-full flex flex-col font-space-grotesk rtl:font-tajawal bg-slate-50 dark:bg-bg text-bg dark:text-amber-50 relative"
         dir={locale === "ar" ? "rtl" : "ltr"}
       >
         <Providers locale={locale} messages={messages}>
+          {/* Header */}
+          <header className="bg-white dark:bg-[#02061766] border-b border-black/5 dark:border-white/10">
+            <div className="container px-5 mx-auto flex justify-between items-center h-20">
+              {/* Logo */}
+              <Logo />
+
+              {/* Nav Links */}
+              <Nav />
+
+              {/* Site Settings */}
+              <div className="site-settings flex items-center gap-2">
+                <ToggleTheme />
+                <ToggleLang />
+              </div>
+            </div>
+          </header>
+
           {children}
-          <ToggleTheme />
-          <div className="flex my-5 mx-auto">
-            <ToggleLang />
-          </div>
+
+          {/* Footer */}
+          <DecoratedFooterText />
+          <footer className="bg-white dark:bg-[#02061766] border-t border-black/5 dark:border-white/10">
+            <div className="footer-container container mx-auto px-5 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 dark:text-gray-400 gap-2">
+              <span>
+                <CurrentDate />
+                {t("copy-right")}
+              </span>
+              <span>
+                {t("made-with")} <span className="text-red-500">&#10084;</span>{" "}
+                {t("and-next")}
+              </span>
+            </div>
+          </footer>
         </Providers>
       </body>
     </html>
