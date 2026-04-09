@@ -16,6 +16,14 @@ export default function Page() {
         <Badge variant="shadcn">shadcn/ui</Badge>
         <Badge variant="nextIntl">next-intl</Badge>
         <Badge variant="reactQuery">React Query</Badge>
+        <Badge variant="html">HTML</Badge>
+        <Badge variant="css">CSS</Badge>
+        <Badge variant="js">JavaScript</Badge>
+        <Badge variant="sass">Sass</Badge>
+        <Badge variant="bootstrap">Bootstrap</Badge>
+        <Badge variant="wordpress">WordPress</Badge>
+        <Badge variant="salla">Salla</Badge>
+        <Badge variant="zid">Zid</Badge>
       </div>
 
       {/* Tabs */}
