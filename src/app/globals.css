@@ -7,6 +7,15 @@
 @theme inline {
     --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
+    /* Font utility variables */
+    --font-space-grotesk: var(--font-space-grotesk, "Space Grotesk", sans-serif);
+    --font-tajawal: var(--font-tajawal, "Tajawal", sans-serif);
+    --font-inter: var(--font-inter, "Inter", sans-serif);
+    --font-jetbrains-mono: var(--font-jetbrains-mono, "JetBrains Mono", monospace);
+    --color-primary: #6C63FF;
+    --color-secondary: #00D4FF;
+    --color-thirdly: #ba528d;
+    --color-bg: #0F1117;
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
