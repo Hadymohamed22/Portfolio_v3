@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>services</div>;
+  return <div className="min-h-screen">services</div>;
 }
