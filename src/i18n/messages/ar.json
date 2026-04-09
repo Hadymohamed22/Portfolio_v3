@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "أهلا بك في الصفحة الرئيسية"
+  },
+  "about": {
+    "title": "أهلا في صفحة عنا"
+  },
+  "layout": {
+    "logo": {
+      "name": "هادي محمد"
+    },
+    "nav": {
+      "work": "مشاريعي",
+      "about": "عني",
+      "services": "خدماتى",
+      "blog": "المدونة",
+      "contact": "تواصل معى"
+    },
+    "footer": {
+      "decorated-text": "كن مميزا",
+      "copy-right": "هادي محمد ، كل حقوق الملكية محفوظة",
+      "made-with": "صنع بـ ",
+      "and-next": "و Next.js"
+    }
+  }
+}
