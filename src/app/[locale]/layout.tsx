@@ -34,7 +34,7 @@ const spaceGrotesk = Space_Grotesk({
 
 const tajawal = Tajawal({
   variable: "--font-tajawal",
-  subsets: ["latin"],
+  subsets: ["arabic"],
   weight: ["300", "400", "500", "700"],
 });
 
