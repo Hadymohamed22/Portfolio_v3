@@ -22,5 +22,12 @@
       "made-with": "Made with",
       "and-next": "and Next.js"
     }
+  },
+  "shared": {
+    "toggle-theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
   }
 }
