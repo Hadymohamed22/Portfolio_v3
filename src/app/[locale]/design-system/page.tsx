@@ -1,7 +1,11 @@
 import { Badge } from "@/shared/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shared/ui/tabs";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  // Translation
+  const t = useTranslations("home.hero.availability");
+
   return (
     <div className="flex flex-col gap-6 items-center">
       {/* Badges */}
@@ -24,6 +28,10 @@ export default function Page() {
         <Badge variant="wordpress">WordPress</Badge>
         <Badge variant="salla">Salla</Badge>
         <Badge variant="zid">Zid</Badge>
+        <Badge variant="notAvailable">{t("not-available")}</Badge>
+        <Badge variant="full-time">{t("full-time")}</Badge>
+        <Badge variant="part-time">{t("part-time")}</Badge>
+        <Badge variant="remote">{t("remote")}</Badge>
       </div>
 
       {/* Tabs */}
