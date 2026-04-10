@@ -25,6 +25,7 @@
   },
   "shared": {
     "toggle-theme": {
+      "text": "غير المظهر",
       "light": "مضئ",
       "dark": "مظلم",
       "system": "النظام"
