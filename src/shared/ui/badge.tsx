@@ -41,9 +41,10 @@ const badgeVariants = cva(
         notAvailable:
           "bg-gray-200 text-gray-500 border-gray-400 dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 border",
 
-        fullTime:
-          "bg-green-200/70 text-green-800 border-green-300 outline outline-1 outline-green-300 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700 dark:outline-green-700 border before:content-[''] before:inline-block before:h-2 before:w-2 before:rounded-full before:bg-green-500 before:me-1 before:align-middle before:ring before:ring-green-400 before:ring-opacity-70 dark:before:bg-green-400 dark:before:ring-green-600",
-        partTime:
+        "full-time":
+          "bg-green-100 text-green-700 border-green-400 outline outline-1 outline-green-400 dark:bg-green-900/30 dark:text-green-300 dark:border-green-700 dark:outline-green-700 border before:content-[''] before:inline-block before:h-2 before:w-2 before:rounded-full before:bg-green-500 before:me-1 before:align-middle before:ring before:ring-green-300 before:ring-opacity-60 dark:before:bg-green-400 dark:before:ring-green-600",
+
+        "part-time":
           "bg-blue-200/70 text-blue-800 border-blue-300 outline outline-1 outline-blue-300 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-700 dark:outline-blue-700 border before:content-[''] before:inline-block before:h-2 before:w-2 before:rounded-full before:bg-blue-500 before:me-1 before:align-middle before:ring before:ring-blue-400 before:ring-opacity-70 dark:before:bg-blue-400 dark:before:ring-blue-600",
         remote:
           "bg-purple-100 text-purple-700 border-purple-300 outline outline-1 outline-purple-300 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700 dark:outline-purple-700 border before:content-[''] before:inline-block before:h-2 before:w-2 before:rounded-full before:bg-purple-500 before:me-1 before:align-middle before:ring before:ring-purple-400 before:ring-opacity-70 dark:before:bg-purple-400 dark:before:ring-purple-600",
