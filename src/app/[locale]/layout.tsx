@@ -18,7 +18,6 @@ import {
 import ToggleLang from "@/shared/components/toggle-lang";
 import Logo from "./_components/logo";
 import Nav from "./_components/nav";
-import DecoratedFooterText from "./_components/decorated-footer-text";
 import CurrentDate from "@/shared/components/current-date";
 
 type Props = {
@@ -107,7 +106,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
 
           {/* Footer */}
-          <DecoratedFooterText />
           <footer className="bg-white dark:bg-[#02061766] border-t border-black/5 dark:border-white/10">
             <div className="footer-container container mx-auto px-5 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 dark:text-gray-400 gap-2">
               <span>
