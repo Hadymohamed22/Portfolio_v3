@@ -1,6 +1,13 @@
 {
   "home": {
-    "title": "أهلا بك في الصفحة الرئيسية"
+    "hero": {
+      "availability": {
+        "not-available": "غير متاح الآن",
+        "full-time": "دوام كامل",
+        "part-time": "دوام جزئي",
+        "remote": "عمل عن بعد"
+      }
+    }
   },
   "about": {
     "title": "أهلا في صفحة عنا"

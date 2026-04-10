@@ -1,6 +1,14 @@
 {
   "home": {
-    "title": "Hello In Home Page"
+    "hero": {
+      "availability": {
+        "not-available": "Not Available",
+        "full-time": "FullTime Work",
+        "part-time": "PartTime Work",
+        "remote": "Remote Work"
+   
+      }
+    }
   },
   "about": {
     "title": "Hi in About Page"
