@@ -24,6 +24,10 @@ export default function Page() {
         <Badge variant="wordpress">WordPress</Badge>
         <Badge variant="salla">Salla</Badge>
         <Badge variant="zid">Zid</Badge>
+        <Badge variant="notAvailable">Not Available</Badge>
+        <Badge variant="fullTime">Full Time</Badge>
+        <Badge variant="partTime">Part Time</Badge>
+        <Badge variant="remote">Remote</Badge>
       </div>
 
       {/* Tabs */}
