@@ -22,5 +22,12 @@
       "made-with": "صنع بـ ",
       "and-next": "و Next.js"
     }
+  },
+  "shared": {
+    "toggle-theme": {
+      "light": "مضئ",
+      "dark": "مظلم",
+      "system": "النظام"
+    }
   }
 }
