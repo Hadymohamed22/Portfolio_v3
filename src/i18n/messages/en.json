@@ -25,6 +25,7 @@
   },
   "shared": {
     "toggle-theme": {
+      "text": "Toggle Theme",
       "light": "Light",
       "dark": "Dark",
       "system": "System"
