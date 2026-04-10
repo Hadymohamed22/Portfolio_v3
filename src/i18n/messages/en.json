@@ -2,12 +2,16 @@
   "home": {
     "hero": {
       "availability": {
+        "available-for": "Available For",
         "not-available": "Not Available",
         "full-time": "FullTime Work",
         "part-time": "PartTime Work",
         "remote": "Remote Work"
-   
-      }
+      },
+      "title": "I Build Websites That <span>Bring You Clients</span>",
+      "sub-title": "Frontend Developer helping businesses & startups grow their digital presence through meticulous engineering and high-end editorial design.",
+      "talk-button": "Let's Talk",
+      "projects-button": "See My Work"
     }
   },
   "about": {
@@ -38,5 +42,6 @@
       "dark": "Dark",
       "system": "System"
     }
-  }
+  },
+  "talk-button": "Let's Talk"
 }

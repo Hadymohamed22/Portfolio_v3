@@ -29,8 +29,8 @@ export default function Page() {
         <Badge variant="salla">Salla</Badge>
         <Badge variant="zid">Zid</Badge>
         <Badge variant="notAvailable">{t("not-available")}</Badge>
-        <Badge variant="fullTime">{t("full-time")}</Badge>
-        <Badge variant="partTime">{t("part-time")}</Badge>
+        <Badge variant="full-time">{t("full-time")}</Badge>
+        <Badge variant="part-time">{t("part-time")}</Badge>
         <Badge variant="remote">{t("remote")}</Badge>
       </div>
 
