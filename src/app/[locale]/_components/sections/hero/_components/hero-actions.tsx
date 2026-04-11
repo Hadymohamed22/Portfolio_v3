@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import getPersonalInfo from "@/shared/lib/actions/get-personal-info.action";
+import getContactInfo from "@/shared/lib/actions/get-contact-info.action";
 import { Button } from "@/shared/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -10,7 +10,7 @@ type Props = {
 
 export default async function HeroActions({ talkText, projectsText }: Props) {
   // Variables
-  const personalInfo = await getPersonalInfo();
+  const contactInfo = await getContactInfo();
 
   return (
     <div className="mt-10 md:mt-12 flex gap-4 items-center">
@@ -28,7 +28,7 @@ export default async function HeroActions({ talkText, projectsText }: Props) {
         variant={"outline"}
       >
         <Link
-          href={`https://wa.me/${personalInfo.ok ? personalInfo.data.phone : "+201029379363"}`}
+          href={`https://wa.me/${contactInfo.ok ? contactInfo.data.phone : "+201029379363"}`}
         >
           {talkText}
         </Link>
