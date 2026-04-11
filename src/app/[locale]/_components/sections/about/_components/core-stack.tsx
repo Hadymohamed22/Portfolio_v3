@@ -1,7 +1,11 @@
 import getPersonalInfo from "@/shared/lib/actions/get-personal-info.action";
 import { Badge } from "@/shared/ui/badge";
+import { getTranslations } from "next-intl/server";
 
 export default async function CoreStack() {
+  // Translation
+  const t = await getTranslations("home.about-me");
+
   // Variables
   const stacks = await getPersonalInfo();
 
@@ -9,7 +13,7 @@ export default async function CoreStack() {
     <div className="core-stack mt-4">
       {/* Title */}
       <p className="text-gray-400 dark:text-gray-500 text-xs mb-2 tracking-widest uppercase font-jetbrains-mono rtl:font-tajawal">
-        Core Stack
+        {t("core-stack-title")}
       </p>
 
       {/* Stack */}
