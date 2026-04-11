@@ -27,6 +27,11 @@
       "start-learn": "STARTED LEARNING CODE",
       "real-world-projects": "BUILT REAL-WORLD PROJECTS",
       "work-with-clients": "WORKING WITH CLIENTS & Companies"
+    },
+    "contact-me": {
+      "available-in-cairo": "Available In Cairo",
+      "title": "LET'S BUILD SOMETHING <p>TOGETHER</p>",
+      "sub-title": "Have a project in mind? Reach out and let's discuss how we can bring your vision to life."
     }
   },
   "about": {

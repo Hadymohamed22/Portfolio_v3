@@ -13,7 +13,7 @@ export default function About() {
   // Translation
   const t = useTranslations("home.about-me");
   return (
-    <section className="about-section my-16 md:my-16">
+    <section className="about-section my-14 md:my-16">
       <div className="container mx-auto px-5 grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-10 lg:gap-12 items-center">
         {/* Image & Statistics */}
         <div className="image-statistics col-span-1">
