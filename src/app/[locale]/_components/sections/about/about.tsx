@@ -1,5 +1,3 @@
-import { Button } from "@/shared/ui/button";
-import { MessageCircleMore } from "lucide-react";
 import YearBox from "./_components/year-box";
 import CoreStack from "./_components/core-stack";
 import { Suspense } from "react";
@@ -7,8 +5,12 @@ import CoreStackSkeleton from "./_skeleton/core-stack.skeleton";
 import Statistics from "./_components/statistics";
 import StatisticsSkeleton from "./_skeleton/statistics.skeleton";
 import Advantages from "./_components/advantages";
+import { useTranslations } from "next-intl";
+import CTA from "./_components/cta";
 
 export default function About() {
+  // Translation
+  const t = useTranslations("home.about-me");
   return (
     <section className="about-section my-14 md:my-16">
       <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-10 lg:gap-12">
@@ -19,20 +21,23 @@ export default function About() {
         <div className="about-me col-span-1 lg:col-span-2">
           {/* Who Me */}
           <p className="text-gray-400 dark:text-gray-300 text-xs mb-4 tracking-[.3rem] uppercase font-jetbrains-mono rtl:font-tajawal">
-            About Me
+            {t("about-me-text")}
           </p>
 
           {/* Title */}
           <h3 className="font-bold text-5xl md:text-6xl">
-            HONEST. AMBITIOUS.{" "}
-            <span className="bg-linear-to-r from-m-primary to-m-secondary rtl:from-m-secondary rtl:to-m-primary bg-clip-text text-transparent">
-              ALWAYS LEARNING.
-            </span>
+            {t.rich("title", {
+              span: (chunks) => (
+                <span className="bg-linear-to-r from-m-primary to-m-secondary rtl:from-m-secondary rtl:to-m-primary bg-clip-text text-transparent">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h3>
 
           {/* Description */}
           <p className="mt-3 font-inter rtl:font-tajawal text-base md:text-lg text-zinc-600 dark:text-zinc-400">
-            {`My journey from junior explorer to mid-level craftsman is fueled by a simple obsession: bridging the gap between raw code and profitable user experiences. I don't just "write HTML"; I architect digital environments that breathe your brand's identity.`}
+            {t("description")}
           </p>
 
           {/* Core Stack */}
@@ -49,10 +54,7 @@ export default function About() {
           <Advantages />
 
           {/* CTA */}
-          <Button className="min-w-48 mt-8">
-            <MessageCircleMore />
-            {"Let's Work Together"}
-          </Button>
+          <CTA talkText={t("cta")} />
         </div>
       </div>
     </section>

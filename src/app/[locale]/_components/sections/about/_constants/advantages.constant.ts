@@ -1,28 +1,29 @@
+import { _Translator } from "next-intl";
 import { IconsKeysType } from "../_components/advantage-item";
 
-export const advantages: {
+export const advantages: (t: _Translator) => {
   id: string;
   text: string;
   iconName: IconsKeysType;
-}[] = [
+}[] = (t) => [
   {
     id: crypto.randomUUID(),
-    text: "BUSINESS THINKING",
+    text: t("business"),
     iconName: "trend",
   },
   {
     id: crypto.randomUUID(),
-    text: "CLEAN CODE FIRST",
+    text: t("clean-code"),
     iconName: "clean-code",
   },
   {
     id: crypto.randomUUID(),
-    text: "Fast delivery",
+    text: t("fast"),
     iconName: "fast",
   },
   {
     id: crypto.randomUUID(),
-    text: "Detail-oriented",
+    text: t("details"),
     iconName: "search",
   },
 ];
