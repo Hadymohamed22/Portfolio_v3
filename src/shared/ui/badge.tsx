@@ -10,6 +10,18 @@ const badgeVariants = cva(
     variants: {
       variant: {
         next: "bg-gray-200 text-secondary-foreground dark:bg-gray-500/50 dark:text-gray-100 [a]:hover:bg-secondary/80 dark:[a]:hover:bg-secondary/30",
+        typescript:
+          "bg-blue-200/60 text-blue-800 dark:bg-blue-500/20 dark:text-blue-300",
+        "typescript-default":
+          "px-4! py-2! border-gray-200 text-[#1b3ea7] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#FF9DD0]",
+        "next-default":
+          "px-4! py-2! border-gray-200 text-[#2500bd] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#A8A4FF]",
+        "react-default":
+          "px-4! py-2! border-gray-200 text-[#00bbeb] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#00D2FD]",
+        "node-default":
+          "px-4! py-2! border-gray-200 text-[#418443] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#FFFFFFCC]",
+        "tailwind-default":
+          "px-4! py-2! border-gray-200 text-[#324fff] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#8A85FF]",
         tailwind:
           "bg-cyan-400/10 text-cyan-600 dark:bg-cyan-400/20 dark:text-cyan-300",
         destructive:
@@ -48,6 +60,8 @@ const badgeVariants = cva(
           "bg-blue-200/70 text-blue-800 border-blue-300 outline outline-1 outline-blue-300 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-700 dark:outline-blue-700 border before:content-[''] before:inline-block before:h-2 before:w-2 before:rounded-full before:bg-blue-500 before:me-1 before:align-middle before:ring before:ring-blue-400 before:ring-opacity-70 dark:before:bg-blue-400 dark:before:ring-blue-600",
         remote:
           "bg-purple-100 text-purple-700 border-purple-300 outline outline-1 outline-purple-300 dark:bg-purple-900/30 dark:text-purple-300 dark:border-purple-700 dark:outline-purple-700 border before:content-[''] before:inline-block before:h-2 before:w-2 before:rounded-full before:bg-purple-500 before:me-1 before:align-middle before:ring before:ring-purple-400 before:ring-opacity-70 dark:before:bg-purple-400 dark:before:ring-purple-600",
+        "who-me":
+          "bg-white text-gray-700 border border-gray-300 px-3 py-1 font-semibold uppercase dark:bg-gray-800 dark:text-gray-100 dark:border-gray-500",
       },
     },
     defaultVariants: {
