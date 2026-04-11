@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "!min-h-12 gap-2 !py-4 !px-8 rounded-xl transition-all bg-amber-100 text-amber-900 shadow-md hover:bg-amber-200 hover:text-amber-900 hover:shadow-lg focus-visible:ring-amber-300 dark:bg-gradient-to-r dark:from-m-primary dark:to-m-secondary dark:text-black duration-300 hover:scale-105",
+          "!min-h-12 gap-2 !py-4 !px-8 rounded-xl transition-all shadow-md bg-gradient-to-r from-m-primary to-m-secondary text-amber-50 dark:text-black duration-300 hover:scale-105",
 
         outline:
           "!min-h-12 rounded-xl !py-4 !px-8 border bg-background transition-all border-slate-300 text-slate-900 hover:bg-slate-100 hover:text-slate-900 aria-expanded:bg-slate-100 aria-expanded:text-slate-900 dark:border-input dark:bg-input/30 dark:text-amber-50 dark:hover:bg-input/50 dark:aria-expanded:bg-input/50 dark:aria-expanded:text-amber-50",
