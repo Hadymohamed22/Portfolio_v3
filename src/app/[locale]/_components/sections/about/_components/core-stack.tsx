@@ -17,7 +17,7 @@ export default async function CoreStack() {
       </p>
 
       {/* Stack */}
-      <div className="content flex items-center gap-3">
+      <div className="content flex items-center gap-3 flex-wrap">
         {stacks.ok ? (
           stacks.data.coreStack.map((tech) => (
             <Badge variant={tech.badgeVariant} key={tech.id}>

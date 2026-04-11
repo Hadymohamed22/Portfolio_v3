@@ -30,7 +30,26 @@ type StatisticItem = {
   text: string;
 };
 
+type ImageDataType = {
+  name: string;
+  hash: string;
+  ext: string;
+  mime: string;
+  path: string | null;
+  width: number;
+  height: number;
+  size: number;
+  sizeInBytes: number;
+  url: string;
+};
+
+type ImageSizesType = "small" | "medium" | "large" | "thumbnail";
+
 type PersonalInfo = {
   coreStack: CoreStackItem[];
   statistics: StatisticItem[];
+  myImage: {
+    alternativeText: string;
+    formats: Record<ImageSizesType, ImageDataType>;
+  };
 };

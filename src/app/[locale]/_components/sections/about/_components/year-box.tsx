@@ -53,7 +53,7 @@ export default function YearBox({ isEnd, year, text, step }: Props) {
       {/* Dot */}
       <span
         className={cn(
-          "size-6 rounded-full border relative before:absolute before:size-2 before:rounded-full before:inset-1/2 before:-translate-1/2",
+          "size-6 rounded-full border relative before:absolute before:size-2 before:rounded-full before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2",
           // Light mode styles
           stepStyles[step].light,
           // Dark mode styles

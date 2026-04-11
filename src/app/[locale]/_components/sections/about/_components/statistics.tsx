@@ -10,7 +10,7 @@ export default async function Statistics() {
   const stacks = await getPersonalInfo(locale);
 
   return (
-    <div className="statistics mt-12 flex flex-nowrap shadow-sm bg-white/70 dark:bg-white/3 border border-zinc-200 dark:border-white/5 rounded-3xl py-6 md:py-8 gap-0.5">
+    <div className="statistics flex flex-nowrap shadow-sm bg-white/70 dark:bg-white/3 border border-zinc-200 dark:border-white/5 rounded-3xl py-6 md:py-8 gap-0.5 mt-6">
       {stacks.ok ? (
         stacks.data.statistics.map((statistic, i) => (
           <StatisticItem
