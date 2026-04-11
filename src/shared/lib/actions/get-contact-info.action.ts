@@ -1,18 +1,18 @@
 import "server-only";
 
-type AvailabilityResult =
-  | { ok: true; data: Availability }
+type ContactInfoResult =
+  | { ok: true; data: ContactInfo }
   | { ok: false; message: string };
 
-export default async function getAvailability(): Promise<AvailabilityResult> {
+export default async function getContactInfo(): Promise<ContactInfoResult> {
   try {
-    const res = await fetch(`${process.env.API_URL}/api/availability`);
+    const res = await fetch(`${process.env.API_URL}/api/contact-us-section`);
 
     if (!res.ok) {
       return { ok: false, message: `Request failed (${res.status})` };
     }
 
-    const payload: APIResponse<Availability> = await res.json();
+    const payload: APIResponse<ContactInfo> = await res.json();
 
     if ("error" in payload) {
       return { ok: false, message: payload.error?.message ?? "Request failed" };
@@ -21,6 +21,6 @@ export default async function getAvailability(): Promise<AvailabilityResult> {
     return { ok: true, data: payload.data };
   } catch (e) {
     console.error((e as Error).message);
-    return { ok: false, message: "Not Available Now" };
+    return { ok: false, message: "Error to fetch Data" };
   }
 }
