@@ -1,4 +1,3 @@
-import YearBox from "./_components/year-box";
 import CoreStack from "./_components/core-stack";
 import { Suspense } from "react";
 import CoreStackSkeleton from "./_skeleton/core-stack.skeleton";
@@ -7,15 +6,20 @@ import StatisticsSkeleton from "./_skeleton/statistics.skeleton";
 import Advantages from "./_components/advantages";
 import { useTranslations } from "next-intl";
 import CTA from "./_components/cta";
+import MyImage from "./_components/my-image";
+import Journey from "./_components/journey";
 
 export default function About() {
   // Translation
   const t = useTranslations("home.about-me");
   return (
-    <section className="about-section my-14 md:my-16">
-      <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-10 lg:gap-12">
+    <section className="about-section my-16 md:my-16">
+      <div className="container mx-auto px-5 grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-10 lg:gap-12 items-center">
         {/* Image & Statistics */}
-        <div className="image-statistics col-span-1"></div>
+        <div className="image-statistics col-span-1">
+          {/* Image */}
+          <MyImage />
+        </div>
 
         {/* About Me */}
         <div className="about-me col-span-1 lg:col-span-2">
@@ -50,11 +54,18 @@ export default function About() {
             <Statistics />
           </Suspense>
 
-          {/* Advantages */}
-          <Advantages />
+          <div className="journey-advantages-cta flex flex-col md:flex-row gap-4">
+            {/* Journey */}
+            <Journey />
 
-          {/* CTA */}
-          <CTA talkText={t("cta")} />
+            <div className="cta-advantages">
+              {/* Advantages */}
+              <Advantages />
+
+              {/* CTA */}
+              <CTA talkText={t("cta")} />
+            </div>
+          </div>
         </div>
       </div>
     </section>
