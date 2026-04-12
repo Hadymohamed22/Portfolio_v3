@@ -32,6 +32,14 @@
       "available-in-cairo": "Available In Cairo",
       "title": "LET'S BUILD SOMETHING <p>TOGETHER</p>",
       "sub-title": "Have a project in mind? Reach out and let's discuss how we can bring your vision to life."
+    },
+    "skills": {
+      "title": "Skills & <span>Technologies</span>",
+      "description": "My curated collection of tools for building exceptional digital solutions.",
+      "frontend-skills-title": "Frontend Core",
+      "ui-skills-title": "UI And Styling",
+      "tools-skills-title": "Tools",
+      "backend-skills-title": "Backend Development"
     }
   },
   "about": {
