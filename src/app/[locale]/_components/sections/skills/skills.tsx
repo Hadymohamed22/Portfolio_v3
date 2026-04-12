@@ -1,5 +1,6 @@
 import SectionHeader from "@/shared/components/section-header";
 import SkillBox from "./_components/skill-box";
+import SkillsGroupTitle from "./_components/skills-group-title";
 
 export default function Skills() {
   return (
@@ -20,6 +21,11 @@ export default function Skills() {
           }
         />
 
+        {/* Skills Group Title */}
+        <SkillsGroupTitle
+          title="Frontend Core"
+          className="text-cyan-400 before:to-m-secondary/55 after:to-m-secondary/55"
+        />
         {/* Content */}
         <div className="content grid grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Skill Box */}
