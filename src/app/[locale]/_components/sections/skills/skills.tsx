@@ -1,6 +1,8 @@
 import SectionHeader from "@/shared/components/section-header";
-import SkillBox from "./_components/skill-box";
-import SkillsGroupTitle from "./_components/skills-group-title";
+import FrontendCoreSkills from "./_components/frontend-core-skills";
+import UIAndStylingSkills from "./_components/ui-and-styling-skills";
+import ToolsSkills from "./_components/tools-skills";
+import BackendSkills from "./_components/backend-skills";
 
 export default function Skills() {
   return (
@@ -21,36 +23,17 @@ export default function Skills() {
           }
         />
 
-        {/* Skills Group Title */}
-        <SkillsGroupTitle
-          title="Frontend Core"
-          className="text-cyan-400 before:to-m-secondary/55 after:to-m-secondary/55"
-        />
-        {/* Content */}
-        <div className="content grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Skill Box */}
-          <SkillBox
-            icon="braces"
-            title="Javascript"
-            description="Smart Interactivity"
-          />
+        {/* Frontend Core Skills */}
+        <FrontendCoreSkills />
 
-          <SkillBox
-            icon="braces"
-            title="Javascript"
-            description="Smart Interactivity"
-          />
-          <SkillBox
-            icon="braces"
-            title="Javascript"
-            description="Smart Interactivity"
-          />
-          <SkillBox
-            icon="braces"
-            title="Javascript"
-            description="Smart Interactivity"
-          />
-        </div>
+        {/* UI And Styling Skills */}
+        <UIAndStylingSkills />
+
+        {/* Tools Skills */}
+        <ToolsSkills />
+
+        {/* Backend Skills */}
+        <BackendSkills />
       </div>
     </section>
   );

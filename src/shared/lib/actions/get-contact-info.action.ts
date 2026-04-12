@@ -1,5 +1,5 @@
-import { Locale } from "next-intl";
 import "server-only";
+import { Locale } from "next-intl";
 
 type ContactInfoResult =
   | { ok: true; data: ContactInfo }
