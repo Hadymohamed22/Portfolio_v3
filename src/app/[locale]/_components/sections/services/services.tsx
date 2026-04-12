@@ -1,4 +1,5 @@
 import SectionHeader from "@/shared/components/section-header";
+import ServicesContent from "./_components/services-content";
 
 export default function Services() {
   return (
@@ -6,6 +7,9 @@ export default function Services() {
       <div className="container mx-auto px-5">
         {/* Section Header */}
         <SectionHeader title="Services & Experiences" className="text-center" />
+
+        {/* Content */}
+        <ServicesContent />
       </div>
     </section>
   );

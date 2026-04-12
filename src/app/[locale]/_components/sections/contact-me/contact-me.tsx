@@ -16,6 +16,7 @@ export default async function ContactMe() {
 
   return (
     <section
+    id="contact-me"
       className={`
         contact-me-section relative
         mt-14 mb-18 md:mt-16 md:mb-20 px-5
