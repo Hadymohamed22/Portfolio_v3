@@ -40,6 +40,10 @@
       "ui-skills-title": "UI And Styling",
       "tools-skills-title": "Tools",
       "backend-skills-title": "Backend Development"
+    },
+    "services": {
+      "title": "Services & <span>Experiences</span>",
+      "start-project": "Start Project Together"
     }
   },
   "about": {
