@@ -40,6 +40,10 @@
       "ui-skills-title": "الواجهة والتنسيقات",
       "tools-skills-title": "الأدوات المساعدة",
       "backend-skills-title": "أدوات لتطوير قواعد البيانات ولوحات التحكم"
+    },
+    "services": {
+      "title": "خدماتي <span>وخبراتي</span>",
+      "start-project": "فلنبدأ العمل معا"
     }
   },
   "about": {

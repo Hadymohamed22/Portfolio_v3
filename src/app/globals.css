@@ -144,3 +144,37 @@
     @apply font-sans;
     }
 }
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  gap: 24px;
+  padding-inline: 24px;                              /* updated: 16px → 24px */
+}
+
+/* small: 1 slide — gap(24) + padding-x * 2 (24*2 = 48) */
+.embla__slide {
+  flex: 0 0 calc(114% - 24px - 48px);
+  min-width: 0;
+}
+
+/* medium: 2 slides — gap/2(12) + padding-x * 2 / 2 (24) */
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 calc(53.5% - 12px - 24px);
+  }
+}
+
+/* large: 4 slides — no padding */
+@media (min-width: 1024px) {
+  .embla__container {
+    padding-inline: 0;
+  }
+
+  .embla__slide {
+    flex: 0 0 calc(25% - 18px);
+  }
+}

@@ -1,16 +1,8 @@
-"use client";
-import { useTheme } from "next-themes";
-
 type Props = {
   icon: React.ReactNode;
-  lightColor: string;
-  darkColor: string;
 };
 
-export default function SkillBoxIcon({ icon, lightColor, darkColor }: Props) {
-  // Hooks
-  const { resolvedTheme } = useTheme();
-
+export default function SkillBoxIcon({ icon }: Props) {
   return (
     <div
       className={`
@@ -22,7 +14,6 @@ export default function SkillBoxIcon({ icon, lightColor, darkColor }: Props) {
         size-12 md:size-14 
         mx-auto
       `}
-      style={{ color: resolvedTheme === "dark" ? darkColor : lightColor }}
     >
       {icon}
     </div>
