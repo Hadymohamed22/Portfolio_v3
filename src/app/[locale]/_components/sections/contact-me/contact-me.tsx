@@ -16,6 +16,7 @@ export default async function ContactMe() {
 
   return (
     <section
+      id="contact-me"
       className={`
         contact-me-section relative
         mt-14 mb-18 md:mt-16 md:mb-20 px-5
@@ -24,10 +25,10 @@ export default async function ContactMe() {
         before:size-80
         before:rounded-full
         before:bg-linear-to-br before:from-m-primary/30 before:to-m-secondary/20
-        before:top-20 before:inset-s-20
+        before:top-20 before:inset-s-10 md:before:inset-s-20
         `}
     >
-      <div className="container mx-auto shadow-sm bg-white/70 dark:bg-white/3 border border-zinc-200 dark:border-white/5 p-18 md:p-20 lg:p-24 rounded-[3rem] backdrop-blur-lg">
+      <div className="container mx-auto shadow-sm bg-white/70 dark:bg-white/3 border border-zinc-200 dark:border-white/5 px-12 py-16 md:p-20 lg:p-24 rounded-[3rem] backdrop-blur-lg">
         {/* Available In Cairo */}
         {contactMeInfo.ok && contactMeInfo.data.availableInCairo && (
           <Badge variant={"full-time"} className="mb-4">
