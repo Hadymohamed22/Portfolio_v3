@@ -1,6 +1,7 @@
 import {
   AppWindow,
   Braces,
+  Coffee,
   Component,
   FileCheck,
   Gauge,
@@ -31,6 +32,7 @@ const icons = {
   component: <Component />,
   "towel-rack": <TowelRack />,
   "tablet-smartphone": <TabletSmartphone />,
+  coffee: <Coffee />,
 } satisfies Record<string, React.ReactNode>;
 
 export type SkillsIconType = keyof typeof icons;
