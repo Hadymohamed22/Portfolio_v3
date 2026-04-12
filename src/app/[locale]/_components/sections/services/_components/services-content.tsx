@@ -1,4 +1,4 @@
-import ServicesEmblaCarousel from "@/shared/components/embla-carousel";
+import ServicesEmblaCarousel from "@/shared/components/services-embla-carousel";
 import { getLocale } from "next-intl/server";
 import getServices from "../_actions/get-services.action";
 

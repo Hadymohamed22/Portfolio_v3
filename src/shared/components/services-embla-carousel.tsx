@@ -4,6 +4,7 @@ import ServiceBox from "@/app/[locale]/_components/sections/services/_components
 import { Service } from "@/app/[locale]/_components/sections/services/_types/services";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
+import { useLocale } from "next-intl";
 import { useRef } from "react";
 
 type Props = {
@@ -38,16 +39,22 @@ const INITIAL_SLIDES: Service[] = [
 ];
 
 const ServicesEmblaCarousel = ({ slides = INITIAL_SLIDES }: Props) => {
+  // Translation
+  const locale = useLocale();
+
+  // Refs
   const autoplayRef = useRef(
     Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }),
   );
 
+  // Hooks
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true, // ← must be true for autoplay to work continuously
       align: "start",
       slidesToScroll: 1,
       containScroll: "keepSnaps",
+      direction: locale === "ar" ? "rtl" : "ltr",
     },
     [autoplayRef.current],
   );

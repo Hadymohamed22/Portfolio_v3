@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
 import { CircleGauge, Code, PlaneLanding, Rocket } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const icons = {
   rocket: <Rocket />,
@@ -26,6 +27,9 @@ export default function ServiceBox({
   boxClassName,
   icon,
 }: Props) {
+  // Translation
+  const t = useTranslations("home.services");
+
   return (
     <div
       className={cn(
@@ -66,7 +70,7 @@ export default function ServiceBox({
           className,
         )}
       >
-        Start Project Together
+        {t("start-project")}
       </Link>
     </div>
   );
