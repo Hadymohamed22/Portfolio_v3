@@ -16,7 +16,7 @@ export default async function MyImage() {
       };
 
   return (
-    <div className="image-container w-96 h-130 mx-auto md:w-110 md:h-145 lg:w-full lg:h-170 relative rounded-2xl shadow before:absolute before:size-full before:-bottom-2 before:-inset-e-2 md:before:-bottom-4 md:before:-inset-e-4 before:border-2 before:border-m-primary/55 dark:before:border-m-secondary/55 before:rounded-2xl">
+    <div className="image-container w-85 h-115 mx-auto md:w-110 md:h-145 lg:w-full lg:h-170 relative rounded-2xl shadow before:absolute before:size-full before:-bottom-2 before:-inset-e-2 md:before:-bottom-4 md:before:-inset-e-4 before:border-2 before:border-m-primary/55 dark:before:border-m-secondary/55 before:rounded-2xl">
       {/* Image */}
       <Image
         src={data.src}

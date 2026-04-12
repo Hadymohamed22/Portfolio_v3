@@ -19,7 +19,7 @@ export default function ContactInfoBox({ iconName, title, infoText }: Props) {
   return (
     <div className="contact-info-box flex items-center gap-6">
       {/* Icon */}
-      <div className="icon-container shadow-sm shadow-cyan-800/55 dark:shadow-m-primary/55 size-12 rounded-full bg-white/3 flex items-center justify-center">
+      <div className="icon-container shadow-sm shadow-cyan-800/55 dark:shadow-m-primary/55 size-10 md:size-12 md:min-size-12 shrink-0 rounded-full bg-white/3 flex items-center justify-center">
         {icons[iconName]}
       </div>
 
