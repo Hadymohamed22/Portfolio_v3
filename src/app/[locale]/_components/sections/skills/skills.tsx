@@ -1,4 +1,5 @@
 import SectionHeader from "@/shared/components/section-header";
+import SkillBox from "./_components/skill-box";
 
 export default function Skills() {
   return (
@@ -18,6 +19,32 @@ export default function Skills() {
             "My curated collection of tools for building exceptional digital solutions."
           }
         />
+
+        {/* Content */}
+        <div className="content grid grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Skill Box */}
+          <SkillBox
+            icon="braces"
+            title="Javascript"
+            description="Smart Interactivity"
+          />
+
+          <SkillBox
+            icon="braces"
+            title="Javascript"
+            description="Smart Interactivity"
+          />
+          <SkillBox
+            icon="braces"
+            title="Javascript"
+            description="Smart Interactivity"
+          />
+          <SkillBox
+            icon="braces"
+            title="Javascript"
+            description="Smart Interactivity"
+          />
+        </div>
       </div>
     </section>
   );
