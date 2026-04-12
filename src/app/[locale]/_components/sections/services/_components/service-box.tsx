@@ -1,8 +1,18 @@
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
-import { Rocket } from "lucide-react";
-import Link from "next/link";
+import { CircleGauge, Code, PlaneLanding, Rocket } from "lucide-react";
+
+const icons = {
+  rocket: <Rocket />,
+  "circle-gauge": <CircleGauge />,
+  "plane-landing": <PlaneLanding />,
+  code: <Code />,
+} satisfies Record<string, React.ReactNode>;
+
+export type serviceIconType = keyof typeof icons;
 
 type Props = {
+  icon: serviceIconType;
   title: string;
   description: string;
   className?: string;
@@ -14,11 +24,12 @@ export default function ServiceBox({
   description,
   className,
   boxClassName,
+  icon,
 }: Props) {
   return (
     <div
       className={cn(
-        "service-box shadow-lg bg-white dark:bg-white/3 border-b-4 border-gray-400 dark:border-white/10 rounded-3xl p-6 md:p-8",
+        "embla__slide flex flex-col service-box shadow-lg bg-white dark:bg-white/3 border-b-4 border-gray-400 dark:border-white/10 rounded-3xl p-6 md:p-8",
         boxClassName,
       )}
     >
@@ -29,7 +40,7 @@ export default function ServiceBox({
           className,
         )}
       >
-        <Rocket />
+        {icons[icon]}
       </div>
 
       {/* Title */}
@@ -51,7 +62,7 @@ export default function ServiceBox({
       <Link
         href={"/#contact-me"}
         className={cn(
-          "underline text-[0.625rem] md:text-xs animate-pulse",
+          "underline text-[0.625rem] md:text-xs animate-pulse mt-auto",
           className,
         )}
       >

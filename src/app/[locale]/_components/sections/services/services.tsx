@@ -1,5 +1,7 @@
 import SectionHeader from "@/shared/components/section-header";
 import ServicesContent from "./_components/services-content";
+import { Suspense } from "react";
+import ServicesContentSkeleton from "./_skeleton/services-content.skeleton";
 
 export default function Services() {
   return (
@@ -9,7 +11,9 @@ export default function Services() {
         <SectionHeader title="Services & Experiences" className="text-center" />
 
         {/* Content */}
-        <ServicesContent />
+        <Suspense fallback={<ServicesContentSkeleton />}>
+          <ServicesContent />
+        </Suspense>
       </div>
     </section>
   );

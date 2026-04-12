@@ -20,8 +20,6 @@ export default async function SkillsContent({ skillCategory }: Props) {
         skills.data.flatMap((data) =>
           data.skills.map((skill) => (
             <SkillBox
-              lightColor={skill.lightColor}
-              darkColor={skill.darkColor}
               key={skill.id}
               title={skill.skillName}
               description={skill.description}
