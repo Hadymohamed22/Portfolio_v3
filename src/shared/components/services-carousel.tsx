@@ -55,11 +55,11 @@ export default function ServicesCarousel({ slides = INITIAL_SLIDES }: Props) {
         }),
       ]}
     >
-      <CarouselContent className="-ml-2 items-stretch">
+      <CarouselContent className="-ms-4 items-stretch">
         {slides.map((slide) => (
           <CarouselItem
             key={slide.id}
-            className="pl-2 md:basis-1/2 lg:basis-1/4 flex"
+            className="ps-4 md:basis-1/2 lg:basis-1/4 flex"
           >
             <ServiceBox
               icon={slide.iconName}
