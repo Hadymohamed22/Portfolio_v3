@@ -1,6 +1,8 @@
 import SectionHeader from "@/shared/components/section-header";
 import { useTranslations } from "next-intl";
 import TestimonialsContent from "./_components/testimonials-content";
+import { Suspense } from "react";
+import TestimonialsSkeleton from "./_skeleton/testimonials.skeleton";
 
 export default function Testimonials() {
   // Translations
@@ -21,7 +23,9 @@ export default function Testimonials() {
       />
 
       {/* Content */}
-      <TestimonialsContent />
+      <Suspense fallback={<TestimonialsSkeleton />}>
+        <TestimonialsContent />
+      </Suspense>
     </section>
   );
 }
