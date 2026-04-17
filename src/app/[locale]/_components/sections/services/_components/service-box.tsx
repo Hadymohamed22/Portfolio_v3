@@ -33,7 +33,7 @@ export default function ServiceBox({
   return (
     <div
       className={cn(
-        "embla__slide flex flex-col service-box shadow-lg bg-white dark:bg-white/3 border-b-4 border-gray-400 dark:border-white/10 rounded-3xl p-6 md:p-8",
+        "flex h-full flex-col service-box shadow-lg bg-white dark:bg-white/3 border-b-4 border-gray-400 dark:border-white/10 rounded-3xl p-6 md:p-8",
         boxClassName,
       )}
     >
