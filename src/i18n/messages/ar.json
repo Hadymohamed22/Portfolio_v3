@@ -44,6 +44,9 @@
     "services": {
       "title": "خدماتي <span>وخبراتي</span>",
       "start-project": "فلنبدأ العمل معا"
+    },
+    "testimonials": {
+      "title": "شاهد <span>آراء العملاء عني</span>"
     }
   },
   "about": {
