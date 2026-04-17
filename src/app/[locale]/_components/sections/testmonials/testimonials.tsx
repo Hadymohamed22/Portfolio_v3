@@ -1,6 +1,6 @@
 import SectionHeader from "@/shared/components/section-header";
 import { useTranslations } from "next-intl";
-import TestimonialsCarousel from "./_components/testimonials-carousel";
+import TestimonialsContent from "./_components/testimonials-content";
 
 export default function Testimonials() {
   // Translations
@@ -21,10 +21,7 @@ export default function Testimonials() {
       />
 
       {/* Content */}
-      <div className="container mx-auto px-5">
-        {/* Carousel */}
-        <TestimonialsCarousel />
-      </div>
+      <TestimonialsContent />
     </section>
   );
 }
