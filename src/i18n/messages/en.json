@@ -44,6 +44,9 @@
     "services": {
       "title": "Services & <span>Experiences</span>",
       "start-project": "Start Project Together"
+    },
+    "testimonials": {
+      "title": "Watch <span>Clients Says</span>"
     }
   },
   "about": {
