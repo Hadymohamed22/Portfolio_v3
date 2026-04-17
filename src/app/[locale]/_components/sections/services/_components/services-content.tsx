@@ -1,6 +1,6 @@
-import ServicesEmblaCarousel from "@/shared/components/services-embla-carousel";
 import { getLocale } from "next-intl/server";
 import getServices from "../_actions/get-services.action";
+import ServicesCarousel from "@/shared/components/services-carousel";
 
 export default async function ServicesContent() {
   // Translation
@@ -15,9 +15,9 @@ export default async function ServicesContent() {
       {services.ok &&
       Array.isArray(services.data) &&
       services.data.length > 0 ? (
-        <ServicesEmblaCarousel slides={services.data} />
+        <ServicesCarousel slides={services.data} />
       ) : (
-        <ServicesEmblaCarousel />
+        <ServicesCarousel />
       )}
     </div>
   );

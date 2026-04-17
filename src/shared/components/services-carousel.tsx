@@ -1,11 +1,9 @@
 "use client";
-
-import ServiceBox from "@/app/[locale]/_components/sections/services/_components/service-box";
 import { Service } from "@/app/[locale]/_components/sections/services/_types/services";
-import Autoplay from "embla-carousel-autoplay";
-import useEmblaCarousel from "embla-carousel-react";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import ServiceBox from "@/app/[locale]/_components/sections/services/_components/service-box";
 import { useLocale } from "next-intl";
-import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 type Props = {
   slides?: Service[];
@@ -38,37 +36,35 @@ const INITIAL_SLIDES: Service[] = [
   },
 ];
 
-const ServicesEmblaCarousel = ({ slides = INITIAL_SLIDES }: Props) => {
+export default function ServicesCarousel({ slides = INITIAL_SLIDES }: Props) {
   // Translation
   const locale = useLocale();
 
-  // Refs
-  const autoplayRef = useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }),
-  );
-
-  // Hooks
-  const [emblaRef] = useEmblaCarousel(
-    {
-      loop: true, // ← must be true for autoplay to work continuously
-      align: "start",
-      slidesToScroll: 1,
-      containScroll: "keepSnaps",
-      direction: locale === "ar" ? "rtl" : "ltr",
-    },
-    [autoplayRef.current],
-  );
+  // Variables
+  const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((slide) => (
+    <Carousel
+      opts={{
+        align: "start",
+        direction: dir,
+      }}
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    >
+      <CarouselContent className="-ml-2 items-stretch">
+        {slides.map((slide) => (
+          <CarouselItem
+            key={slide.id}
+            className="pl-2 md:basis-1/2 lg:basis-1/4 flex"
+          >
             <ServiceBox
-              key={slide.id}
               icon={slide.iconName}
-              title={slide.serviceName}
               description={slide.description}
+              title={slide.serviceName}
               className={
                 slide.iconName === "rocket"
                   ? "text-red-500 dark:text-red-400"
@@ -92,11 +88,9 @@ const ServicesEmblaCarousel = ({ slides = INITIAL_SLIDES }: Props) => {
                         : "border-purple-500"
               }
             />
-          ))}
-        </div>
-      </div>
-    </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
   );
-};
-
-export default ServicesEmblaCarousel;
+}
