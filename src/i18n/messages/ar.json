@@ -47,6 +47,9 @@
     },
     "testimonials": {
       "title": "شاهد <span>آراء العملاء عني</span>"
+    },
+    "blog": {
+      "title": "أحدث <span>البوستات</span>"
     }
   },
   "about": {
