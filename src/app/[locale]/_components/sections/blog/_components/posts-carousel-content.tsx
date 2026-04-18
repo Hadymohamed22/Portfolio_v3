@@ -28,7 +28,7 @@ export default function PostsCarouselContent({ posts }: Props) {
         }),
       ]}
     >
-      <CarouselContent className="-ms-6 md:-ms-8 items-stretch">
+      <CarouselContent className="-ms-6 md:-ms-8 items-stretch pb-12">
         {posts.map((post) => (
           <CarouselItem
             key={post.id}

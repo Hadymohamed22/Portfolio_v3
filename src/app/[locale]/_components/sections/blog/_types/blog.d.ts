@@ -9,7 +9,13 @@ type Post = {
     url: string;
   };
   blog_category: {
-    name: "Development" | "Design" | "Career";
+    name:
+      | "Development"
+      | "Design"
+      | "Career"
+      | "برمجة"
+      | "حياتك المهنية"
+      | "تصميم";
   };
   paragraphs: string[];
 };
