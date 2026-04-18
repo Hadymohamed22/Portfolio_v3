@@ -25,7 +25,12 @@ export default function PostCard({
     <div className="post-card shadow-lg bg-white dark:bg-white/3 border border-gray-300 dark:border-white/10 rounded-2xl md:rounded-3xl min-h-115 flex flex-col">
       {/* Image Container */}
       <div className="image-container relative rounded-t-2xl md:rounded-t-3xl overflow-hidden h-56 shrink-0">
-        <Image src={img} alt={alt} fill />
+        <Image
+          src={img}
+          alt={alt}
+          fill
+          className="object-cover object-center"
+        />
       </div>
 
       {/* Content */}
@@ -34,9 +39,9 @@ export default function PostCard({
         <p
           className={cn(
             "font-jetbrains-mono rtl:font-tajawal text-[0.5rem] md:text-[0.625rem]",
-            category === "Development"
+            category === "Development" || category === "برمجة"
               ? "text-purple-600 dark:text-purple-500"
-              : category === "Design"
+              : category === "Design" || category === "تصميم"
                 ? "text-cyan-600 dark:text-cyan-500"
                 : "text-red-500 dark:text-red-400",
           )}
