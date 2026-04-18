@@ -1,4 +1,5 @@
 import About from "./_components/sections/about/about";
+import Blog from "./_components/sections/blog/blog";
 import ContactMe from "./_components/sections/contact-me/contact-me";
 import Hero from "./_components/sections/hero/hero";
 import Services from "./_components/sections/services/services";
@@ -19,6 +20,9 @@ export default function Home() {
 
       {/* Services */}
       <Services />
+
+      {/* Blog */}
+      <Blog />
 
       {/* Testimonials */}
       <Testimonials />

@@ -47,6 +47,9 @@
     },
     "testimonials": {
       "title": "Watch <span>Clients Says</span>"
+    },
+    "blog": {
+      "title": "Latest <span>Posts</span>"
     }
   },
   "about": {
