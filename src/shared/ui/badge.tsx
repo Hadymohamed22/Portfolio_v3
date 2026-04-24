@@ -9,8 +9,9 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        next: "bg-gray-200 text-secondary-foreground dark:bg-gray-500/50 dark:text-gray-100 [a]:hover:bg-secondary/80 dark:[a]:hover:bg-secondary/30",
-        typescript:
+        "Next.js":
+          "bg-gray-200 text-secondary-foreground dark:bg-gray-500/50 dark:text-gray-100 [a]:hover:bg-secondary/80 dark:[a]:hover:bg-secondary/30",
+        TypeScript:
           "bg-blue-200/60 text-blue-800 dark:bg-blue-500/20 dark:text-blue-300",
         "typescript-default":
           "px-4! py-2! border-gray-200 text-[#1b3ea7] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#FF9DD0]",
@@ -22,22 +23,21 @@ const badgeVariants = cva(
           "px-4! py-2! border-gray-200 text-[#418443] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#FFFFFFCC]",
         "tailwind-default":
           "px-4! py-2! border-gray-200 text-[#324fff] min-h-8 bg-gray-400/10 dark:bg-transparent dark:border-white/10 dark:text-[#8A85FF]",
-        tailwind:
+        "Tailwind CSS":
           "bg-cyan-400/10 text-cyan-600 dark:bg-cyan-400/20 dark:text-cyan-300",
         destructive:
           "bg-destructive/10 text-destructive focus-visible:ring-destructive/20 [a]:hover:bg-destructive/20 dark:bg-destructive/30 dark:text-destructive-foreground dark:focus-visible:ring-destructive/40 dark:[a]:hover:bg-destructive/50",
         react:
           "bg-indigo-300/10 text-indigo-600 dark:bg-indigo-400/15 dark:text-indigo-300",
-        reactHookForm:
-          "bg-green-700/10 text-green-700 dark:bg-green-400/15 dark:text-green-300",
-        zod: "bg-teal-700/10 text-teal-700 dark:bg-teal-400/15 dark:text-teal-300",
-        nextAuth:
+        RHF: "bg-green-700/10 text-green-700 dark:bg-green-400/15 dark:text-green-300",
+        ZOD: "bg-teal-700/10 text-teal-700 dark:bg-teal-400/15 dark:text-teal-300",
+        NextAuth:
           "bg-yellow-200/25 text-yellow-700 dark:bg-yellow-300/15 dark:text-yellow-200",
         shadcn:
           "bg-gray-950/10 text-gray-900 dark:bg-gray-50/15 dark:text-gray-100",
         nextIntl:
           "bg-lime-200/15 text-lime-700 dark:bg-lime-200/10 dark:text-lime-300",
-        reactQuery:
+        "React Query":
           "bg-rose-300/15 text-rose-500 dark:bg-rose-400/10 dark:text-rose-300",
         html: "bg-orange-100 text-orange-700 dark:bg-orange-300/20 dark:text-orange-800",
         css: "bg-blue-100 text-blue-700 dark:bg-blue-300/20 dark:text-blue-300",
@@ -66,14 +66,14 @@ const badgeVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "next",
+      variant: "Next.js",
     },
   },
 );
 
 function Badge({
   className,
-  variant = "next",
+  variant = "Next.js",
   asChild = false,
   ...props
 }: React.ComponentProps<"span"> &

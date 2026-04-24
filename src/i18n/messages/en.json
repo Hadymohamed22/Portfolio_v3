@@ -50,6 +50,10 @@
     },
     "blog": {
       "title": "Latest <span>Posts</span>"
+    },
+    "projects": {
+      "title": "Selected <span>Projects</span>",
+      "description": "Crafting digital solutions that solve real-world business problems."
     }
   },
   "about": {
