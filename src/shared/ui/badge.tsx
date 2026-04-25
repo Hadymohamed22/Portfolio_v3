@@ -63,6 +63,10 @@ const badgeVariants = cva(
 
         "who-me":
           "bg-white text-gray-700 border border-gray-300 px-3 py-1 font-semibold uppercase dark:bg-gray-800 dark:text-gray-100 dark:border-gray-500",
+        "case-study":
+          "rounded-full border border-[#C7C8F7] bg-[#E6E5FA] text-[#37346D] px-3 py-1.5 font-medium shadow-[0_0_0_1.5px_rgba(103,102,164,0.13)] dark:border-[#504C6B] dark:bg-[#242334] dark:text-[#A1A2E6] dark:shadow-[0_0_0_1.5px_rgba(103,102,164,0.25)]",
+        collaboration:
+          "bg-cyan-400 text-gray-800 tracking-widest font-extrabold rounded-sm px-4 py-2 shadow-none border-none dark:bg-cyan-500 dark:text-gray-900",
       },
     },
     defaultVariants: {
