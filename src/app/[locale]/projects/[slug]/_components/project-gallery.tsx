@@ -1,14 +1,24 @@
 import SectionHeader from "@/shared/components/section-header";
 import ProjectGalleryCarousel from "./project-gallery-carousel";
+import { useTranslations } from "next-intl";
 
 export default function ProjectGallery() {
+  // Translations
+  const t = useTranslations("projects.project-details.gallery");
+
   return (
     <section className="my-14 md:my-16">
       <div className="container mx-auto px-5">
         {/* Section Header */}
         <SectionHeader
-          title="Project Gallery"
-          subTitle="An in-depth look at UI and the digital experience."
+          title={t.rich("title", {
+            span: (chunks) => (
+              <span className="bg-linear-to-r from-m-primary to-m-secondary rtl:from-m-secondary rtl:to-m-primary bg-clip-text text-transparent">
+                {chunks}
+              </span>
+            ),
+          })}
+          subTitle={t("sub-title")}
         />
 
         {/* Content */}

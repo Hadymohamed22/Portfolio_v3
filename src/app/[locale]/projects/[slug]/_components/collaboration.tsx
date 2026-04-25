@@ -2,6 +2,7 @@ import SectionHeader from "@/shared/components/section-header";
 import { Badge } from "@/shared/ui/badge";
 import CollaborationBox from "./collaboration-box";
 import { Laptop, Users, Lightbulb, Code2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 // Dummy data for collaboration boxes
 const collaborationBoxes = [
@@ -36,6 +37,9 @@ const collaborationBoxes = [
 ];
 
 export default function Collaboration() {
+  // Translations
+  const t = useTranslations("projects.project-details.collaboration");
+
   return (
     <section className="bg-gray-100 dark:bg-[#23262E4D] py-14 md:py-16">
       <div className="container mx-auto px-5">
@@ -44,11 +48,20 @@ export default function Collaboration() {
           <div className="badge-title">
             {/* Badge */}
             <Badge variant="collaboration" className="mb-2">
-              Collaboration
+              {t("collaboration")}
             </Badge>
 
-            {/* Title */}
-            <SectionHeader title="My Role & Contributions" className="m-0!" />
+            {/* Section Header */}
+            <SectionHeader
+              title={t.rich("title", {
+                span: (chunks) => (
+                  <span className="bg-linear-to-r from-m-primary to-m-secondary rtl:from-m-secondary rtl:to-m-primary bg-clip-text text-transparent">
+                    {chunks}
+                  </span>
+                ),
+              })}
+              className="m-0!"
+            />
           </div>
 
           <p className="text-lg md:text-xl font-inter rtl:font-tajawal text-zinc-500 dark:text-gray-400 md:max-w-1/2 leading-7">

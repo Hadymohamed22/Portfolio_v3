@@ -2,9 +2,13 @@ import { Link } from "@/i18n/navigation";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 import { Eye, GitBranch } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function ProjectHero({}) {
+  // Translations
+  const t = useTranslations("projects.project-details.hero");
+
   return (
     <section
       className="
@@ -21,7 +25,7 @@ export default function ProjectHero({}) {
         <div className="text relative z-10">
           {/* Case Study Badge */}
           <Badge variant="case-study" className="mb-1">
-            Case Study
+            {t("badge")}
           </Badge>
 
           {/* Title */}
@@ -58,7 +62,7 @@ export default function ProjectHero({}) {
             <Button className="font-bold" asChild>
               <Link href="">
                 <Eye />
-                <span>Preview Live</span>
+                <span>{t("preview-live")}</span>
               </Link>
             </Button>
 
@@ -66,7 +70,7 @@ export default function ProjectHero({}) {
             <Button variant="outline" asChild>
               <Link href="">
                 <GitBranch />
-                Github Repo
+                {t("github-repo")}
               </Link>
             </Button>
           </div>
