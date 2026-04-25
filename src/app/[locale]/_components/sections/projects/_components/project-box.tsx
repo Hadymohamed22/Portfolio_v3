@@ -1,3 +1,4 @@
+import { Link } from "@/i18n/navigation";
 import { Badge } from "@/shared/ui/badge";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ type Props = {
     variant: React.ComponentProps<typeof Badge>["variant"];
     title: string;
   }[];
+  link: string;
 };
 
 export default function ProjectBox({
@@ -18,9 +20,13 @@ export default function ProjectBox({
   title,
   summary,
   techStack,
+  link,
 }: Props) {
   return (
-    <div className="project-card shadow-lg bg-white dark:bg-white/3 border border-gray-300 dark:border-white/10 rounded-2xl md:rounded-3xl min-h-96 flex flex-col grow">
+    <Link
+      className="project-card shadow-lg bg-white dark:bg-white/3 border border-gray-300 dark:border-white/10 rounded-2xl md:rounded-3xl min-h-96 flex flex-col grow"
+      href={link}
+    >
       {/* Image Container */}
       <div className="image-container relative rounded-t-2xl md:rounded-t-3xl overflow-hidden h-56 shrink-0">
         <Image
@@ -54,6 +60,6 @@ export default function ProjectBox({
           {summary}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
