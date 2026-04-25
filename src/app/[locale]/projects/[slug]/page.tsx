@@ -1,6 +1,7 @@
 import { INITIAL_PROJECTS_DATA } from "../../_components/sections/projects/_constants/projects.constant";
 import CaseStudy from "./_components/case-study";
 import Collaboration from "./_components/collaboration";
+import ContactMeNow from "./_components/contact-me-now";
 import ProjectHero from "./_components/project-hero";
 import TechStack from "./_components/tech-stack";
 
@@ -55,6 +56,9 @@ export default async function Page({ params }: Props) {
           },
         ]}
       />
+
+      {/* Contact Me */}
+      <ContactMeNow />
     </main>
   );
 }
