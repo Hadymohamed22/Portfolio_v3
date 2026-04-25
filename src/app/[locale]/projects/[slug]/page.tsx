@@ -2,6 +2,7 @@ import { INITIAL_PROJECTS_DATA } from "../../_components/sections/projects/_cons
 import CaseStudy from "./_components/case-study";
 import Collaboration from "./_components/collaboration";
 import ContactMeNow from "./_components/contact-me-now";
+import ProjectGallery from "./_components/project-gallery";
 import ProjectHero from "./_components/project-hero";
 import TechStack from "./_components/tech-stack";
 
@@ -56,6 +57,9 @@ export default async function Page({ params }: Props) {
           },
         ]}
       />
+
+      {/* Project Gallery */}
+      <ProjectGallery />
 
       {/* Contact Me */}
       <ContactMeNow />
