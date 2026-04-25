@@ -56,6 +56,39 @@
       "description": "صياغة حلول رقمية تعالج المشكلات العملية التي تواجهها الشركات.\n"
     }
   },
+  "projects": {
+    "project-details": {
+      "hero": {
+        "badge": "تفاصيل المشروع",
+        "preview-live": "شاهد الموقع",
+        "github-repo": "شاهد أكواد المشروع"
+      },
+      "collaboration": {
+        "collaboration": "مساهمتى",
+        "title": "دورى <span>ومساهمتى في المشروع</span>"
+      },
+      "case-study": {
+        "the-motivation": "المشكلة والدافع",
+        "software-solution": "الحل البرمجي",
+        "accuracy": "الدقة في التنفيذ",
+        "efficiency": "رفع كفاءة الموقع"
+      },
+      "tech-stack": {
+        "title": "التقنيات <span>المستخدمة</span>",
+        "sub-title": "مدعوم من أحدث التقنيات"
+      },
+      "gallery": {
+        "title": "معرض <span>صور المشروع</span>",
+        "sub-title": "نظرة كاملة على الواجهة وتجربة المستخدم الرقمية."
+      },
+      "contact-me-now": {
+        "title": "هل ترغب في بناء شيء مماثل؟",
+        "description": "أنا متاح حاليًا للمشاريع الجديدة والتعاون الإبداعي.",
+        "lets-talk": "هيا لنتواصل",
+        "watch-another-projects": "شاهد مشاريع أخرى"
+      }
+    }
+  },
   "about": {
     "title": "أهلا في صفحة عنا"
   },
