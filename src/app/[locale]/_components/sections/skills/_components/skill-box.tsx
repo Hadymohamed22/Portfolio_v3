@@ -49,13 +49,19 @@ type Props = {
   icon: SkillsIconType;
   title: string;
   description: string;
+  skillIconClasses: string;
 };
 
-export default function SkillBox({ icon, title, description }: Props) {
+export default function SkillBox({
+  icon,
+  title,
+  description,
+  skillIconClasses,
+}: Props) {
   return (
     <div className="skill-box flex flex-col p-6 md:p-8 gap-6 shadow-lg bg-white dark:bg-white/3 border border-transparent dark:border-white/10 rounded-3xl min-h-0 md:min-h-48">
       {/* Icon */}
-      <SkillBoxIcon icon={icons[icon]} />
+      <SkillBoxIcon icon={icons[icon]} className={skillIconClasses} />
 
       {/* Content */}
       <div className="skill-box-content">

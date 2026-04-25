@@ -2,6 +2,7 @@ import { INITIAL_PROJECTS_DATA } from "../../_components/sections/projects/_cons
 import CaseStudy from "./_components/case-study";
 import Collaboration from "./_components/collaboration";
 import ProjectHero from "./_components/project-hero";
+import TechStack from "./_components/tech-stack";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -22,6 +23,38 @@ export default async function Page({ params }: Props) {
 
       {/* Case Study */}
       <CaseStudy />
+
+      {/* Tech Stack */}
+      <TechStack
+        skills={[
+          {
+            icon: "braces",
+            title: "TypeScript",
+            description: "Strongly-typed JavaScript for scalable applications.",
+          },
+          {
+            icon: "terminal",
+            title: "Node.js",
+            description:
+              "Server-side JavaScript runtime powering backend logic.",
+          },
+          {
+            icon: "layout-panel-left",
+            title: "React",
+            description: "Interactive UIs with component-based architecture.",
+          },
+          {
+            icon: "file-check",
+            title: "Jest",
+            description: "Robust testing framework for code reliability.",
+          },
+          {
+            icon: "git-branch",
+            title: "Git",
+            description: "Version control to manage code changes effectively.",
+          },
+        ]}
+      />
     </main>
   );
 }
