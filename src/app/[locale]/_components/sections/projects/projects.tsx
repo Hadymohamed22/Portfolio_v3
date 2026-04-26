@@ -2,6 +2,8 @@ import SectionHeader from "@/shared/components/section-header";
 import { useTranslations } from "next-intl";
 import ProjectsCarousel from "./_components/projects-carousel";
 import FiltersTabs from "./_components/filters-tabs";
+import { Suspense } from "react";
+import FiltersTabsSkeleton from "./_skeleton/filters-tabs.skeleton";
 
 export default function Projects() {
   // Translations
@@ -26,7 +28,9 @@ export default function Projects() {
           />
 
           {/* Filter Tabs */}
-          <FiltersTabs />
+          <Suspense fallback={<FiltersTabsSkeleton />}>
+            <FiltersTabs />
+          </Suspense>
         </div>
 
         {/* Projects Carousel */}
