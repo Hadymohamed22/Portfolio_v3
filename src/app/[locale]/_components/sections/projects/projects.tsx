@@ -4,6 +4,7 @@ import ProjectsCarousel from "./_components/projects-carousel";
 import FiltersTabs from "./_components/filters-tabs";
 import { Suspense } from "react";
 import FiltersTabsSkeleton from "./_skeleton/filters-tabs.skeleton";
+import ProjectsCarouselSkeleton from "./_skeleton/projects-carousel.skeleton";
 
 export default function Projects() {
   // Translations
@@ -34,7 +35,9 @@ export default function Projects() {
         </div>
 
         {/* Projects Carousel */}
-        <ProjectsCarousel />
+        <Suspense fallback={<ProjectsCarouselSkeleton />}>
+          <ProjectsCarousel />
+        </Suspense>
       </div>
     </section>
   );
