@@ -5,8 +5,13 @@ import Autoplay from "embla-carousel-autoplay";
 import { useLocale } from "next-intl";
 import ProjectBox from "./project-box";
 import { INITIAL_PROJECTS_DATA } from "../_constants/projects.constant";
+import { Projects } from "../_types/projects";
 
-export default function ProjectsCarouselContent() {
+type Props = {
+  projects?: Projects;
+};
+
+export default function ProjectsCarouselContent({ projects }: Props) {
   // Translations
   const locale = useLocale();
 
@@ -22,26 +27,28 @@ export default function ProjectsCarouselContent() {
       }}
       plugins={[
         Autoplay({
-          delay: 2200,
+          delay: 2500,
         }),
       ]}
     >
       <CarouselContent className="-ms-6 md:-ms-8 items-stretch pb-12">
-        {INITIAL_PROJECTS_DATA.map((project) => (
-          <CarouselItem
-            className="ps-6 md:ps-8 md:basis-1/2 flex w-full"
-            key={project.id}
-          >
-            <ProjectBox
-              link={`/projects/${project.id}`}
-              img={project.img}
-              alt={project.alt}
-              summary={project.summary}
-              title={project.title}
-              techStack={project.techStack}
-            />
-          </CarouselItem>
-        ))}
+        {(projects ? projects : INITIAL_PROJECTS_DATA).map((project) => {
+          return (
+            <CarouselItem
+              className="ps-6 md:ps-8 md:basis-1/2 flex w-full"
+              key={project.id}
+            >
+              <ProjectBox
+                link={`/projects/${project.slug}`}
+                img={project.mainImage.url}
+                alt={project.mainImage.alternativeText || ""}
+                summary={project.summary}
+                title={project.title}
+                techStack={project.badges}
+              />
+            </CarouselItem>
+          );
+        })}
       </CarouselContent>
     </Carousel>
   );

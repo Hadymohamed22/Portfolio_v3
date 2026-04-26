@@ -1,16 +1,14 @@
 import { Link } from "@/i18n/navigation";
 import { Badge } from "@/shared/ui/badge";
 import Image from "next/image";
+import { Project } from "../_types/projects";
 
 type Props = {
   img: string;
   alt: string;
   title: string;
   summary: string;
-  techStack: {
-    variant: React.ComponentProps<typeof Badge>["variant"];
-    title: string;
-  }[];
+  techStack: Project["badges"];
   link: string;
 };
 
@@ -28,7 +26,7 @@ export default function ProjectBox({
       href={link}
     >
       {/* Image Container */}
-      <div className="image-container relative rounded-t-2xl md:rounded-t-3xl overflow-hidden h-56 shrink-0">
+      <div className="image-container relative rounded-t-2xl md:rounded-t-3xl overflow-hidden h-96 shrink-0">
         <Image
           src={img}
           alt={alt}
