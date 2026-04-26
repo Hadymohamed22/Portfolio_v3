@@ -53,7 +53,10 @@
     },
     "projects": {
       "title": "Selected <span>Projects</span>",
-      "description": "Crafting digital solutions that solve real-world business problems."
+      "description": "Crafting digital solutions that solve real-world business problems.",
+      "filters-tabs": {
+        "all": "All"
+      }
     }
   },
   "projects": {
@@ -131,5 +134,6 @@
   "title": "Would you like to build something similar?",
   "description": "I am currently available for new projects and creative collaborations.",
   "lets-talk": "Let's Talk",
-  "watch-another-projects": "Watch Another Projects"
+  "watch-another-projects": "Watch Another Projects",
+  "all": "All"
 }
