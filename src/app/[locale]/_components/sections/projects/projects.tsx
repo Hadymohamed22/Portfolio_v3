@@ -1,7 +1,7 @@
 import SectionHeader from "@/shared/components/section-header";
-import { Tabs, TabsList, TabsTrigger } from "@/shared/ui/tabs";
 import { useTranslations } from "next-intl";
 import ProjectsCarousel from "./_components/projects-carousel";
+import FiltersTabs from "./_components/filters-tabs";
 
 export default function Projects() {
   // Translations
@@ -26,13 +26,7 @@ export default function Projects() {
           />
 
           {/* Filter Tabs */}
-          <Tabs defaultValue="all" className="w-100">
-            <TabsList>
-              <TabsTrigger value="all">All</TabsTrigger>
-              <TabsTrigger value="business">Business</TabsTrigger>
-              <TabsTrigger value="landing-pages">Landing Pages</TabsTrigger>
-            </TabsList>
-          </Tabs>
+          <FiltersTabs />
         </div>
 
         {/* Projects Carousel */}

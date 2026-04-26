@@ -12,3 +12,10 @@ export type Project = {
     title: string;
   }[];
 };
+
+export type ProjectCategory = {
+  id: number;
+  name: string;
+};
+
+export type ProjectsCategories = ProjectCategory[];
