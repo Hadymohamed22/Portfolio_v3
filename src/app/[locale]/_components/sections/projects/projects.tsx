@@ -13,7 +13,7 @@ export default function Projects() {
     <section className="projects mt-18 mb-14 md:mt-20 md:mb-16">
       <div className="container mx-auto px-5">
         {/* Header & Filters */}
-        <div className="header-filters flex flex-col md:flex-row items-center justify-center md:justify-between mb-14 md:mb-16">
+        <div className="header-filters flex flex-col gap-2 md:gap-0 md:flex-row items-center justify-center md:justify-between mb-14 md:mb-16">
           {/* Section Header */}
           <SectionHeader
             title={t.rich("title", {
