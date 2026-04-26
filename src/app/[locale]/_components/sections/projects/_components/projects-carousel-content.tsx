@@ -40,7 +40,10 @@ export default function ProjectsCarouselContent({ projects }: Props) {
             >
               <ProjectBox
                 link={`/projects/${project.slug}`}
-                img={project.mainImage.url}
+                img={
+                  project.mainImage?.formats?.medium?.url ||
+                  project.mainImage.url
+                }
                 alt={project.mainImage.alternativeText || ""}
                 summary={project.summary}
                 title={project.title}

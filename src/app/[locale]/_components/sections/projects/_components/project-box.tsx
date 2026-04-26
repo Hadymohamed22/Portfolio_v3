@@ -22,7 +22,7 @@ export default function ProjectBox({
 }: Props) {
   return (
     <Link
-      className="project-card shadow-lg bg-white dark:bg-white/3 border border-gray-300 dark:border-white/10 rounded-2xl md:rounded-3xl min-h-96 flex flex-col grow"
+      className="project-card shadow-lg bg-white dark:bg-white/3 border border-gray-300 dark:border-white/10 rounded-2xl md:rounded-3xl min-h-72 md:min-h-96 flex flex-col grow"
       href={link}
     >
       {/* Image Container */}
@@ -54,7 +54,7 @@ export default function ProjectBox({
         </div>
 
         {/* Summary */}
-        <p className="text-gray-500 dark:text-gray-400 font-inter rtl:font-tajawal text-xs md:text-sm">
+        <p className="text-gray-500 dark:text-gray-400 font-inter rtl:font-tajawal text-xs md:text-sm text-center md:text-start">
           {summary}
         </p>
       </div>

@@ -9,6 +9,11 @@ export type ProjectsCategories = ProjectCategory[];
 
 export type ProjectImage = {
   id: number;
+  formats?: {
+    medium: {
+      url: string;
+    };
+  };
   alternativeText: string;
   url: string;
 };
