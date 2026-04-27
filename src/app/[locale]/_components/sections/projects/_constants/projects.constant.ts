@@ -1,5 +1,7 @@
 import { Projects } from "../_types/projects";
 
+export const PROJECT_CATEGORY_QUERY_KEY = "project_category";
+
 export const INITIAL_PROJECTS_DATA: Projects = [
   {
     id: 1,

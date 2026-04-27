@@ -1,27 +1,66 @@
+"use client";
 import { Tabs, TabsList, TabsTrigger } from "@/shared/ui/tabs";
-import { getLocale, getTranslations } from "next-intl/server";
-import getProjectCategories from "../_actions/get-project-categories.action";
+import { useLocale, useTranslations } from "next-intl";
+import useCategories from "../_hooks/use-categories";
+import FiltersTabsSkeleton from "../_skeleton/filters-tabs.skeleton";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
+import { PROJECT_CATEGORY_QUERY_KEY } from "../_constants/projects.constant";
 
-export default async function FiltersTabs() {
+export default function FiltersTabs() {
   // Translations
-  const t = await getTranslations("home.projects.filters-tabs");
-  const locale = await getLocale();
+  const t = useTranslations("home.projects.filters-tabs");
+  const locale = useLocale();
+
+  // Navigation
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  // Hooks
+  const { categories, isLoading } = useCategories();
 
   // Variables
-  const categories = await getProjectCategories(locale);
+  const activeTab = searchParams.get(PROJECT_CATEGORY_QUERY_KEY) ?? "all";
 
-  // Variables
-  return (
+  // Functions
+  const appendQuery = (
+    key: string = PROJECT_CATEGORY_QUERY_KEY,
+    value: string,
+  ) => {
+    const queryString = new URLSearchParams(searchParams.toString());
+    queryString.set(key, value);
+    router.replace(`${pathname}?${queryString.toString()}`, { scroll: false });
+  };
+
+  const deleteQuery = (key: string = PROJECT_CATEGORY_QUERY_KEY) => {
+    const queryString = new URLSearchParams(searchParams.toString());
+    queryString.delete(key);
+    router.replace(`${pathname}?${queryString.toString()}`, { scroll: false });
+  };
+
+  return isLoading ? (
+    <FiltersTabsSkeleton />
+  ) : (
     <Tabs
-      defaultValue="all"
+      value={activeTab}
       className="w-100"
       dir={locale === "ar" ? "rtl" : "ltr"}
     >
       <TabsList>
-        <TabsTrigger value="all">{t("all")}</TabsTrigger>
-        {categories.ok ? (
+        <TabsTrigger
+          value="all"
+          onClick={() => deleteQuery(PROJECT_CATEGORY_QUERY_KEY)}
+        >
+          {t("all")}
+        </TabsTrigger>
+        {categories?.ok ? (
           categories.data.map((cat) => (
-            <TabsTrigger key={cat.id} value={cat.name}>
+            <TabsTrigger
+              key={cat.id}
+              value={cat.query}
+              onClick={() => appendQuery(PROJECT_CATEGORY_QUERY_KEY, cat.query)}
+            >
               {cat.name}
             </TabsTrigger>
           ))

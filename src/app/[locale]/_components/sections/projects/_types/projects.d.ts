@@ -3,6 +3,7 @@ import { Badge } from "@/shared/ui/badge";
 export type ProjectCategory = {
   id: number;
   name: string;
+  query: string;
 };
 
 export type ProjectsCategories = ProjectCategory[];

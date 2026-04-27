@@ -1,24 +1,23 @@
-import "server-only";
 import { Locale } from "next-intl";
-import { Projects } from "../_types/projects";
+import { ProjectsCategories } from "../_types/projects";
 
-type ProjectsResult =
-  | { ok: true; data: Projects }
+type ProjectsCategoriesResult =
+  | { ok: true; data: ProjectsCategories }
   | { ok: false; message: string };
 
-export default async function getProjects(
+export default async function getProjectCategories(
   locale?: Locale,
-): Promise<ProjectsResult> {
+): Promise<ProjectsCategoriesResult> {
   try {
     const res = await fetch(
-      `${process.env.API_URL}/api/projects?populate=*&locale=${locale ? locale : "en"}`,
+      `${process.env.NEXT_PUBLIC_API_URL}/api/categories?locale=${locale ? locale : "en"}`,
     );
 
     if (!res.ok) {
       return { ok: false, message: `Request failed (${res.status})` };
     }
 
-    const payload: APIResponse<Projects> = await res.json();
+    const payload: APIResponse<ProjectsCategories> = await res.json();
 
     if ("error" in payload) {
       return { ok: false, message: payload.error?.message ?? "Request failed" };
