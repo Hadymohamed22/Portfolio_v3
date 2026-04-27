@@ -1,15 +1,15 @@
-import { getLocale } from "next-intl/server";
+"use client";
 import ProjectsCarouselContent from "./projects-carousel-content";
-import getProjects from "../_actions/get-projects.action";
+import useProjects from "../_hooks/use-projects";
+import ProjectsCarouselSkeleton from "../_skeleton/projects-carousel.skeleton";
 
-export default async function ProjectsCarousel() {
-  // Translations
-  const locale = await getLocale();
+export default function ProjectsCarousel() {
+  // Hooks
+  const { projects, isLoading } = useProjects();
 
-  // Variables
-  const projects = await getProjects(locale);
-
-  return projects.ok ? (
+  return isLoading ? (
+    <ProjectsCarouselSkeleton />
+  ) : projects?.ok ? (
     <ProjectsCarouselContent projects={projects.data} />
   ) : (
     <ProjectsCarouselContent />
