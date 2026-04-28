@@ -50,6 +50,46 @@
     },
     "blog": {
       "title": "Latest <span>Posts</span>"
+    },
+    "projects": {
+      "title": "Selected <span>Projects</span>",
+      "description": "Crafting digital solutions that solve real-world business problems.",
+      "filters-tabs": {
+        "all": "All"
+      }
+    }
+  },
+  "projects": {
+    "project-details": {
+      "hero": {
+        "badge": "Case Study",
+        "preview-live": "Preview Live",
+        "github-repo": "Github Repo"
+      },
+      "collaboration": {
+        "collaboration": "Collaboration",
+        "title": "My Role <span>& Contributions</span>"
+      },
+      "case-study": {
+        "the-motivation": "The Motivation",
+        "software-solution": "Software Solution",
+        "accuracy": "Precision in execution",
+        "efficiency": "App Efficiency Improvement Rate"
+      },
+      "tech-stack": {
+        "title": "Technologies <span>Used</span>",
+        "sub-title": "Powered By Cutting-Edge Tech"
+      },
+      "gallery": {
+        "title": "Project <span>Gallery</span>",
+        "sub-title": "An in-depth look at UI and the digital experience."
+      },
+      "contact-me-now": {
+        "title": "Would you like to build something similar?",
+        "description": "I am currently available for new projects and creative collaborations.",
+        "lets-talk": "Let's Talk",
+        "watch-another-projects": "Watch Another Projects"
+      }
     }
   },
   "about": {
@@ -81,5 +121,19 @@
       "system": "System"
     }
   },
-  "talk-button": "Let's Talk"
+  "talk-button": "Let's Talk",
+  "badge": "Case Study",
+  "preview-live": "Preview Live",
+  "github-repo": "Github Repo",
+  "collaboration": "Collaboration",
+  "the-motivation": "The Motivation",
+  "software-solution": "Software Solution",
+  "accuracy": "Precision in execution",
+  "efficiency": "App Efficiency Improvement Rate",
+  "sub-title": "Powered By Cutting-Edge Tech",
+  "title": "Would you like to build something similar?",
+  "description": "I am currently available for new projects and creative collaborations.",
+  "lets-talk": "Let's Talk",
+  "watch-another-projects": "Watch Another Projects",
+  "all": "All"
 }
