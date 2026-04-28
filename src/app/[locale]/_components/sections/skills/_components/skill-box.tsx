@@ -83,7 +83,7 @@ type Props = {
   icon: SkillsIconType;
   title: string;
   description: string;
-  skillIconClasses: string;
+  skillIconClasses?: string;
 };
 
 export default function SkillBox({
