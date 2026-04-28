@@ -27,7 +27,9 @@ export default function ContactMeNow() {
             className="font-bold rounded-full animate-pulse w-full md:w-auto"
             asChild
           >
-            <Link href="">{t("lets-talk")}</Link>
+            <Link href="https://wa.me/+201029379363" target="_blank">
+              {t("lets-talk")}
+            </Link>
           </Button>
 
           {/* Repo */}
@@ -36,7 +38,7 @@ export default function ContactMeNow() {
             className="rounded-full w-full md:w-auto"
             asChild
           >
-            <Link href="">{t("watch-another-projects")}</Link>
+            <Link href="/projects">{t("watch-another-projects")}</Link>
           </Button>
         </div>
       </div>

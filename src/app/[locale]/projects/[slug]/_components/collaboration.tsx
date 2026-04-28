@@ -1,42 +1,15 @@
 import SectionHeader from "@/shared/components/section-header";
 import { Badge } from "@/shared/ui/badge";
 import CollaborationBox from "./collaboration-box";
-import { Laptop, Users, Lightbulb, Code2 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Project } from "@/app/[locale]/_components/sections/projects/_types/projects";
 
-// Dummy data for collaboration boxes
-const collaborationBoxes = [
-  {
-    icon: <Laptop className="text-cyan-600 dark:text-cyan-400" />,
-    iconClassNames: "bg-cyan-100 dark:bg-cyan-900/20",
-    title: "Frontend Architecture",
-    description:
-      "Designed scalable component-driven architecture and patterns for robust development.",
-  },
-  {
-    icon: <Users className="text-purple-600 dark:text-purple-400" />,
-    iconClassNames: "bg-purple-100 dark:bg-purple-900/20",
-    title: "Team Collaboration",
-    description:
-      "Facilitated seamless teamwork between designers, developers, and QA through clear documentation and agile rituals.",
-  },
-  {
-    icon: <Lightbulb className="text-yellow-500 dark:text-yellow-400" />,
-    iconClassNames: "bg-yellow-100 dark:bg-yellow-900/20",
-    title: "UX Improvements",
-    description:
-      "Spearheaded user experience enhancements grounded in user feedback and analytics.",
-  },
-  {
-    icon: <Code2 className="text-green-600 dark:text-green-400" />,
-    iconClassNames: "bg-green-100 dark:bg-green-900/20",
-    title: "Code Quality",
-    description:
-      "Established code review practices and enforced strict linting to ensure maintainability.",
-  },
-];
+type Props = {
+  role?: string | null;
+  collaborations: Project["collaborations"];
+};
 
-export default function Collaboration() {
+export default function Collaboration({ role, collaborations }: Props) {
   // Translations
   const t = useTranslations("projects.project-details.collaboration");
 
@@ -65,19 +38,16 @@ export default function Collaboration() {
           </div>
 
           <p className="text-lg md:text-xl font-inter rtl:font-tajawal text-zinc-500 dark:text-gray-400 md:max-w-1/2 leading-7">
-            As the Lead Frontend Architect, I orchestrated the interface logic
-            and visualization systems that define the core user experience of
-            Vortex.
+            {role || "Frontend Developer"}
           </p>
         </header>
 
         {/* Content */}
         <div className="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {collaborationBoxes.map((box, idx) => (
+          {collaborations.map((box) => (
             <CollaborationBox
-              key={idx}
-              icon={box.icon}
-              iconClassNames={box.iconClassNames}
+              key={box.id}
+              icon={box.iconVariant}
               title={box.title}
               description={box.description}
             />

@@ -1,4 +1,5 @@
 import { Badge } from "@/shared/ui/badge";
+import { SkillsIconType } from "../../skills/_components/skill-box";
 
 export type ProjectCategory = {
   id: number;
@@ -17,11 +18,12 @@ export type ProjectImage = {
   };
   alternativeText: string;
   url: string;
+  name: string;
 };
 
 export type Collaboration = {
   id: number;
-  iconVariant: string;
+  iconVariant: CollaborationIconBox;
   title: string;
   description: string;
 };
@@ -51,6 +53,13 @@ export type Project = {
   subImage: ProjectImage;
   projectGallary: ProjectImage[];
   collaborations: Collaboration[];
+  bugs: { id: number; text: string }[];
+  technologies: {
+    id: number;
+    title: string;
+    iconName: SkillsIconType;
+    techFor: string;
+  }[];
 };
 
 export type Projects = Project[];

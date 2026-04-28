@@ -1,4 +1,5 @@
-import { INITIAL_PROJECTS_DATA } from "../../_components/sections/projects/_constants/projects.constant";
+import { getLocale } from "next-intl/server";
+import getProjectBySlug from "./_actions/get-product-by-slug.action";
 import CaseStudy from "./_components/case-study";
 import Collaboration from "./_components/collaboration";
 import ContactMeNow from "./_components/contact-me-now";
@@ -11,55 +12,54 @@ type Props = {
 };
 
 export default async function Page({ params }: Props) {
+  // Translation
+  const locale = await getLocale();
+
   // Variables
   const { slug } = await params;
-  const project = INITIAL_PROJECTS_DATA.find((p) => p.slug === slug);
+  const payload = await getProjectBySlug(slug, locale);
+  const currentProject = payload.ok && payload.data[0];
 
   return (
     <main>
       {/* Hero */}
-      <ProjectHero />
+      {currentProject && (
+        <ProjectHero
+          title={currentProject.title}
+          description={currentProject.description}
+          repoLink={currentProject.repoLink}
+          imgSrc={currentProject.mainImage?.url}
+          imgAlt={currentProject.mainImage?.alternativeText}
+          liveLink={currentProject.siteLink}
+        />
+      )}
 
       {/* is A Collaborator */}
-      <Collaboration />
+      {currentProject && currentProject.isACollaborator && (
+        <Collaboration
+          role={currentProject.collaborationRole}
+          collaborations={currentProject.collaborations}
+        />
+      )}
 
       {/* Case Study */}
-      <CaseStudy />
+      {currentProject && (
+        <CaseStudy
+          bugs={currentProject.bugs}
+          motivation={currentProject.purpose}
+          solution={currentProject.solutation}
+          efficiencyPercentage={currentProject.IncreasedEfficiencyPercentage}
+          accuracyPercentage={currentProject.accuracyPercentage}
+        />
+      )}
 
       {/* Tech Stack */}
-      <TechStack
-        skills={[
-          {
-            icon: "braces",
-            title: "TypeScript",
-            description: "Strongly-typed JavaScript for scalable applications.",
-          },
-          {
-            icon: "terminal",
-            title: "Node.js",
-            description:
-              "Server-side JavaScript runtime powering backend logic.",
-          },
-          {
-            icon: "layout-panel-left",
-            title: "React",
-            description: "Interactive UIs with component-based architecture.",
-          },
-          {
-            icon: "file-check",
-            title: "Jest",
-            description: "Robust testing framework for code reliability.",
-          },
-          {
-            icon: "git-branch",
-            title: "Git",
-            description: "Version control to manage code changes effectively.",
-          },
-        ]}
-      />
+      {currentProject && <TechStack skills={currentProject.technologies} />}
 
       {/* Project Gallery */}
-      <ProjectGallery />
+      {currentProject && (
+        <ProjectGallery projectGallery={currentProject.projectGallary} />
+      )}
 
       {/* Contact Me */}
       <ContactMeNow />
