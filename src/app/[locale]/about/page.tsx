@@ -4,5 +4,5 @@ export default function Page() {
   // Translation
   const t = useTranslations("about");
 
-  return <div>{t("title")}</div>;
+  return <div className="min-h-screen">{t("title")}</div>;
 }
