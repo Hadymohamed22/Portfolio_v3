@@ -9,10 +9,15 @@ import {
 } from "@/shared/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useLocale } from "next-intl";
-import { useMemo, useRef } from "react";
+import { useRef } from "react";
 import ProjectImageBox from "./project-image-box";
+import { ProjectImage } from "@/app/[locale]/_components/sections/projects/_types/projects";
 
-export default function ProjectGalleryCarousel() {
+type Props = {
+  images: ProjectImage[];
+};
+
+export default function ProjectGalleryCarousel({ images }: Props) {
   // Translation
   const locale = useLocale();
 
@@ -22,16 +27,6 @@ export default function ProjectGalleryCarousel() {
     Autoplay({
       delay: 2000,
     }),
-  );
-
-  const images = useMemo(
-    () => [
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-    ],
-    [],
   );
 
   return (
@@ -44,12 +39,17 @@ export default function ProjectGalleryCarousel() {
       plugins={[autoplay.current]}
     >
       <CarouselContent className="-ms-4 md:-ml-6 py-12 items-stretch">
-        {images.map((imgUrl, idx) => (
+        {images.map((img) => (
           <CarouselItem
-            key={idx}
+            key={img.id}
             className="ps-4 md:pl-6 md:basis-1/2 lg:basis-1/3 flex"
           >
-            <ProjectImageBox src={imgUrl} alt={imgUrl} />
+            <ProjectImageBox
+              smallImageSrc={img.formats?.medium.url || img.url}
+              largeImageSrc={img.url}
+              alt={img.alternativeText}
+              name={img.name}
+            />
           </CarouselItem>
         ))}
       </CarouselContent>

@@ -42,9 +42,10 @@ export default function ProjectsCarouselContent({ projects }: Props) {
                 link={`/projects/${project.slug}`}
                 img={
                   project.mainImage?.formats?.medium?.url ||
-                  project.mainImage.url
+                  project.mainImage?.url ||
+                  ""
                 }
-                alt={project.mainImage.alternativeText || ""}
+                alt={project.mainImage?.alternativeText || ""}
                 summary={project.summary}
                 title={project.title}
                 techStack={project.badges}

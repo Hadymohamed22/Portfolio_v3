@@ -1,11 +1,10 @@
-import SkillBox, {
-  SkillsIconType,
-} from "@/app/[locale]/_components/sections/skills/_components/skill-box";
+import { Project } from "@/app/[locale]/_components/sections/projects/_types/projects";
+import SkillBox from "@/app/[locale]/_components/sections/skills/_components/skill-box";
 import SectionHeader from "@/shared/components/section-header";
 import { useTranslations } from "next-intl";
 
 type Props = {
-  skills: { icon: SkillsIconType; title: string; description: string }[];
+  skills: Project["technologies"];
 };
 
 export default function TechStack({ skills }: Props) {
@@ -33,11 +32,11 @@ export default function TechStack({ skills }: Props) {
           {skills.map((skill) => {
             return (
               <SkillBox
-                key={skill.title}
+                key={skill.id}
                 skillIconClasses={"rounded-full"}
-                icon={skill.icon}
+                icon={skill.iconName}
                 title={skill.title}
-                description={skill.description}
+                description={skill.techFor}
               />
             );
           })}

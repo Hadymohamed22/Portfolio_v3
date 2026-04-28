@@ -27,22 +27,61 @@ export const INITIAL_PROJECTS_DATA: Projects = [
     slug: "business-dashboard",
     mainImage: {
       id: 1001,
+      name: "Business Dashboard Main",
       alternativeText: "Screenshot of project dashboard",
       url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
     },
     subImage: {
       id: 1002,
+      name: "Business Dashboard Mobile",
       alternativeText: "Dashboard mobile view",
       url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=50",
     },
     projectGallary: [
       {
         id: 1003,
+        name: "Dashboard Analytics Graphs",
         alternativeText: "Dashboard analytics graphs",
         url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80",
       },
     ],
     collaborations: [],
+    bugs: [
+      { id: 1, text: "Manual error-prone tracking of key business metrics." },
+      { id: 2, text: "Lack of real-time operational analytics." },
+    ],
+    technologies: [
+      {
+        id: 1,
+        title: "TypeScript",
+        iconName: "braces",
+        techFor: "Strongly-typed JavaScript for scalable applications.",
+      },
+      {
+        id: 2,
+        title: "Node.js",
+        iconName: "terminal",
+        techFor: "Server-side JavaScript runtime powering backend logic.",
+      },
+      {
+        id: 3,
+        title: "React",
+        iconName: "layout-panel-left",
+        techFor: "Interactive UIs with component-based architecture.",
+      },
+      {
+        id: 4,
+        title: "React Query",
+        iconName: "braces",
+        techFor: "Efficient state and server data management.",
+      },
+      {
+        id: 5,
+        title: "Git",
+        iconName: "git-branch",
+        techFor: "Version control to manage code changes effectively.",
+      },
+    ],
   },
   {
     id: 2,
@@ -66,17 +105,20 @@ export const INITIAL_PROJECTS_DATA: Projects = [
     slug: "creative-landing",
     mainImage: {
       id: 2001,
+      name: "Creative Landing Main",
       alternativeText: "Landing page screenshot",
       url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
     },
     subImage: {
       id: 2002,
+      name: "Creative Landing Mobile",
       alternativeText: "Landing on mobile",
       url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=50",
     },
     projectGallary: [
       {
         id: 2003,
+        name: "Sign-up Form Screenshot",
         alternativeText: "Sign-up form screenshot",
         url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
       },
@@ -87,6 +129,36 @@ export const INITIAL_PROJECTS_DATA: Projects = [
         iconVariant: "designer",
         title: "Design",
         description: "Led the design system and developed component library.",
+      },
+    ],
+    bugs: [
+      { id: 1, text: "Uninspiring visuals reducing conversion rates." },
+      { id: 2, text: "Inconsistent user experience on different devices." },
+    ],
+    technologies: [
+      {
+        id: 1,
+        title: "Tailwind CSS",
+        iconName: "git-branch",
+        techFor: "Utility-first CSS for rapid UI development.",
+      },
+      {
+        id: 2,
+        title: "React",
+        iconName: "layout-panel-left",
+        techFor: "Component-based JavaScript library for UIs.",
+      },
+      {
+        id: 3,
+        title: "Zod",
+        iconName: "square-round-corner",
+        techFor: "Type-safe schema validation for frontend forms.",
+      },
+      {
+        id: 4,
+        title: "Framer Motion",
+        iconName: "tablet-smartphone",
+        techFor: "Motion library for rich frontend animations.",
       },
     ],
   },
@@ -113,21 +185,54 @@ export const INITIAL_PROJECTS_DATA: Projects = [
     slug: "ecommerce-platform",
     mainImage: {
       id: 3001,
+      name: "E-commerce Platform Main",
       alternativeText: "Ecommerce platform UI",
       url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
     },
     subImage: {
       id: 3002,
+      name: "E-commerce Platform Checkout",
       alternativeText: "Ecommerce checkout screenshot",
       url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=50",
     },
     projectGallary: [
       {
         id: 3003,
+        name: "Mobile Product Page",
         alternativeText: "Mobile product page",
         url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
       },
     ],
     collaborations: [],
+    bugs: [
+      { id: 1, text: "Payment gateway integration issues prevented sales." },
+      { id: 2, text: "Poor scalability for large product inventories." },
+    ],
+    technologies: [
+      {
+        id: 1,
+        title: "NextAuth",
+        iconName: "layout-panel-left",
+        techFor: "Authentication for secure user access.",
+      },
+      {
+        id: 2,
+        title: "Salla",
+        iconName: "git-branch",
+        techFor: "E-commerce platform API integration.",
+      },
+      {
+        id: 3,
+        title: "Bootstrap",
+        iconName: "git-branch",
+        techFor: "Front-end framework for responsive design.",
+      },
+      {
+        id: 4,
+        title: "Stripe",
+        iconName: "git-branch",
+        techFor: "Payment processing for online transactions.",
+      },
+    ],
   },
 ];

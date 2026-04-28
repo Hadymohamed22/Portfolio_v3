@@ -5,7 +5,23 @@ import { Eye, GitBranch } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default function ProjectHero({}) {
+type Props = {
+  title: string;
+  description: string;
+  repoLink: string;
+  imgSrc?: string;
+  imgAlt?: string;
+  liveLink?: string;
+};
+
+export default function ProjectHero({
+  title,
+  description,
+  imgSrc,
+  imgAlt,
+  repoLink,
+  liveLink,
+}: Props) {
   // Translations
   const t = useTranslations("projects.project-details.hero");
 
@@ -45,30 +61,29 @@ export default function ProjectHero({}) {
             whitespace-pre-line
           "
           >
-            Education Landing Page
+            {title}
           </h2>
 
           {/* Description */}
           <p className="text-sm md:text-base font-inter rtl:font-tajawal text-zinc-500 dark:text-gray-400 mt-6 max-w-3/4 md:max-w-1/2 leading-7">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-            tempore, sit excepturi voluptatem exercitationem culpa dolores nobis
-            provident quidem quod, nostrum non voluptates minus laborum
-            officiis! Deleniti esse dicta a?
+            {description}
           </p>
 
           {/* User Actions : Preview & Repo Buttons */}
           <div className="user-actions flex items-center gap-3 mt-12">
             {/* Preview */}
-            <Button className="font-bold" asChild>
-              <Link href="">
-                <Eye />
-                <span>{t("preview-live")}</span>
-              </Link>
-            </Button>
+            {liveLink && (
+              <Button className="font-bold" asChild>
+                <Link href={liveLink} target="_blank">
+                  <Eye />
+                  <span>{t("preview-live")}</span>
+                </Link>
+              </Button>
+            )}
 
             {/* Repo */}
-            <Button variant="outline" asChild>
-              <Link href="">
+            <Button variant={!liveLink ? "default" : "outline"} asChild>
+              <Link href={repoLink} target="_blank">
                 <GitBranch />
                 {t("github-repo")}
               </Link>
@@ -77,14 +92,16 @@ export default function ProjectHero({}) {
         </div>
 
         {/* Image */}
-        <div className="hidden lg:block image absolute inset-e-20 top-1/2 -translate-y-1/2 lg:w-130 lg:h-100 p-2 rounded-xl bg-white/5 dark:bg-white/5 backdrop-blur-lg rotate-6 overflow-hidden shadow-[0_8px_40px_0_rgba(90,104,242,0.15)] dark:shadow-[0_10px_50px_0_rgba(168,164,255,0.15)]">
-          <Image
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
-            alt=""
-            fill
-            className="relative! rounded-xl"
-          />
-        </div>
+        {imgSrc ? (
+          <div className="hidden lg:block image absolute inset-e-20 top-1/2 -translate-y-1/2 lg:w-130 lg:h-100 p-2 rounded-xl bg-white/5 dark:bg-white/5 backdrop-blur-lg rotate-6 overflow-hidden shadow-[0_8px_40px_0_rgba(90,104,242,0.15)] dark:shadow-[0_10px_50px_0_rgba(168,164,255,0.15)]">
+            <Image
+              src={imgSrc}
+              alt={imgAlt ?? ""}
+              fill
+              className="relative! rounded-xl"
+            />
+          </div>
+        ) : null}
       </div>
     </section>
   );

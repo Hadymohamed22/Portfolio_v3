@@ -13,17 +13,41 @@ import {
   Terminal,
   TowelRack,
   TypeOutline,
+  LockKeyhole,
+  SquareMousePointer,
+  TicketCheck,
+  DatabaseSearch,
+  AppWindowMac, // Added import for app-window-mac
 } from "lucide-react";
 import SkillBoxIcon from "./skill-box-icon";
 
 // Variables
 // i set icons here to can extract keys type
 const icons = {
+  // React
+  react: <Hexagon className="text-sky-500 dark:text-sky-400" />,
+  // React Router
+  "react-router": (
+    <GitBranch className="text-violet-500 dark:text-violet-400" />
+  ),
+  // React Query
+  "react-query": <Gauge className="text-pink-500 dark:text-pink-400" />,
+  // Zod (validation/schema)
+  zod: <Braces className="text-green-500 dark:text-green-400" />,
+  // Shadcn UI (component/UI library)
+  shadcn: <Component className="text-indigo-500 dark:text-indigo-400" />,
+  // Use-Intl (i18n/translation utilities)
+  "use-intl": <TypeOutline className="text-orange-500 dark:text-orange-300" />,
+
+  // keep the old icons for other techs (legacy/fallback)
   braces: <Braces className="text-purple-600 dark:text-purple-400" />,
   "type-outline": (
     <TypeOutline className="text-yellow-500 dark:text-yellow-300" />
   ),
   "app-window": <AppWindow className="text-cyan-500 dark:text-cyan-300" />,
+  "app-window-mac": (
+    <AppWindowMac className="text-cyan-700 dark:text-cyan-400" />
+  ),
   "layout-panel-left": (
     <LayoutPanelLeft className="text-teal-500 dark:text-teal-300" />
   ),
@@ -41,6 +65,16 @@ const icons = {
     <TabletSmartphone className="text-sky-500 dark:text-sky-300" />
   ),
   coffee: <Coffee className="text-amber-700 dark:text-amber-300" />,
+  "lock-keyhole": <LockKeyhole className="text-blue-600 dark:text-blue-300" />,
+  "square-mouse-pointer": (
+    <SquareMousePointer className="text-orange-500 dark:text-orange-300" />
+  ),
+  "ticket-check": (
+    <TicketCheck className="text-green-600 dark:text-green-400" />
+  ),
+  "database-search": (
+    <DatabaseSearch className="text-fuchsia-600 dark:text-fuchsia-400" />
+  ),
 } satisfies Record<string, React.ReactNode>;
 
 export type SkillsIconType = keyof typeof icons;

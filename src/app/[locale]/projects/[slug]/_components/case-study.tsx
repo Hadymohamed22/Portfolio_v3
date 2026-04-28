@@ -3,7 +3,21 @@ import BugParagraph from "./bug-paragraph";
 import DecoratedTitle from "./decorated-title";
 import DetailSummaryBox from "./detail-summary-box";
 
-export default function CaseStudy() {
+type Props = {
+  motivation: string;
+  solution: string;
+  efficiencyPercentage: number;
+  accuracyPercentage: number;
+  bugs: { id: number; text: string }[];
+};
+
+export default function CaseStudy({
+  motivation,
+  solution,
+  efficiencyPercentage,
+  accuracyPercentage,
+  bugs,
+}: Props) {
   // Translations
   const t = useTranslations("projects.project-details.case-study");
 
@@ -20,22 +34,14 @@ export default function CaseStudy() {
 
           {/* Text */}
           <p className="text-sm md:text-base font-inter rtl:font-tajawal text-zinc-500 dark:text-gray-400 mt-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            consectetur, a eveniet quibusdam quas, dolore ad, earum totam
-            voluptate quidem minus blanditiis? Magni dignissimos totam
-            temporibus debitis esse. Debitis, asperiores!
+            {motivation}
           </p>
 
           {/* Bugs */}
           <div className="bugs flex flex-col gap-1.5 mt-6 md:mt-auto">
             {/* List of bugs this project solves */}
-            {[
-              "Students often forget to complete",
-              "Difficult to track individual progress",
-              "Limited collaboration features",
-              "Uninspiring UI leads to decreased ",
-            ].map((bug, idx) => (
-              <BugParagraph key={idx} p={bug} />
+            {bugs.map((bug) => (
+              <BugParagraph key={bug.id} p={bug.text} />
             ))}
           </div>
         </div>
@@ -50,20 +56,17 @@ export default function CaseStudy() {
 
           {/* Text */}
           <p className="text-sm md:text-base font-inter rtl:font-tajawal text-zinc-500 dark:text-gray-400 mt-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            consectetur, a eveniet quibusdam quas, dolore ad, earum totam
-            voluptate quidem minus blanditiis? Magni dignissimos totam
-            temporibus debitis esse. Debitis, asperiores!
+            {solution}
           </p>
 
           <div className="accuracy-efficiency flex flex-col md:flex-row gap-4 md:gap-2 mt-6 md:mt-auto">
             <DetailSummaryBox
-              percentage={98}
+              percentage={accuracyPercentage}
               text={t("accuracy")}
               className="bg-m-secondary/10 dark:bg-m-primary/5 shadow-xl border-2 border-m-secondary/25 dark:border-m-primary/25"
             />
             <DetailSummaryBox
-              percentage={90}
+              percentage={efficiencyPercentage}
               text={t("efficiency")}
               className="bg-m-primary/10 dark:bg-m-secondary/5 shadow-xl border-2 border-m-primary/25 dark:border-m-secondary/25"
             />

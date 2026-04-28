@@ -9,19 +9,26 @@ import {
 import Image from "next/image";
 
 type Props = {
-  src: string;
+  smallImageSrc: string;
+  largeImageSrc: string;
   alt: string;
+  name: string;
 };
 
-export default function ProjectImageBox({ src, alt }: Props) {
+export default function ProjectImageBox({
+  smallImageSrc,
+  largeImageSrc,
+  alt,
+  name,
+}: Props) {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <button type="button" className="block w-full">
           <div className="relative aspect-4/3 w-full overflow-hidden rounded-xl bg-muted">
             <Image
-              src={src}
-              alt={alt}
+              src={smallImageSrc}
+              alt={alt || name}
               className="object-cover"
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
@@ -35,8 +42,8 @@ export default function ProjectImageBox({ src, alt }: Props) {
       >
         <div className="relative w-full mx-auto overflow-hidden rounded-2xl bg-muted">
           <Image
-            src={src}
-            alt={alt}
+            src={largeImageSrc}
+            alt={alt || name}
             className="object-cover"
             fill
             sizes="(min-width: 1536px) 70vw, (min-width: 1280px) 80vw, 95vw"
@@ -45,9 +52,9 @@ export default function ProjectImageBox({ src, alt }: Props) {
 
         {/* i set header , title and description to prevent console errors and improve accessibility */}
         <DialogHeader className="hidden">
-          <DialogTitle>{alt}</DialogTitle>
+          <DialogTitle>{alt || name}</DialogTitle>
         </DialogHeader>
-        <DialogDescription className="hidden">{alt}</DialogDescription>
+        <DialogDescription className="hidden">{alt || name}</DialogDescription>
       </DialogContent>
     </Dialog>
   );

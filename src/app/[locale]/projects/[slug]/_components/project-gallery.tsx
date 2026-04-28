@@ -1,8 +1,13 @@
 import SectionHeader from "@/shared/components/section-header";
 import ProjectGalleryCarousel from "./project-gallery-carousel";
 import { useTranslations } from "next-intl";
+import { ProjectImage } from "@/app/[locale]/_components/sections/projects/_types/projects";
 
-export default function ProjectGallery() {
+type Props = {
+  projectGallery: ProjectImage[];
+};
+
+export default function ProjectGallery({ projectGallery }: Props) {
   // Translations
   const t = useTranslations("projects.project-details.gallery");
 
@@ -22,7 +27,7 @@ export default function ProjectGallery() {
         />
 
         {/* Content */}
-        <ProjectGalleryCarousel />
+        <ProjectGalleryCarousel images={projectGallery} />
       </div>
     </section>
   );
