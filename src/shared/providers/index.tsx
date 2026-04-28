@@ -6,6 +6,7 @@ import {
 } from "next-intl";
 import { ThemeProvider } from "./components/theme-provider";
 import { getFormats } from "@/i18n/formats";
+import TanstackQueryProvider from "./components/tanstack-query-provider";
 
 type Props = {
   children: React.ReactNode;
@@ -25,14 +26,16 @@ export default function Providers({ children, messages, locale }: Props) {
       formats={formats}
       timeZone={timeZone}
     >
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
+      <TanstackQueryProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </TanstackQueryProvider>
     </NextIntlClientProvider>
   );
 }

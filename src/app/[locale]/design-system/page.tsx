@@ -1,21 +1,25 @@
 import { Badge } from "@/shared/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shared/ui/tabs";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  // Translation
+  const t = useTranslations("home.hero.availability");
+
   return (
     <div className="flex flex-col gap-6 items-center">
       {/* Badges */}
       <div className="flex flex-wrap gap-2 items-center justify-center py-5">
-        <Badge variant="next">Next.js</Badge>
-        <Badge variant="tailwind">Tailwind</Badge>
+        <Badge variant="Next.js">Next.js</Badge>
+        <Badge variant="Tailwind CSS">Tailwind</Badge>
         <Badge variant="destructive">Destructive</Badge>
         <Badge variant="react">React</Badge>
-        <Badge variant="reactHookForm">React Hook Form</Badge>
-        <Badge variant="zod">Zod</Badge>
-        <Badge variant="nextAuth">NextAuth</Badge>
+        <Badge variant="RHF">React Hook Form</Badge>
+        <Badge variant="ZOD">Zod</Badge>
+        <Badge variant="NextAuth">NextAuth</Badge>
         <Badge variant="shadcn">shadcn/ui</Badge>
         <Badge variant="nextIntl">next-intl</Badge>
-        <Badge variant="reactQuery">React Query</Badge>
+        <Badge variant="React Query">React Query</Badge>
         <Badge variant="html">HTML</Badge>
         <Badge variant="css">CSS</Badge>
         <Badge variant="js">JavaScript</Badge>
@@ -24,6 +28,11 @@ export default function Page() {
         <Badge variant="wordpress">WordPress</Badge>
         <Badge variant="salla">Salla</Badge>
         <Badge variant="zid">Zid</Badge>
+        <Badge variant="TypeScript">Zid</Badge>
+        <Badge variant="notAvailable">{t("not-available")}</Badge>
+        <Badge variant="full-time">{t("full-time")}</Badge>
+        <Badge variant="part-time">{t("part-time")}</Badge>
+        <Badge variant="remote">{t("remote")}</Badge>
       </div>
 
       {/* Tabs */}

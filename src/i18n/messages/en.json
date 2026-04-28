@@ -1,6 +1,96 @@
 {
   "home": {
-    "title": "Hello In Home Page"
+    "hero": {
+      "availability": {
+        "available-for": "Available For",
+        "not-available": "Not Available",
+        "full-time": "FullTime Work",
+        "part-time": "PartTime Work",
+        "remote": "Remote Work"
+      },
+      "title": "I Build Websites That <span>Bring You Clients</span>",
+      "sub-title": "Frontend Developer helping businesses & startups grow their digital presence through meticulous engineering and high-end editorial design.",
+      "talk-button": "Let's Talk",
+      "projects-button": "See My Work"
+    },
+    "about-me": {
+      "about-me-text": "About Me",
+      "title": "HONEST. AMBITIOUS. <span>ALWAYS LEARNING.</span>",
+      "description": "My journey from junior explorer to mid-level craftsman is fueled by a simple obsession: bridging the gap between raw code and profitable user experiences. I don't just \"write HTML\"; I architect digital environments that breathe your brand's identity.",
+      "core-stack-title": "Core Stack",
+      "business": "BUSINESS THINKING",
+      "fast": "Fast delivery",
+      "details": "Detail-oriented",
+      "clean-code": "CLEAN CODE FIRST",
+      "cta": "Let's Work Together",
+      "statistic-title": "EVOLUTION",
+      "start-learn": "STARTED LEARNING CODE",
+      "real-world-projects": "BUILT REAL-WORLD PROJECTS",
+      "work-with-clients": "WORKING WITH CLIENTS & Companies"
+    },
+    "contact-me": {
+      "available-in-cairo": "Available In Cairo",
+      "title": "LET'S BUILD SOMETHING <p>TOGETHER</p>",
+      "sub-title": "Have a project in mind? Reach out and let's discuss how we can bring your vision to life."
+    },
+    "skills": {
+      "title": "Skills & <span>Technologies</span>",
+      "description": "My curated collection of tools for building exceptional digital solutions.",
+      "frontend-skills-title": "Frontend Core",
+      "ui-skills-title": "UI And Styling",
+      "tools-skills-title": "Tools",
+      "backend-skills-title": "Backend Development"
+    },
+    "services": {
+      "title": "Services & <span>Experiences</span>",
+      "start-project": "Start Project Together"
+    },
+    "testimonials": {
+      "title": "Watch <span>Clients Says</span>"
+    },
+    "blog": {
+      "title": "Latest <span>Posts</span>"
+    },
+    "projects": {
+      "title": "Selected <span>Projects</span>",
+      "description": "Crafting digital solutions that solve real-world business problems.",
+      "filters-tabs": {
+        "all": "All"
+      }
+    }
+  },
+  "projects": {
+    "project-details": {
+      "hero": {
+        "badge": "Case Study",
+        "preview-live": "Preview Live",
+        "github-repo": "Github Repo"
+      },
+      "collaboration": {
+        "collaboration": "Collaboration",
+        "title": "My Role <span>& Contributions</span>"
+      },
+      "case-study": {
+        "the-motivation": "The Motivation",
+        "software-solution": "Software Solution",
+        "accuracy": "Precision in execution",
+        "efficiency": "App Efficiency Improvement Rate"
+      },
+      "tech-stack": {
+        "title": "Technologies <span>Used</span>",
+        "sub-title": "Powered By Cutting-Edge Tech"
+      },
+      "gallery": {
+        "title": "Project <span>Gallery</span>",
+        "sub-title": "An in-depth look at UI and the digital experience."
+      },
+      "contact-me-now": {
+        "title": "Would you like to build something similar?",
+        "description": "I am currently available for new projects and creative collaborations.",
+        "lets-talk": "Let's Talk",
+        "watch-another-projects": "Watch Another Projects"
+      }
+    }
   },
   "about": {
     "title": "Hi in About Page"
@@ -30,5 +120,20 @@
       "dark": "Dark",
       "system": "System"
     }
-  }
+  },
+  "talk-button": "Let's Talk",
+  "badge": "Case Study",
+  "preview-live": "Preview Live",
+  "github-repo": "Github Repo",
+  "collaboration": "Collaboration",
+  "the-motivation": "The Motivation",
+  "software-solution": "Software Solution",
+  "accuracy": "Precision in execution",
+  "efficiency": "App Efficiency Improvement Rate",
+  "sub-title": "Powered By Cutting-Edge Tech",
+  "title": "Would you like to build something similar?",
+  "description": "I am currently available for new projects and creative collaborations.",
+  "lets-talk": "Let's Talk",
+  "watch-another-projects": "Watch Another Projects",
+  "all": "All"
 }
