@@ -1,4 +1,4 @@
-import { Building, Code } from "lucide-react";
+import { Building, Code, Gauge, PencilRuler, Rocket } from "lucide-react";
 import ServiceInfoBoxFeat from "./service-info-box-feat";
 import CTA from "../../_components/sections/about/_components/cta";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
@@ -10,13 +10,31 @@ const ServicesInfoBoxsIcons = {
       <Building />
     </div>
   ),
+  rocket: (
+    <div className="icon size-12 md:size-14 rounded-lg flex items-center justify-center bg-[#00D2FD]/10 text-[#00D2FD]">
+      <Rocket />
+    </div>
+  ),
+  pen: (
+    <div className="icon size-12 md:size-14 rounded-lg flex items-center justify-center bg-[#FF9DD0]/10 text-[#FF9DD0]">
+      <PencilRuler />
+    </div>
+  ),
+  speed: (
+    <div className="icon size-12 md:size-14 rounded-lg flex items-center justify-center bg-[#FF6E84]/10 text-[#FF6E84]">
+      <Gauge />
+    </div>
+  ),
 };
+
+type ServicesInfoBoxsIconType = keyof typeof ServicesInfoBoxsIcons;
 
 type Props = {
   className?: string;
+  icon: ServicesInfoBoxsIconType;
 };
 
-export default function ServiceInfoBox({ className }: Props) {
+export default function ServiceInfoBox({ className, icon }: Props) {
   // Translations
   const t = useTranslations("services.all-services");
 
@@ -43,7 +61,7 @@ export default function ServiceInfoBox({ className }: Props) {
         </p>
 
         {/* Icon */}
-        {ServicesInfoBoxsIcons["buildings"]}
+        {ServicesInfoBoxsIcons[icon]}
       </div>
 
       {/* Content */}
