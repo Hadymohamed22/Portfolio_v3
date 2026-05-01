@@ -42,12 +42,12 @@ export default function ToggleLang() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="toggleLang">
+        <Button variant="toggleLang" className="">
           {locales.find((l) => l.code === currentLocale)?.label ||
             currentLocale}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align={currentLocale === "ar" ? "end" : "start"}>
+      <DropdownMenuContent>
         {locales.map((locale) => (
           <DropdownMenuItem
             key={locale.code}

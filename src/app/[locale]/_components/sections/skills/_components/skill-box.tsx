@@ -24,6 +24,8 @@ import SkillBoxIcon from "./skill-box-icon";
 // Variables
 // i set icons here to can extract keys type
 const icons = {
+  // Webhook (for networking/events integration)
+  webhook: <SquareMousePointer className="text-blue-500 dark:text-blue-400" />,
   // React
   react: <Hexagon className="text-sky-500 dark:text-sky-400" />,
   // React Router
