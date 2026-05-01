@@ -3,6 +3,7 @@ import ServiceInfoBoxFeat from "./service-info-box-feat";
 import CTA from "../../_components/sections/about/_components/cta";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
 import { useTranslations } from "next-intl";
+import { ServiceFeature } from "../_types/all-services";
 
 const ServicesInfoBoxsIcons = {
   buildings: (
@@ -27,24 +28,27 @@ const ServicesInfoBoxsIcons = {
   ),
 };
 
-type ServicesInfoBoxsIconType = keyof typeof ServicesInfoBoxsIcons;
+export type ServicesInfoBoxsIconType = keyof typeof ServicesInfoBoxsIcons;
 
 type Props = {
   className?: string;
   icon: ServicesInfoBoxsIconType;
+  title: string;
+  description: string;
+  num: string;
+  features: ServiceFeature[];
 };
 
-export default function ServiceInfoBox({ className, icon }: Props) {
+export default function ServiceInfoBox({
+  className,
+  icon,
+  title,
+  description,
+  num,
+  features,
+}: Props) {
   // Translations
   const t = useTranslations("services.all-services");
-
-  // Variables
-  const features = [
-    "CMS Integration",
-    "Multi-page Architecture",
-    "SEO Strategy",
-    "Advanced Analytics",
-  ];
 
   return (
     <div
@@ -57,7 +61,7 @@ export default function ServiceInfoBox({ className, icon }: Props) {
       <div className="num-icon flex justify-between mb-6 md:mb-8">
         {/* Num */}
         <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 font-jetbrains-mono!">
-          {"1".padStart(2, "0")} /
+          {num.padStart(2, "0")} /
         </p>
 
         {/* Icon */}
@@ -67,21 +71,17 @@ export default function ServiceInfoBox({ className, icon }: Props) {
       {/* Content */}
       <div className="content flex flex-col grow">
         {/* Title */}
-        <h3 className="text-3xl md:text-4xl font-bold mb-2">
-          Business Websites
-        </h3>
+        <h3 className="text-3xl md:text-4xl font-bold mb-2">{title}</h3>
 
         {/* Description */}
         <p className="text-sm md:text-base font-inter rtl:font-tajawal text-gray-500 dark:text-gray-400 w-4/5 md:w-3/4">
-          Scalable, secure, and professional ecosystems designed for established
-          enterprises seeking a digital transformation that reflects their
-          market authority.
+          {description}
         </p>
 
         {/* Service Info Feature Box */}
-        <div className="features flex flex-wrap gap-3 justify-between mt-4 mb-2">
+        <div className="features flex flex-wrap gap-x-6 gap-y-2 mt-4 mb-2">
           {features.map((feat) => (
-            <ServiceInfoBoxFeat key={feat} text={feat} />
+            <ServiceInfoBoxFeat key={feat.id} text={feat.text} />
           ))}
         </div>
 
