@@ -1,36 +1,14 @@
 import Image from "next/image";
 import WorkflowStep from "./workflow-step";
+import { useTranslations } from "next-intl";
+import { workflowSteps } from "../_constants/workflow-steps.constant";
 
 export default function Workflow() {
+  // Translations
+  const t = useTranslations("services.workflow");
+
   // Variables
-  const workflowSteps: {
-    id: string;
-    title: string;
-    desc: string;
-    className: string;
-  }[] = [
-    {
-      id: crypto.randomUUID(),
-      title: "Discovery & Strategy",
-      desc: "Defining technical requirements and creative objectives through deep consultation.",
-      className:
-        "text-[#6b68a1] dark:text-[#A8A4FF] border-[#6b68a1] dark:border-[#A8A4FF]",
-    },
-    {
-      id: crypto.randomUUID(),
-      title: "Editorial UI Design",
-      desc: "Crafting unique, high-fidelity layouts that prioritize visual storytelling.",
-      className:
-        "text-[#017087] dark:text-[#00D2FD] border-[#017087] dark:border-[#00D2FD]",
-    },
-    {
-      id: crypto.randomUUID(),
-      title: "Architecture & Deployment",
-      desc: "Developing clean, semantic code optimized for global distribution.",
-      className:
-        "text-[#884869] dark:text-[#FF9DD0] border-[#884869] dark:border-[#FF9DD0]",
-    },
-  ];
+  const translatedWorkflowSteps = workflowSteps(t);
 
   return (
     <section className="workflow-section my-14 md:my-16 dark:mt-0!">
@@ -47,13 +25,11 @@ export default function Workflow() {
 
         {/* Content */}
         <div className="content grow">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            The Precision Workflow
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h2>
 
           {/* Steps */}
           <div className="steps flex flex-col gap-6">
-            {workflowSteps.map((wfs, i) => (
+            {translatedWorkflowSteps.map((wfs, i) => (
               <div className="workflow-step flex gap-6" key={wfs.id}>
                 {/* Step */}
                 <WorkflowStep

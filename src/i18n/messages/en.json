@@ -68,6 +68,15 @@
     },
     "all-services": {
       "lets-to-deal": "Let's To Deal"
+    },
+    "workflow": {
+      "title": "The Precision Workflow",
+      "discovery-and-strategy": "Discovery & Strategy",
+      "discovery-desc": "Defining technical requirements and creative objectives through deep consultation.",
+      "editorial-ui-design": "Editorial UI Design",
+      "ui-desc": "Crafting unique, high-fidelity layouts that prioritize visual storytelling.",
+      "architecture-and-deployment": "Architecture & Deployment",
+      "architecture-desc": "Developing clean, semantic code optimized for global distribution."
     }
   },
   "projects": {
