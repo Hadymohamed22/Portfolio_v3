@@ -7,7 +7,7 @@ export default function Logo() {
 
   return (
     <Link href="/">
-      <h1 className="uppercase text-xl md:text-2xl font-bold">{t("name")}</h1>
+      <h1 className="uppercase text-lg md:text-2xl font-bold">{t("name")}</h1>
     </Link>
   );
 }

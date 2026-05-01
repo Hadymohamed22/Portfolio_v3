@@ -42,11 +42,7 @@ export default function FiltersTabs() {
   return isLoading ? (
     <FiltersTabsSkeleton />
   ) : (
-    <Tabs
-      value={activeTab}
-      className="w-100"
-      dir={locale === "ar" ? "rtl" : "ltr"}
-    >
+    <Tabs value={activeTab} dir={locale === "ar" ? "rtl" : "ltr"}>
       <TabsList>
         <TabsTrigger
           value="all"

@@ -18,7 +18,7 @@ export default function StatisticItem({ text, num, type, isEnd }: Props) {
       {/* Num */}
       <p
         className={cn(
-          "font-bold text-3xl md:text-4xl",
+          "font-bold text-[1.625rem] md:text-4xl",
           type === "projects"
             ? "text-m-secondary"
             : type === "clients"

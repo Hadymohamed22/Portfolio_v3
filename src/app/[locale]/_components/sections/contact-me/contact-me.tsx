@@ -22,7 +22,8 @@ export default async function ContactMe() {
         mt-14 mb-18 md:mt-16 md:mb-20 px-5
         before:absolute
         before:-z-10
-        before:size-80
+        before:size-60
+        md:before:size-80
         before:rounded-full
         before:bg-linear-to-br before:from-m-primary/30 before:to-m-secondary/20
         before:top-20 before:inset-s-10 md:before:inset-s-20

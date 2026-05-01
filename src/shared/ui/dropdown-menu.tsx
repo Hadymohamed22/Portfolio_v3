@@ -1,8 +1,25 @@
 "use client";
 
+/**
+ * HOW TO CHANGE DROPDOWN MENU CONTENT PREVIEW POSITION:
+ *
+ * To change the position where the dropdown menu content (the menu popup) is displayed,
+ * you can use the `align`, `side`, and `sideOffset` props of DropdownMenuContent and DropdownMenuSubContent.
+ *
+ * - `align`: "start", "center", or "end" (horizontal alignment relative to the trigger)
+ * - `side`: "top", "right", "bottom", "left" (which side of the trigger to show the menu)
+ * - `sideOffset`: number (distance in px from the trigger)
+ * - `alignOffset`: number (distance in px for alignment offset)
+ *
+ * For example:
+ * <DropdownMenuContent align="end" side="bottom" sideOffset={8} />
+ *
+ * You can pass these as props wherever you use DropdownMenuContent or DropdownMenuSubContent.
+ * See the implementation below for details.
+ */
+
 import * as React from "react";
 import { DropdownMenu as DropdownMenuPrimitive } from "radix-ui";
-
 import { cn } from "@/shared/lib/utils/tailwind-merge";
 import { CheckIcon, ChevronRightIcon } from "lucide-react";
 
@@ -31,18 +48,36 @@ function DropdownMenuTrigger({
   );
 }
 
+/**
+ * DropdownMenuContent
+ *
+ * Controls the position of the dropdown preview.
+ *
+ * To change the preview position, pass any of these props:
+ *  - align: "start" | "center" | "end"
+ *  - side: "top" | "right" | "bottom" | "left"
+ *  - sideOffset: number
+ *  - alignOffset: number
+ *
+ * Example usage:
+ * <DropdownMenuContent align="end" side="top" sideOffset={8} />
+ */
 function DropdownMenuContent({
   className,
   align = "start",
+  side = "bottom",
   sideOffset = 4,
+  alignOffset,
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Content>) {
   return (
     <DropdownMenuPrimitive.Portal>
       <DropdownMenuPrimitive.Content
         data-slot="dropdown-menu-content"
-        sideOffset={sideOffset}
+        side={side}
         align={align}
+        sideOffset={sideOffset}
+        alignOffset={alignOffset}
         className={cn(
           "z-50 max-h-(--radix-dropdown-menu-content-available-height) min-w-32 origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:overflow-hidden data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
           className,
@@ -240,11 +275,15 @@ function DropdownMenuSubTrigger({
 
 function DropdownMenuSubContent({
   className,
+  sideOffset = 4,
+  alignOffset,
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.SubContent>) {
   return (
     <DropdownMenuPrimitive.SubContent
       data-slot="dropdown-menu-sub-content"
+      sideOffset={sideOffset}
+      alignOffset={alignOffset}
       className={cn(
         "z-50 min-w-24 origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden rounded-lg bg-popover p-1 text-popover-foreground shadow-lg ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
         className,

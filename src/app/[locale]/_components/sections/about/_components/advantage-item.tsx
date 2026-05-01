@@ -42,7 +42,7 @@ type Props = {
 
 export default function AdvantageItem({ text, iconName }: Props) {
   return (
-    <div className="advantage-item flex items-center gap-2 min-w-44">
+    <div className="advantage-item flex items-center gap-2 min-w-fit">
       {/* Icon */}
       {icons[iconName].icon}
 
