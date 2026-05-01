@@ -59,6 +59,14 @@
       }
     }
   },
+  "services": {
+    "hero": {
+      "capabilities": "CAPABILITIES",
+      "title": "What Can I <span>Do For You</span>",
+      "description": "Precision-engineered digital solutions at the intersection of high-end editorial design and robust technical architecture.",
+      "lets-start-together": "Let's Start Together "
+    }
+  },
   "projects": {
     "project-details": {
       "hero": {
@@ -135,5 +143,7 @@
   "description": "I am currently available for new projects and creative collaborations.",
   "lets-talk": "Let's Talk",
   "watch-another-projects": "Watch Another Projects",
-  "all": "All"
+  "all": "All",
+  "capabilities": "CAPABILITIES",
+  "lets-start-together": "Let's Start Together"
 }

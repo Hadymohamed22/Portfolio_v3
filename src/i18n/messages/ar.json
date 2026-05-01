@@ -59,6 +59,14 @@
       }
     }
   },
+  "services": {
+    "hero": {
+      "capabilities": "قدراتي",
+      "title": "ما الذي استطيع <span>فعله من اجلك</span>",
+      "description": "حلول رقمية مصممة بدقة تجمع بين التصميم التحريري الراقي والبنية التقنية القوية.",
+      "lets-start-together": "لنبدأ مشروع معًا"
+    }
+  },
   "projects": {
     "project-details": {
       "hero": {
