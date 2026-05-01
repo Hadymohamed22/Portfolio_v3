@@ -65,6 +65,9 @@
       "title": "What Can I <span>Do For You</span>",
       "description": "Precision-engineered digital solutions at the intersection of high-end editorial design and robust technical architecture.",
       "lets-start-together": "Let's Start Together "
+    },
+    "all-services": {
+      "lets-to-deal": "Let's To Deal"
     }
   },
   "projects": {
@@ -145,5 +148,6 @@
   "watch-another-projects": "Watch Another Projects",
   "all": "All",
   "capabilities": "CAPABILITIES",
-  "lets-start-together": "Let's Start Together"
+  "lets-start-together": "Let's Start Together",
+  "lets-to-deal": "Let's To Deal"
 }

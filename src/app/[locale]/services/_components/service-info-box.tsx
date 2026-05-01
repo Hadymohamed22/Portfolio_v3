@@ -2,6 +2,7 @@ import { Building, Code } from "lucide-react";
 import ServiceInfoBoxFeat from "./service-info-box-feat";
 import CTA from "../../_components/sections/about/_components/cta";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
+import { useTranslations } from "next-intl";
 
 const ServicesInfoBoxsIcons = {
   buildings: (
@@ -16,6 +17,9 @@ type Props = {
 };
 
 export default function ServiceInfoBox({ className }: Props) {
+  // Translations
+  const t = useTranslations("services.all-services");
+
   // Variables
   const features = [
     "CMS Integration",
@@ -64,10 +68,10 @@ export default function ServiceInfoBox({ className }: Props) {
         </div>
 
         {/* CTA */}
-        <CTA talkText="Let's To Deal" className="mt-auto w-fit" />
+        <CTA talkText={t("lets-to-deal")} className="mt-auto w-fit" />
 
         {/* Icon To Add Decoration For Box */}
-        <div className="code-icon absolute -bottom-8 md:-bottom-12 -right-4 *:size-36 md:*:size-40 text-gray-200 dark:text-gray-700/25 -rotate-12">
+        <div className="code-icon absolute -bottom-10 md:-bottom-12 -inset-e-4 *:size-34 md:*:size-40 text-gray-200 dark:text-gray-700/25 -rotate-12 rtl:rotate-12">
           <Code strokeWidth={3} />
         </div>
       </div>
