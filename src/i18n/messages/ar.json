@@ -59,6 +59,26 @@
       }
     }
   },
+  "services": {
+    "hero": {
+      "capabilities": "قدراتي",
+      "title": "ما الذي استطيع <span>فعله من اجلك</span>",
+      "description": "حلول رقمية مصممة بدقة تجمع بين التصميم التحريري الراقي والبنية التقنية القوية.",
+      "lets-start-together": "لنبدأ مشروع معًا"
+    },
+    "all-services": {
+      "lets-to-deal": "لنبدأ اللآن"
+    },
+    "workflow": {
+      "title": "مسار العمل الدقيق",
+      "discovery-and-strategy": "الاستكشاف والتخطيط",
+      "discovery-desc": "تحديد المتطلبات الفنية والأهداف الإبداعية من خلال التشاور العميق.",
+      "editorial-ui-design": "تصميم واجهة المستخدم",
+      "ui-desc": "تصميم تخطيطات فريدة وعالية الدقة تركز على السرد البصري.",
+      "architecture-and-deployment": "التطوير والنشر",
+      "architecture-desc": "تطوير كود نظيف ودلالي ومُحسَّن للتوزيع العالمي."
+    }
+  },
   "projects": {
     "project-details": {
       "hero": {
