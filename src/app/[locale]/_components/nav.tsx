@@ -67,7 +67,7 @@ export default function Nav() {
               key={link.id}
               href={link.href}
               className={cn(
-                "text-p font-semibold pb-1 text-center text-3xl hover:text-m-primary",
+                "text-gray-600 font-semibold pb-1 text-center text-3xl hover:text-m-primary",
                 pathname.includes(link.href) &&
                   "text-4xl text-m-primary hover:pb-2",
               )}
