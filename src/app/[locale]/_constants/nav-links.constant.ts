@@ -11,11 +11,6 @@ export const createNavLinks: (t: _Translator) => NavLink[] = (
     },
     {
       id: crypto.randomUUID(),
-      label: t("about"),
-      href: "/about",
-    },
-    {
-      id: crypto.randomUUID(),
       label: t("services"),
       href: "/services",
     },
