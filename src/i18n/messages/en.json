@@ -158,5 +158,39 @@
   "all": "All",
   "capabilities": "CAPABILITIES",
   "lets-start-together": "Let's Start Together",
-  "lets-to-deal": "Let's To Deal"
+  "lets-to-deal": "Let's To Deal",
+  "contact": {
+    "hero": {
+      "available": "AVAILABLE FOR NEW PROJECTS",
+      "title": "Let's Build <span>Something Together</span>",
+      "description": "Whether you have a fully formed concept or just the spark of an idea, I’m here to help engineer digital experiences that push boundaries."
+    },
+    "contact-form": {
+      "full-name": "Full Name",
+      "email-address": "Email Address",
+      "message": "Message",
+      "send-now": "Send Now",
+      "message-placeholder": "Tell me about your project vision...",
+      "full-name-placeholder": "Hady Mohamed",
+      "name-required": "Name Is Required !",
+      "name-min": "Please Enter Valid Name !",
+      "email-valid": "Please Enter Valid Email!",
+      "email-required": "Email Is Required !",
+      "message-required": "Message Is Required !",
+      "message-min": "Message Must be At least 5 Characters !",
+      "success-message": "Thank you! Your message has been sent successfully."
+    },
+    "contact-details-boxs": {
+      "email": "Email Address",
+      "linkedin-profile": "LinkedIn Profile",
+      "whatsapp-direct": "Whatsapp Direct"
+    }
+  },
+  "email-address": "EMAIL ADDRESS",
+  "message": "MESSAGE",
+  "send-now": "Send Now",
+  "message-placeholder": "Tell me about your project vision...",
+  "full-name-placeholder": "Hady Mohamed",
+  "linkedin-profile": "LINKEDIN PROFILE",
+  "whatsapp-direct": "WHATSAPP DIRECT"
 }
