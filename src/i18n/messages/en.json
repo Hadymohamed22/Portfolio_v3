@@ -171,7 +171,14 @@
       "message": "Message",
       "send-now": "Send Now",
       "message-placeholder": "Tell me about your project vision...",
-      "full-name-placeholder": "Hady Mohamed"
+      "full-name-placeholder": "Hady Mohamed",
+      "name-required": "Name Is Required !",
+      "name-min": "Please Enter Valid Name !",
+      "email-valid": "Please Enter Valid Email!",
+      "email-required": "Email Is Required !",
+      "message-required": "Message Is Required !",
+      "message-min": "Message Must be At least 5 Characters !",
+      "success-message": "Thank you! Your message has been sent successfully."
     },
     "contact-details-boxs": {
       "email": "Email Address",
