@@ -14,7 +14,10 @@ export default function ContactForm() {
       <div className="nam-email flex flex-col md:flex-row gap-8 md:items-center">
         {/* Name Input */}
         <Field>
-          <FieldLabel htmlFor="Name" className="capitalize">
+          <FieldLabel
+            htmlFor="Name"
+            className="capitalize font-jetbrains-mono rtl:font-tajawal"
+          >
             {t("full-name")}
           </FieldLabel>
           <Input
@@ -26,7 +29,10 @@ export default function ContactForm() {
 
         {/* Email Input */}
         <Field>
-          <FieldLabel htmlFor="Email" className="capitalize">
+          <FieldLabel
+            htmlFor="Email"
+            className="capitalize font-jetbrains-mono rtl:font-tajawal"
+          >
             {t("email-address")}
           </FieldLabel>
           <Input type="email" placeholder="hadysapry60@gmail.com" id="Email" />
@@ -35,13 +41,16 @@ export default function ContactForm() {
 
       {/* Textarea Input */}
       <Field>
-        <FieldLabel htmlFor="Message" className="capitalize">
+        <FieldLabel
+          htmlFor="Message"
+          className="capitalize font-jetbrains-mono rtl:font-tajawal"
+        >
           {t("message")}
         </FieldLabel>
         <Textarea
           placeholder={t("message-placeholder")}
           id="Message"
-          className="min-h-44"
+          className="min-h-44 resize-none"
         />
       </Field>
 
