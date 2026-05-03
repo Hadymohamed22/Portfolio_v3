@@ -172,11 +172,18 @@
       "send-now": "Send Now",
       "message-placeholder": "Tell me about your project vision...",
       "full-name-placeholder": "Hady Mohamed"
+    },
+    "contact-details-boxs": {
+      "email": "Email Address",
+      "linkedin-profile": "LinkedIn Profile",
+      "whatsapp-direct": "Whatsapp Direct"
     }
   },
   "email-address": "EMAIL ADDRESS",
   "message": "MESSAGE",
   "send-now": "Send Now",
   "message-placeholder": "Tell me about your project vision...",
-  "full-name-placeholder": "Hady Mohamed"
+  "full-name-placeholder": "Hady Mohamed",
+  "linkedin-profile": "LINKEDIN PROFILE",
+  "whatsapp-direct": "WHATSAPP DIRECT"
 }
