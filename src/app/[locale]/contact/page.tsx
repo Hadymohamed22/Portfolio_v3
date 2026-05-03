@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import ContactInfoDetails from "./_components/contact-details-info";
 import ContactForm from "./_components/contact-form";
 import ContactHero from "./_components/contact-hero";
+import ContactInfoDetailsSkeleton from "./_skeletons/contact-info-details.skeleton";
 
 export default function Page() {
   return (
@@ -14,7 +16,9 @@ export default function Page() {
         <ContactForm />
 
         {/* Contact Info */}
-        <ContactInfoDetails />
+        <Suspense fallback={<ContactInfoDetailsSkeleton />}>
+          <ContactInfoDetails />
+        </Suspense>
       </section>
     </main>
   );
