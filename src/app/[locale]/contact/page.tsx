@@ -1,3 +1,10 @@
+import ContactHero from "./_components/contact-hero";
+
 export default function Page() {
-  return <div className="min-h-screen">Contact</div>;
+  return (
+    <main>
+      {/* Contact Hero */}
+      <ContactHero />
+    </main>
+  );
 }

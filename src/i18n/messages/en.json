@@ -158,5 +158,12 @@
   "all": "All",
   "capabilities": "CAPABILITIES",
   "lets-start-together": "Let's Start Together",
-  "lets-to-deal": "Let's To Deal"
+  "lets-to-deal": "Let's To Deal",
+  "contact": {
+    "hero": {
+      "available": "AVAILABLE FOR NEW PROJECTS",
+      "title": "Let's Build <span>Something Together</span>",
+      "description": "Whether you have a fully formed concept or just the spark of an idea, I’m here to help engineer digital experiences that push boundaries."
+    }
+  }
 }
