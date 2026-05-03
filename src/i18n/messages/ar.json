@@ -153,7 +153,14 @@
       "message": "رسالتك لنا",
       "send-now": "أرسل الآن",
       "message-placeholder": "أخبرني عن رؤيتك للمشروع...",
-      "full-name-placeholder": "هادى محمد"
+      "full-name-placeholder": "هادى محمد",
+      "name-required": "الاسم مطلوب!",
+      "name-min": "يرجى إدخال اسم صالح!",
+      "email-valid": "يرجى إدخال بريد إلكتروني صالح!",
+      "email-required": "البريد الإلكتروني مطلوب!",
+      "message-required": "الرسالة مطلوبة!",
+      "message-min": "يجب ألا تقل الرسالة عن 5 أحرف!",
+      "success-message": "شكرًا لك! تم الإرسال وسأتواصل معك قريبا."
     },
     "contact-details-boxs": {
       "email": "البريد الإلكترونى",
