@@ -154,6 +154,11 @@
       "send-now": "أرسل الآن",
       "message-placeholder": "أخبرني عن رؤيتك للمشروع...",
       "full-name-placeholder": "هادى محمد"
+    },
+    "contact-details-boxs": {
+      "email": "البريد الإلكترونى",
+      "linkedin-profile": "حساب لينكد ان",
+      "whatsapp-direct": "واتساب مباشر"
     }
   }
 }
