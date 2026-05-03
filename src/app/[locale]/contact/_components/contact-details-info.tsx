@@ -1,12 +1,16 @@
-import { useTranslations } from "next-intl";
+import getContactInfoDetails from "../_actions/get-contact-info-details.action";
 import ContactDetailsBox from "./contact-details-box";
+import { getLocale, getTranslations } from "next-intl/server";
 
-export default function ContactInfoDetails() {
+export default async function ContactInfoDetails() {
   // Translations
-  const t = useTranslations("contact.contact-details-boxs");
+  const t = await getTranslations("contact.contact-details-boxs");
+  const locale = await getLocale();
 
-  return (
-    <div className="contact-info-details flex flex-col gap-4">
+  // Variables
+  const contactInfo = await getContactInfoDetails(locale);
+  const INITIAL_DATA = (
+    <>
       {/* Email */}
       <ContactDetailsBox
         iconVariant="mail"
@@ -19,7 +23,7 @@ export default function ContactInfoDetails() {
       <ContactDetailsBox
         iconVariant="linkedin"
         title={t("linkedin-profile")}
-        content="linkedin.com/in/hadysapry"
+        content="linkedin.com/in/hady-elnifaly"
         link="https://linkedin.com/in/hady-elnifaly"
       />
 
@@ -30,6 +34,34 @@ export default function ContactInfoDetails() {
         content="+201200253203"
         link="https://wa.me/+201200253203"
       />
+    </>
+  );
+
+  return (
+    <div className="contact-info-details flex flex-col gap-4">
+      {contactInfo.ok
+        ? contactInfo.data.map((ci) => (
+            <ContactDetailsBox
+              key={ci.id}
+              iconVariant={ci.iconVariant}
+              title={t(
+                ci.iconVariant === "mail"
+                  ? "email"
+                  : ci.iconVariant === "linkedin"
+                    ? "linkedin-profile"
+                    : "whatsapp-direct",
+              )}
+              content={ci.info}
+              link={
+                ci.iconVariant === "mail"
+                  ? `mailto:${ci.info}`
+                  : ci.iconVariant === "linkedin"
+                    ? `https://${ci.info}`
+                    : `https://wa.me/${ci.info.replace(/[^+\d]/g, "")}`
+              }
+            />
+          ))
+        : INITIAL_DATA}
     </div>
   );
 }
