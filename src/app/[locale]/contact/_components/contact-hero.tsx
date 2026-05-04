@@ -23,7 +23,7 @@ export default function ContactHero() {
             ),
           })}
           subTitle={t("description")}
-          titleClasses="text-7xl md:text-8xl w-full md:w-5/6 lg:w-4/6 rtl:lg:w-3/5 rtl:mb-5"
+          titleClasses="text-5xl md:text-7xl lg:text-8xl w-full md:w-5/6 lg:w-4/6 rtl:lg:w-3/5 rtl:mb-5"
           subTitleClasses="w-3/4 md:w-2/5"
           className="mb-2!"
         />
