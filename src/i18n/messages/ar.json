@@ -59,6 +59,26 @@
       }
     }
   },
+  "services": {
+    "hero": {
+      "capabilities": "قدراتي",
+      "title": "ما الذي استطيع <span>فعله من اجلك</span>",
+      "description": "حلول رقمية مصممة بدقة تجمع بين التصميم التحريري الراقي والبنية التقنية القوية.",
+      "lets-start-together": "لنبدأ مشروع معًا"
+    },
+    "all-services": {
+      "lets-to-deal": "لنبدأ اللآن"
+    },
+    "workflow": {
+      "title": "مسار العمل الدقيق",
+      "discovery-and-strategy": "الاستكشاف والتخطيط",
+      "discovery-desc": "تحديد المتطلبات الفنية والأهداف الإبداعية من خلال التشاور العميق.",
+      "editorial-ui-design": "تصميم واجهة المستخدم",
+      "ui-desc": "تصميم تخطيطات فريدة وعالية الدقة تركز على السرد البصري.",
+      "architecture-and-deployment": "التطوير والنشر",
+      "architecture-desc": "تطوير كود نظيف ودلالي ومُحسَّن للتوزيع العالمي."
+    }
+  },
   "projects": {
     "project-details": {
       "hero": {
@@ -90,7 +110,11 @@
         "lets-talk": "هيا لنتواصل",
         "watch-another-projects": "شاهد مشاريع أخرى"
       }
-    }
+    },
+    "title": "أعمالى <span>المختارة</span>",
+    "selected-work": "أعمالى <span>المختارة</span>",
+    "project-case-study": "معلومات أكثر عن المشروع",
+    "project-live-demo": "مشاهدة الموقع"
   },
   "about": {
     "title": "أهلا في صفحة عنا"
@@ -120,5 +144,35 @@
       "dark": "مظلم",
       "system": "النظام"
     }
+  },
+  "contact": {
+    "hero": {
+      "available": "متاح للمشاريع الجديدة",
+      "title": "دعونا نبني <span>شيئا معا</span>",
+      "description": "سواء كان لديك مفهوم مكتمل أو مجرد فكرة أولية، فأنا هنا لمساعدتك في تصميم تجارب رقمية تخطو الحدود."
+    },
+    "contact-form": {
+      "full-name": "الإسم بالكامل",
+      "email-address": "البريد الإلكتروني",
+      "message": "رسالتك لنا",
+      "send-now": "أرسل الآن",
+      "message-placeholder": "أخبرني عن رؤيتك للمشروع...",
+      "full-name-placeholder": "هادى محمد",
+      "name-required": "الاسم مطلوب!",
+      "name-min": "يرجى إدخال اسم صالح!",
+      "email-valid": "يرجى إدخال بريد إلكتروني صالح!",
+      "email-required": "البريد الإلكتروني مطلوب!",
+      "message-required": "الرسالة مطلوبة!",
+      "message-min": "يجب ألا تقل الرسالة عن 5 أحرف!",
+      "success-message": "شكرًا لك! تم الإرسال وسأتواصل معك قريبا."
+    },
+    "contact-details-boxs": {
+      "email": "البريد الإلكترونى",
+      "linkedin-profile": "حساب لينكد ان",
+      "whatsapp-direct": "واتساب مباشر"
+    }
+  },
+  "blog": {
+    "in-progress": "تحت التطوير"
   }
 }

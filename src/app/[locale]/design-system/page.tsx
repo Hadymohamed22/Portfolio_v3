@@ -28,6 +28,7 @@ export default function Page() {
         <Badge variant="wordpress">WordPress</Badge>
         <Badge variant="salla">Salla</Badge>
         <Badge variant="zid">Zid</Badge>
+        <Badge variant="cat-badge">Web App</Badge>
         <Badge variant="TypeScript">Zid</Badge>
         <Badge variant="notAvailable">{t("not-available")}</Badge>
         <Badge variant="full-time">{t("full-time")}</Badge>

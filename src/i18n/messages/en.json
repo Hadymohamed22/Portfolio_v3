@@ -59,6 +59,26 @@
       }
     }
   },
+  "services": {
+    "hero": {
+      "capabilities": "CAPABILITIES",
+      "title": "What Can I <span>Do For You</span>",
+      "description": "Precision-engineered digital solutions at the intersection of high-end editorial design and robust technical architecture.",
+      "lets-start-together": "Let's Start Together "
+    },
+    "all-services": {
+      "lets-to-deal": "Let's To Deal"
+    },
+    "workflow": {
+      "title": "The Precision Workflow",
+      "discovery-and-strategy": "Discovery & Strategy",
+      "discovery-desc": "Defining technical requirements and creative objectives through deep consultation.",
+      "editorial-ui-design": "Editorial UI Design",
+      "ui-desc": "Crafting unique, high-fidelity layouts that prioritize visual storytelling.",
+      "architecture-and-deployment": "Architecture & Deployment",
+      "architecture-desc": "Developing clean, semantic code optimized for global distribution."
+    }
+  },
   "projects": {
     "project-details": {
       "hero": {
@@ -90,7 +110,11 @@
         "lets-talk": "Let's Talk",
         "watch-another-projects": "Watch Another Projects"
       }
-    }
+    },
+    "title": "Selected <span>Work</span>",
+    "selected-work": "Selected <span>Work</span>",
+    "project-case-study": "Case Study",
+    "project-live-demo": "Live Demo"
   },
   "about": {
     "title": "Hi in About Page"
@@ -121,6 +145,9 @@
       "system": "System"
     }
   },
+  "blog": {
+    "in-progress": "In Progress"
+  },
   "talk-button": "Let's Talk",
   "badge": "Case Study",
   "preview-live": "Preview Live",
@@ -135,5 +162,45 @@
   "description": "I am currently available for new projects and creative collaborations.",
   "lets-talk": "Let's Talk",
   "watch-another-projects": "Watch Another Projects",
-  "all": "All"
+  "all": "All",
+  "capabilities": "CAPABILITIES",
+  "lets-start-together": "Let's Start Together",
+  "lets-to-deal": "Let's To Deal",
+  "contact": {
+    "hero": {
+      "available": "AVAILABLE FOR NEW PROJECTS",
+      "title": "Let's Build <span>Something Together</span>",
+      "description": "Whether you have a fully formed concept or just the spark of an idea, I’m here to help engineer digital experiences that push boundaries."
+    },
+    "contact-form": {
+      "full-name": "Full Name",
+      "email-address": "Email Address",
+      "message": "Message",
+      "send-now": "Send Now",
+      "message-placeholder": "Tell me about your project vision...",
+      "full-name-placeholder": "Hady Mohamed",
+      "name-required": "Name Is Required !",
+      "name-min": "Please Enter Valid Name !",
+      "email-valid": "Please Enter Valid Email!",
+      "email-required": "Email Is Required !",
+      "message-required": "Message Is Required !",
+      "message-min": "Message Must be At least 5 Characters !",
+      "success-message": "Thank you! Your message has been sent successfully."
+    },
+    "contact-details-boxs": {
+      "email": "Email Address",
+      "linkedin-profile": "LinkedIn Profile",
+      "whatsapp-direct": "Whatsapp Direct"
+    }
+  },
+  "email-address": "EMAIL ADDRESS",
+  "message": "MESSAGE",
+  "send-now": "Send Now",
+  "message-placeholder": "Tell me about your project vision...",
+  "full-name-placeholder": "Hady Mohamed",
+  "linkedin-profile": "LINKEDIN PROFILE",
+  "whatsapp-direct": "WHATSAPP DIRECT",
+  "selected-work": "Selected Work",
+  "project-case-study": "Case Study",
+  "project-live-demo": "Live Demo"
 }

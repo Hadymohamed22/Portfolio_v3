@@ -9,6 +9,11 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
+        "main-tech":
+          "bg-[#B8F5FF] text-[#005569] dark:bg-[#080C12] dark:text-[#15E0FE] border-0 font-jetbrains-mono font-semibold rounded-[6px] shadow-sm",
+
+        "cat-badge":
+          "rounded-sm bg-fuchsia-100 text-fuchsia-800 dark:bg-fuchsia-700/20 dark:text-fuchsia-200 border border-fuchsia-200 dark:border-fuchsia-700",
         "Next.js":
           "bg-gray-200 text-secondary-foreground dark:bg-gray-500/50 dark:text-gray-100 [a]:hover:bg-secondary/80 dark:[a]:hover:bg-secondary/30",
         TypeScript:
