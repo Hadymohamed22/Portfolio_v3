@@ -24,6 +24,7 @@ export default function ProjectsContent() {
             summary={project.summary}
             categoryName={project.category.name}
             badges={project.badges}
+            badgeClassName={project.category.classname}
           />
         ))
       ) : (

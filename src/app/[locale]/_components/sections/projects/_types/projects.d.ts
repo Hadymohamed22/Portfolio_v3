@@ -5,6 +5,7 @@ export type ProjectCategory = {
   id: number;
   name: string;
   query: string;
+  classname: string;
 };
 
 export type ProjectsCategories = ProjectCategory[];
@@ -60,7 +61,7 @@ export type Project = {
     iconName: SkillsIconType;
     techFor: string;
   }[];
-  category: { id: 16; name: "Sport"; query: "sport" };
+  category: { id: number; name: string; query: string; classname: string };
 };
 
 export type Projects = Project[];

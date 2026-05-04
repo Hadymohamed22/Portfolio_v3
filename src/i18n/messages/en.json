@@ -145,6 +145,9 @@
       "system": "System"
     }
   },
+  "blog": {
+    "in-progress": "In Progress"
+  },
   "talk-button": "Let's Talk",
   "badge": "Case Study",
   "preview-live": "Preview Live",
