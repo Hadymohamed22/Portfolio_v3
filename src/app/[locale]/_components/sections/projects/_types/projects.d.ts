@@ -60,6 +60,7 @@ export type Project = {
     iconName: SkillsIconType;
     techFor: string;
   }[];
+  category: { id: 16; name: "Sport"; query: "sport" };
 };
 
 export type Projects = Project[];

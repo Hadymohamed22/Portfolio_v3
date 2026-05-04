@@ -112,7 +112,9 @@
       }
     },
     "title": "Selected <span>Work</span>",
-    "selected-work": "Selected <span>Work</span>"
+    "selected-work": "Selected <span>Work</span>",
+    "project-case-study": "Case Study",
+    "project-live-demo": "Live Demo"
   },
   "about": {
     "title": "Hi in About Page"
@@ -195,5 +197,7 @@
   "full-name-placeholder": "Hady Mohamed",
   "linkedin-profile": "LINKEDIN PROFILE",
   "whatsapp-direct": "WHATSAPP DIRECT",
-  "selected-work": "Selected Work"
+  "selected-work": "Selected Work",
+  "project-case-study": "Case Study",
+  "project-live-demo": "Live Demo"
 }

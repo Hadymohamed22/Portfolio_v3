@@ -3,18 +3,35 @@ import { cn } from "@/shared/lib/utils/tailwind-merge";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 import Image from "next/image";
+import { Project } from "../../_components/sections/projects/_types/projects";
+import { useTranslations } from "next-intl";
 
 type Props = {
-  id: string;
+  slug: string;
   liveDemoLink?: string;
   className?: string;
+  title: string;
+  summary: string;
+  imgSrc: string;
+  alt: string;
+  categoryName: string;
+  badges: Project["badges"];
 };
 
 export default function ProjectDetailBox({
-  id,
+  slug,
   liveDemoLink,
   className,
+  title,
+  categoryName,
+  summary,
+  imgSrc,
+  alt,
+  badges,
 }: Props) {
+  // Translations
+  const t = useTranslations("projects");
+
   return (
     <div
       className={cn(
@@ -23,54 +40,55 @@ export default function ProjectDetailBox({
       )}
     >
       {/* Image */}
-      <div className="image-container min-h-82.5 rounded-t-xl relative overflow-hidden">
+      <div className="image-container min-h-80 lg:min-h-110 rounded-t-xl relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
-          alt="Project thumbnail"
+          src={imgSrc}
+          alt={alt || `${title} Image`}
           fill
           sizes="(max-width: 768px) 100vw, 600px"
         />
       </div>
 
       {/* Content */}
-      <div className="content p-8 md:p-10">
+      <div className="content p-8 md:p-10 flex flex-col">
         {/* Title And Category */}
         <div className="title-category flex items-center justify-between">
           {/* Title */}
           <h4 className="text-2xl md:text-3xl font-bold font-space-grotesk rtl:font-tajawal">
-            Lumina Analytics
+            {title}
           </h4>
 
           {/* Category Badge */}
-          <Badge variant={"cat-badge"}>Web App</Badge>
+          <Badge variant={"cat-badge"}>{categoryName}</Badge>
         </div>
 
         {/* Summary */}
         <p className="text-xs md:text-sm font-jetbrains-mono rtl:font-tajawal text-zinc-500 dark:text-gray-400 my-4">
-          A high-performance data orchestration platform for enterprise scale
-          machine learning workflows.
+          {summary}
         </p>
 
         {/* Tech Stack */}
         <div className="techs flex items-center gap-2 mb-8">
-          {["React", "Next", "Tailwind", "Strapi"].map((t) => (
-            <Badge key={t} variant={"main-tech"}>
-              {t}
+          {badges.map((badge) => (
+            <Badge key={badge.id} variant={"main-tech"}>
+              {badge.title}
             </Badge>
           ))}
         </div>
 
         {/* Actions */}
-        <div className="actions flex items-center gap-4">
+        <div className="actions flex items-center gap-4 mt-auto">
           {/* Case Study */}
           <Button asChild className="grow">
-            <Link href={`/projects/${id || "exam-app"}`}>Case Study</Link>
+            <Link href={`/projects/${slug || "exam-app"}`}>
+              {t("project-case-study")}
+            </Link>
           </Button>
 
           {/* Live Demo */}
           {liveDemoLink && (
             <Button variant={"secondary"} asChild className="grow">
-              <Link href={liveDemoLink}>Live Demo</Link>
+              <Link href={liveDemoLink}>{t("project-live-demo")}</Link>
             </Button>
           )}
         </div>

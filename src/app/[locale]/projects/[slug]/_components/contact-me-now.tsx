@@ -1,3 +1,4 @@
+import CTA from "@/app/[locale]/_components/sections/about/_components/cta";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/shared/ui/button";
 import { useTranslations } from "next-intl";
@@ -23,14 +24,7 @@ export default function ContactMeNow() {
         {/* User Actions */}
         <div className="user-actions flex flex-col md:flex-row justify-center items-center gap-3 mt-8">
           {/* Preview */}
-          <Button
-            className="font-bold rounded-full animate-pulse w-full md:w-auto"
-            asChild
-          >
-            <Link href="https://wa.me/+201029379363" target="_blank">
-              {t("lets-talk")}
-            </Link>
-          </Button>
+          <CTA talkText={t("lets-talk")} className="mt-0! rounded-full" />
 
           {/* Repo */}
           <Button

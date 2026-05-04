@@ -112,7 +112,9 @@
       }
     },
     "title": "أعمالى <span>المختارة</span>",
-    "selected-work": "أعمالى <span>المختارة</span>"
+    "selected-work": "أعمالى <span>المختارة</span>",
+    "project-case-study": "معلومات أكثر عن المشروع",
+    "project-live-demo": "مشاهدة الموقع"
   },
   "about": {
     "title": "أهلا في صفحة عنا"
