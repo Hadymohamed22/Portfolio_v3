@@ -110,7 +110,11 @@
         "lets-talk": "Let's Talk",
         "watch-another-projects": "Watch Another Projects"
       }
-    }
+    },
+    "title": "Selected <span>Work</span>",
+    "selected-work": "Selected <span>Work</span>",
+    "project-case-study": "Case Study",
+    "project-live-demo": "Live Demo"
   },
   "about": {
     "title": "Hi in About Page"
@@ -140,6 +144,9 @@
       "dark": "Dark",
       "system": "System"
     }
+  },
+  "blog": {
+    "in-progress": "In Progress"
   },
   "talk-button": "Let's Talk",
   "badge": "Case Study",
@@ -192,5 +199,8 @@
   "message-placeholder": "Tell me about your project vision...",
   "full-name-placeholder": "Hady Mohamed",
   "linkedin-profile": "LINKEDIN PROFILE",
-  "whatsapp-direct": "WHATSAPP DIRECT"
+  "whatsapp-direct": "WHATSAPP DIRECT",
+  "selected-work": "Selected Work",
+  "project-case-study": "Case Study",
+  "project-live-demo": "Live Demo"
 }

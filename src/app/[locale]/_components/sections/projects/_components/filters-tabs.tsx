@@ -7,7 +7,15 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 import { PROJECT_CATEGORY_QUERY_KEY } from "../_constants/projects.constant";
 
-export default function FiltersTabs() {
+type Props = {
+  tabListVariant?: "default" | "line" | "tabs";
+  filtersSkeleton?: React.ReactNode;
+};
+
+export default function FiltersTabs({
+  filtersSkeleton,
+  tabListVariant = "default",
+}: Props) {
   // Translations
   const t = useTranslations("home.projects.filters-tabs");
   const locale = useLocale();
@@ -40,10 +48,10 @@ export default function FiltersTabs() {
   };
 
   return isLoading ? (
-    <FiltersTabsSkeleton />
+    filtersSkeleton || <FiltersTabsSkeleton />
   ) : (
     <Tabs value={activeTab} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <TabsList>
+      <TabsList variant={tabListVariant}>
         <TabsTrigger
           value="all"
           onClick={() => deleteQuery(PROJECT_CATEGORY_QUERY_KEY)}
