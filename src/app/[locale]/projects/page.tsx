@@ -1,8 +1,8 @@
 import SectionHeader from "@/shared/components/section-header";
 import FiltersTabs from "../_components/sections/projects/_components/filters-tabs";
 import ProjectsFiltersTabsSkeleton from "./_skeletons/projects-filters-tabs.skeleton";
-import ProjectDetailBox from "./_components/project-detail-box";
 import { useTranslations } from "next-intl";
+import ProjectsContent from "./_components/projects-content";
 
 export default function Page() {
   // Translations
@@ -10,7 +10,7 @@ export default function Page() {
 
   return (
     <main className="projects-page">
-      <div className="container mx-auto px-5">
+      <div className="container mx-auto px-5 relative before:">
         {/* Header */}
         <SectionHeader
           title={t.rich("title", {
@@ -32,39 +32,8 @@ export default function Page() {
           />
         </div>
 
-        {/* Projects */}
-        <div className="projects flex flex-wrap gap-8 md:gap-10 mt-12 mb-24">
-          {[
-            {
-              id: "lumina-analytics",
-              liveDemoLink: "https://lumina-demo.com",
-            },
-            {
-              id: "taskflow-app",
-              liveDemoLink: "https://taskflow-demo.com",
-            },
-            {
-              id: "creolabs",
-              liveDemoLink: undefined,
-            },
-            {
-              id: "exam-app",
-              liveDemoLink: "https://exam-app-demo.com",
-            },
-          ].map((project, i) => (
-            <div
-              key={project.id}
-              className={`w-full lg:w-[calc(50%-1.25rem)] ${
-                i % 2 !== 0 ? "md:mt-10" : ""
-              }`}
-            >
-              <ProjectDetailBox
-                id={project.id}
-                liveDemoLink={project.liveDemoLink}
-              />
-            </div>
-          ))}
-        </div>
+        {/* Project Content */}
+        <ProjectsContent />
       </div>
     </main>
   );

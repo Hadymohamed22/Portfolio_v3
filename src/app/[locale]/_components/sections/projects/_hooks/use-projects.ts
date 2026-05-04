@@ -13,10 +13,14 @@ export default function useProjects() {
   const category = useSearchParams().get(PROJECT_CATEGORY_QUERY_KEY);
 
   // Query
-  const { data: projects, isLoading } = useQuery({
+  const {
+    data: projects,
+    isLoading,
+    error,
+  } = useQuery({
     queryKey: ["projects", locale, category],
     queryFn: () => getProjects(locale, category),
   });
 
-  return { projects, isLoading };
+  return { projects, isLoading, error };
 }
