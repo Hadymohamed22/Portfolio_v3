@@ -110,7 +110,9 @@
         "lets-talk": "Let's Talk",
         "watch-another-projects": "Watch Another Projects"
       }
-    }
+    },
+    "title": "Selected <span>Work</span>",
+    "selected-work": "Selected <span>Work</span>"
   },
   "about": {
     "title": "Hi in About Page"
@@ -192,5 +194,6 @@
   "message-placeholder": "Tell me about your project vision...",
   "full-name-placeholder": "Hady Mohamed",
   "linkedin-profile": "LINKEDIN PROFILE",
-  "whatsapp-direct": "WHATSAPP DIRECT"
+  "whatsapp-direct": "WHATSAPP DIRECT",
+  "selected-work": "Selected Work"
 }

@@ -110,7 +110,9 @@
         "lets-talk": "هيا لنتواصل",
         "watch-another-projects": "شاهد مشاريع أخرى"
       }
-    }
+    },
+    "title": "أعمالى <span>المختارة</span>",
+    "selected-work": "أعمالى <span>المختارة</span>"
   },
   "about": {
     "title": "أهلا في صفحة عنا"
