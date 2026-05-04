@@ -6,6 +6,12 @@ export const INITIAL_PROJECTS_DATA: Projects = [
   {
     id: 1,
     title: "Business Dashboard",
+    category: {
+      id: 1,
+      name: "Dashboard",
+      query: "dashboard",
+      classname: "bg-blue-100 text-blue-800",
+    },
     badges: [
       { id: 1, title: "Next.js", variant: "next-default" },
       { id: 2, title: "TypeScript", variant: "typescript-default" },
@@ -86,6 +92,12 @@ export const INITIAL_PROJECTS_DATA: Projects = [
   {
     id: 2,
     title: "Creative Landing",
+    category: {
+      id: 2,
+      name: "Landing Page",
+      query: "landing-page",
+      classname: "bg-pink-100 text-pink-800",
+    },
     badges: [
       { id: 1, title: "Tailwind CSS", variant: "tailwind-default" },
       { id: 2, title: "React", variant: "react-default" },
@@ -165,6 +177,12 @@ export const INITIAL_PROJECTS_DATA: Projects = [
   {
     id: 3,
     title: "E-commerce Platform",
+    category: {
+      id: 3,
+      name: "E-commerce",
+      query: "e-commerce",
+      classname: "bg-green-100 text-green-800",
+    },
     badges: [
       { id: 1, title: "NextAuth", variant: "NextAuth" },
       { id: 2, title: "Salla", variant: "salla" },
