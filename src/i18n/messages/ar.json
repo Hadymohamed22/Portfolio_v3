@@ -110,7 +110,11 @@
         "lets-talk": "هيا لنتواصل",
         "watch-another-projects": "شاهد مشاريع أخرى"
       }
-    }
+    },
+    "title": "أعمالى <span>المختارة</span>",
+    "selected-work": "أعمالى <span>المختارة</span>",
+    "project-case-study": "معلومات أكثر عن المشروع",
+    "project-live-demo": "مشاهدة الموقع"
   },
   "about": {
     "title": "أهلا في صفحة عنا"
@@ -167,5 +171,8 @@
       "linkedin-profile": "حساب لينكد ان",
       "whatsapp-direct": "واتساب مباشر"
     }
+  },
+  "blog": {
+    "in-progress": "تحت التطوير"
   }
 }

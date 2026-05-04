@@ -9,7 +9,7 @@ export default function ContactHero() {
     <section className="my-14 md:my-16">
       <div className="container mx-auto- px-5">
         {/* Available for New Projects */}
-        <p className="text-m-primary text-xs mb-4 tracking-[.3rem] uppercase font-jetbrains-mono rtl:font-tajawal font-semibold">
+        <p className="text-m-primary text-xs mb-4 tracking-[.1rem] uppercase font-jetbrains-mono rtl:font-tajawal font-semibold">
           {t("available")}
         </p>
 
