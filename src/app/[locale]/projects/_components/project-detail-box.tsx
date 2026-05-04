@@ -16,6 +16,7 @@ type Props = {
   alt: string;
   categoryName: string;
   badges: Project["badges"];
+  badgeClassName: string;
 };
 
 export default function ProjectDetailBox({
@@ -28,6 +29,7 @@ export default function ProjectDetailBox({
   imgSrc,
   alt,
   badges,
+  badgeClassName,
 }: Props) {
   // Translations
   const t = useTranslations("projects");
@@ -59,7 +61,9 @@ export default function ProjectDetailBox({
           </h4>
 
           {/* Category Badge */}
-          <Badge variant={"cat-badge"}>{categoryName}</Badge>
+          <Badge variant={"cat-badge"} className={badgeClassName}>
+            {categoryName}
+          </Badge>
         </div>
 
         {/* Summary */}

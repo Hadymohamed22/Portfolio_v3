@@ -64,7 +64,7 @@ export default function ServiceBox({
 
       {/* Link */}
       <Link
-        href={"/#contact-me"}
+        href={"/contact"}
         className={cn(
           "underline text-[0.625rem] md:text-xs animate-pulse mt-auto",
           className,
