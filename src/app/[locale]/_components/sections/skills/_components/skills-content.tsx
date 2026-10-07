@@ -1,34 +1,37 @@
-import { getLocale } from "next-intl/server";
-import { SKILLS_CATEGORIES } from "../_constants/skills-categories.constant";
-import getSkills from "@/shared/lib/actions/get-skills.action";
-import SkillBox from "./skill-box";
+import site from "@/data/site.json";
+import SkillBox, { SkillsIconType } from "./skill-box";
+import { useLocale } from "next-intl";
 
 type Props = {
-  skillCategory: (typeof SKILLS_CATEGORIES)[keyof typeof SKILLS_CATEGORIES];
+  skillGroupName:
+    | "frontend-development-skill-group"
+    | "ui-styling-skill-group"
+    | "tools-skill-group"
+    | "backend-development-skill-group";
 };
 
-export default async function SkillsContent({ skillCategory }: Props) {
+export default function SkillsContent({ skillGroupName }: Props) {
   // Translation
-  const locale = await getLocale();
+  const locale = useLocale();
 
   // Variables
-  const skills = await getSkills(locale, skillCategory);
+  const frontendSkills = site.skillGroups.find(
+    (skill) => skill.id === skillGroupName,
+  );
 
   return (
     <div className="content grid grid-cols-2 lg:grid-cols-4 gap-6">
-      {skills.ok ? (
-        skills.data.flatMap((data) =>
-          data.skills.map((skill) => (
-            <SkillBox
-              key={skill.id}
-              title={skill.skillName}
-              description={skill.description}
-              icon={skill.iconName}
-            />
-          )),
-        )
+      {frontendSkills ? (
+        frontendSkills.items.map((skill) => (
+          <SkillBox
+            key={skill.id}
+            title={skill.name}
+            description={skill.note[locale as "en" | "ar"]}
+            icon={skill.icon as SkillsIconType}
+          />
+        ))
       ) : (
-        <>Backend Not work</>
+        <>Skills Not Available Now</>
       )}
     </div>
   );

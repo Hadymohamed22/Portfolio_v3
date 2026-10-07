@@ -185,12 +185,14 @@
   ],
   "skillGroups": [
     {
+      "id": "ui-styling-skill-group",
       "name": {
         "en": "UI & Styling",
         "ar": "التصميم والتنسيقات"
       },
       "items": [
         {
+          "id": "tailwind_css_7xk2m9p4",
           "name": "Tailwindcss",
           "icon": "square-round-corner",
           "lightColor": "#00D4FF",
@@ -201,6 +203,7 @@
           }
         },
         {
+          "id": "shadcn_ui_3r8n1v6q",
           "name": "Shadcn",
           "icon": "component",
           "lightColor": "#6C63FF",
@@ -211,6 +214,7 @@
           }
         },
         {
+          "id": "framer_motion_l4y7q2x8",
           "name": "Framer Motion",
           "icon": "towel-rack",
           "lightColor": "#EB7BB8",
@@ -221,6 +225,7 @@
           }
         },
         {
+          "id": "responsive_design_h9v2c6m4",
           "name": "Responsive Design",
           "icon": "tablet-smartphone",
           "lightColor": "#475569",
@@ -233,12 +238,14 @@
       ]
     },
     {
+      "id": "frontend-development-skill-group",
       "name": {
         "en": "Frontend Development",
         "ar": "تطوير الواجهة الأمامية"
       },
       "items": [
         {
+          "id": "javascript_js_2k6p8n4t",
           "name": "Javascript",
           "icon": "braces",
           "lightColor": "rgb(202 138 4)",
@@ -249,6 +256,7 @@
           }
         },
         {
+          "id": "typescript_ts_9m3v7r1c",
           "name": "Typescript",
           "icon": "type-outline",
           "lightColor": "#2563EB",
@@ -259,16 +267,18 @@
           }
         },
         {
+          "id": "react_ui_5x1p7w9k",
           "name": "React",
           "icon": "app-window",
           "lightColor": "#6C63FF",
           "darkColor": "#ada9bb",
           "note": {
             "en": "Dynamic Interfaces",
-            "ar": null
+            "ar": "شاشات تفاعلية"
           }
         },
         {
+          "id": "nextjs_app_4v8n2c7s",
           "name": "Next.js",
           "icon": "layout-panel-left",
           "lightColor": "#0F172A",
@@ -281,12 +291,14 @@
       ]
     },
     {
+      "id": "tools-skill-group",
       "name": {
         "en": "Tools",
         "ar": "أدوات سير العمل"
       },
       "items": [
         {
+          "id": "postman_api_1p9w6m3d",
           "name": "Postman",
           "icon": "file-check",
           "lightColor": "#6C63FF",
@@ -297,6 +309,7 @@
           }
         },
         {
+          "id": "vite_build_8n4r2v7x",
           "name": "Vite",
           "icon": "gauge",
           "lightColor": "#9333EA",
@@ -307,6 +320,7 @@
           }
         },
         {
+          "id": "cli_terminal_2k7m5c8r",
           "name": "CLI",
           "icon": "terminal",
           "lightColor": "#0F172A",
@@ -317,6 +331,7 @@
           }
         },
         {
+          "id": "git_versioning_6t3x9q1w",
           "name": "Git",
           "icon": "git-branch",
           "lightColor": "#EA580C",
@@ -329,12 +344,14 @@
       ]
     },
     {
+      "id": "backend-development-skill-group",
       "name": {
         "en": "Backend Development",
         "ar": "تطوير الواجهات الخلفية"
       },
       "items": [
         {
+          "id": "nodejs_backend_4m7h2r8c",
           "name": "Node.js",
           "icon": "hexagon",
           "lightColor": "#83b84c",
@@ -345,6 +362,7 @@
           }
         },
         {
+          "id": "strapi_cms_3w9p6l2n",
           "name": "Strapi",
           "icon": "coffee",
           "lightColor": "#4945FF",
