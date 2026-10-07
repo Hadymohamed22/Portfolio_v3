@@ -78,6 +78,7 @@
   ],
   "statistics": [
     {
+      "id": "projects",
       "type": "projects",
       "value": "+25",
       "label": {
@@ -86,6 +87,7 @@
       }
     },
     {
+      "id": "clients",
       "type": "clients",
       "value": "+10",
       "label": {
@@ -94,6 +96,7 @@
       }
     },
     {
+      "id": "experience",
       "type": "exp",
       "value": "+2",
       "label": {
