@@ -2,43 +2,6 @@ import { Badge } from "@/shared/ui/badge";
 import site from "@/data/site.json";
 import { useTranslations } from "next-intl";
 
-type BadgeVariant =
-  | "react-default"
-  | "Next.js"
-  | "next-default"
-  | "typescript-default"
-  | "tailwind-default"
-  | "node-default"
-  | "full-time"
-  | "html"
-  | "main-tech"
-  | "cat-badge"
-  | "TypeScript"
-  | "Tailwind CSS"
-  | "destructive"
-  | "react"
-  | "RHF"
-  | "ZOD"
-  | "NextAuth"
-  | "shadcn"
-  | "nextIntl"
-  | "React Query"
-  | "css"
-  | "js"
-  | "sass"
-  | "bootstrap"
-  | "wordpress"
-  | "salla"
-  | "zid"
-  | "notAvailable"
-  | "part-time"
-  | "remote"
-  | "who-me"
-  | "case-study"
-  | "collaboration"
-  | null
-  | undefined;
-
 export default function Availability() {
   // Translations
   const t = useTranslations("home.hero.availability");
@@ -57,7 +20,7 @@ export default function Availability() {
           <Badge
             variant={
               site.availability.isAvailable
-                ? (site.availability.workType as unknown as BadgeVariant)
+                ? (site.availability.workType as BadgeVariant)
                 : "notAvailable"
             }
           >

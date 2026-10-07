@@ -1,24 +1,29 @@
 {
   "coreStack": [
     {
+      "id": "react",
       "name": "React.js",
-      "badge": "react-default"
+      "badgeVariant": "react-default"
     },
     {
+      "id": "next",
       "name": "Next.js",
-      "badge": "next-default"
+      "badgeVariant": "next-default"
     },
     {
+      "id": "typescript",
       "name": "Typescript",
-      "badge": "typescript-default"
+      "badgeVariant": "typescript-default"
     },
     {
+      "id": "tailwindcss",
       "name": "Tailwindcss",
-      "badge": "tailwind-default"
+      "badgeVariant": "tailwind-default"
     },
     {
+      "id": "node-js-basics",
       "name": "Node.js Basics",
-      "badge": "node-default"
+      "badgeVariant": "node-default"
     }
   ],
   "contact": {
