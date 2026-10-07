@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "query": "sport",
+    "name": {
+      "en": "Sport",
+      "ar": "رياضة"
+    },
+    "classname": "bg-[#A8A4FF]/10 text-[#A8A4FF] dark:bg-[#A8A4FF]/20 dark:text-[#C7C5FF] border border-[#A8A4FF]/30 dark:border-[#A8A4FF]/40"
+  },
+  {
+    "id": 2,
+    "query": "education",
+    "name": {
+      "ar": "تعليمي",
+      "en": "Education"
+    },
+    "classname": "bg-[#FF9DD0]/10 text-[#FF9DD0] dark:bg-[#FF9DD0]/20 dark:text-[#FFC2E3] border border-[#FF9DD0]/30 dark:border-[#FF9DD0]/40"
+  },
+  {
+    "id": 3,
+    "query": "e-commerce",
+    "name": {
+      "en": "E-Commerce",
+      "ar": "متاجر إلكترونية"
+    },
+    "classname": "bg-[#00D2FD]/10 text-[#00D2FD] dark:bg-[#00D2FD]/20 dark:text-[#7FE7FF] border border-[#00D2FD]/30 dark:border-[#00D2FD]/40"
+  },
+  {
+    "id": 4,
+    "query": "blogs",
+    "name": {
+      "ar": "مدونات",
+      "en": "Blogs"
+    },
+    "classname": "bg-amber-100 text-amber-800 border border-amber-200 dark:bg-amber-800/10 dark:text-amber-200 dark:border-amber-700"
+  }
+]

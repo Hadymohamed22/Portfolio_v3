@@ -1,79 +1,56 @@
 "use client";
+import { useMemo } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/shared/ui/tabs";
 import { useLocale, useTranslations } from "next-intl";
-import useCategories from "../_hooks/use-categories";
-import FiltersTabsSkeleton from "../_skeleton/filters-tabs.skeleton";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 import { PROJECT_CATEGORY_QUERY_KEY } from "../_constants/projects.constant";
+import { getCategories } from "@/data/categories";
 
 type Props = {
   tabListVariant?: "default" | "line" | "tabs";
-  filtersSkeleton?: React.ReactNode;
 };
 
-export default function FiltersTabs({
-  filtersSkeleton,
-  tabListVariant = "default",
-}: Props) {
+export default function FiltersTabs({ tabListVariant = "default" }: Props) {
   // Translations
   const t = useTranslations("home.projects.filters-tabs");
-  const locale = useLocale();
+  const locale = useLocale() as "en" | "ar";
 
   // Navigation
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Hooks
-  const { categories, isLoading } = useCategories();
-
   // Variables
+  const categories = useMemo(() => getCategories(locale), [locale]);
   const activeTab = searchParams.get(PROJECT_CATEGORY_QUERY_KEY) ?? "all";
 
   // Functions
-  const appendQuery = (
-    key: string = PROJECT_CATEGORY_QUERY_KEY,
-    value: string,
-  ) => {
-    const queryString = new URLSearchParams(searchParams.toString());
-    queryString.set(key, value);
-    router.replace(`${pathname}?${queryString.toString()}`, { scroll: false });
+  const setCategory = (value?: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (value) params.set(PROJECT_CATEGORY_QUERY_KEY, value);
+    else params.delete(PROJECT_CATEGORY_QUERY_KEY);
+
+    const qs = params.toString();
+    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
   };
 
-  const deleteQuery = (key: string = PROJECT_CATEGORY_QUERY_KEY) => {
-    const queryString = new URLSearchParams(searchParams.toString());
-    queryString.delete(key);
-    router.replace(`${pathname}?${queryString.toString()}`, { scroll: false });
-  };
-
-  return isLoading ? (
-    filtersSkeleton || <FiltersTabsSkeleton />
-  ) : (
+  return (
     <Tabs value={activeTab} dir={locale === "ar" ? "rtl" : "ltr"}>
       <TabsList variant={tabListVariant} className="flex-col md:flex-row">
-        <TabsTrigger
-          value="all"
-          onClick={() => deleteQuery(PROJECT_CATEGORY_QUERY_KEY)}
-        >
+        <TabsTrigger value="all" onClick={() => setCategory()}>
           {t("all")}
         </TabsTrigger>
-        {categories?.ok ? (
-          categories.data.map((cat) => (
-            <TabsTrigger
-              key={cat.id}
-              value={cat.query}
-              onClick={() => appendQuery(PROJECT_CATEGORY_QUERY_KEY, cat.query)}
-            >
-              {cat.name}
-            </TabsTrigger>
-          ))
-        ) : (
-          <>
-            <TabsTrigger value="business">Business</TabsTrigger>
-            <TabsTrigger value="landing-pages">Landing Pages</TabsTrigger>
-          </>
-        )}
+
+        {categories.map((cat) => (
+          <TabsTrigger
+            key={cat.id}
+            value={cat.query}
+            onClick={() => setCategory(cat.query)}
+          >
+            {cat.name}
+          </TabsTrigger>
+        ))}
       </TabsList>
     </Tabs>
   );

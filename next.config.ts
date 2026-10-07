@@ -2,18 +2,9 @@ import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   images: {
-    loader: "custom",
-    loaderFile: "./src/shared/lib/portfolio-image-loader.ts",
     remotePatterns: [
-      {
-        protocol: "http",
-        hostname: "localhost",
-        port: "1337",
-        pathname: "/uploads/**",
-      },
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
