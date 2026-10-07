@@ -16,7 +16,7 @@ function Tabs({
       data-slot="tabs"
       data-orientation={orientation}
       className={cn(
-        "group/tabs flex gap-2 data-horizontal:flex-col items-center md:items-end",
+        "group/tabs flex gap-1 md:gap-2 data-horizontal:flex-col items-center md:items-end",
         className,
       )}
       {...props}
@@ -97,7 +97,7 @@ function TabsContent({
   return (
     <TabsPrimitive.Content
       data-slot="tabs-content"
-      className={cn("flex-1 text-sm outline-none", className)}
+      className={cn("flex-1 text-xs md:text-sm outline-none", className)}
       {...props}
     />
   );

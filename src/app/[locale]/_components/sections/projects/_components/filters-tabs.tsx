@@ -51,7 +51,7 @@ export default function FiltersTabs({
     filtersSkeleton || <FiltersTabsSkeleton />
   ) : (
     <Tabs value={activeTab} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <TabsList variant={tabListVariant}>
+      <TabsList variant={tabListVariant} className="flex-col md:flex-row">
         <TabsTrigger
           value="all"
           onClick={() => deleteQuery(PROJECT_CATEGORY_QUERY_KEY)}

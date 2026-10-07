@@ -1,7 +1,5 @@
-import { Suspense } from "react";
 import { useTranslations } from "next-intl";
 import Availability from "./_components/availability";
-import AvailabilitySkeleton from "./_skeleton/availability-skeleton";
 import HeroActions from "./_components/hero-actions";
 
 export default function Hero() {
@@ -12,9 +10,7 @@ export default function Hero() {
     <section className="my-14 md:my-16">
       <div className="container mx-auto px-5">
         {/* Availability Component */}
-        <Suspense fallback={<AvailabilitySkeleton />}>
-          <Availability />
-        </Suspense>
+        <Availability />
 
         {/* Title */}
         <h1 className="md:max-w-10/12 text-6xl md:text-8xl rtl:md:text-9xl font-bold mb-6">

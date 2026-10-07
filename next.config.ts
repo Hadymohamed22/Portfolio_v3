@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   images: {
+    loader: "custom",
+    loaderFile: "./src/shared/lib/portfolio-image-loader.ts",
     remotePatterns: [
       {
         protocol: "http",

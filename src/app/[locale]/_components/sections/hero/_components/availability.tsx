@@ -1,18 +1,54 @@
 import { Badge } from "@/shared/ui/badge";
-import getAvailability from "../_utils/get-availability.util";
-import { getTranslations } from "next-intl/server";
+import site from "@/data/site.json";
+import { useTranslations } from "next-intl";
 
-export default async function Availability() {
+type BadgeVariant =
+  | "react-default"
+  | "Next.js"
+  | "next-default"
+  | "typescript-default"
+  | "tailwind-default"
+  | "node-default"
+  | "full-time"
+  | "html"
+  | "main-tech"
+  | "cat-badge"
+  | "TypeScript"
+  | "Tailwind CSS"
+  | "destructive"
+  | "react"
+  | "RHF"
+  | "ZOD"
+  | "NextAuth"
+  | "shadcn"
+  | "nextIntl"
+  | "React Query"
+  | "css"
+  | "js"
+  | "sass"
+  | "bootstrap"
+  | "wordpress"
+  | "salla"
+  | "zid"
+  | "notAvailable"
+  | "part-time"
+  | "remote"
+  | "who-me"
+  | "case-study"
+  | "collaboration"
+  | null
+  | undefined;
+
+export default function Availability() {
   // Translations
-  const t = await getTranslations("home.hero.availability");
+  const t = useTranslations("home.hero.availability");
 
   // Variables
-  const availability = await getAvailability();
 
   return (
     <div className="flex flex-col gap-2 mb-8 rtl:mb-12">
-      {!availability.ok ? (
-        availability.message
+      {!site.availability ? (
+        "Data Not Available Now"
       ) : (
         <>
           <p className="text-xs rtl:text-sm font-semibold text-gray-500 dark:text-gray-400 tracking-wide uppercase">
@@ -20,14 +56,14 @@ export default async function Availability() {
           </p>
           <Badge
             variant={
-              availability.data.isAvailable
-                ? availability.data.workType
+              site.availability.isAvailable
+                ? (site.availability.workType as unknown as BadgeVariant)
                 : "notAvailable"
             }
           >
             {t(
-              availability.data.isAvailable
-                ? availability.data.workType
+              site.availability.isAvailable
+                ? site.availability.workType
                 : "not-available",
             )}
           </Badge>
