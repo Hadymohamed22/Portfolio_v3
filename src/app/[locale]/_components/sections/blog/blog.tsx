@@ -1,8 +1,6 @@
 import SectionHeader from "@/shared/components/section-header";
 import { useTranslations } from "next-intl";
 import PostsCarousel from "./_components/posts-carousel";
-import { Suspense } from "react";
-import PostsCarouselSkeleton from "./_skeleton/posts-carousel.skeleton";
 
 export default function Blog() {
   // Translations
@@ -23,9 +21,7 @@ export default function Blog() {
         />
 
         {/* Posts Carousel */}
-        <Suspense fallback={<PostsCarouselSkeleton />}>
-          <PostsCarousel />
-        </Suspense>
+        <PostsCarousel />
       </div>
     </section>
   );

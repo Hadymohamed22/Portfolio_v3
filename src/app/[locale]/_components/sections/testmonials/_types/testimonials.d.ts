@@ -1,8 +1,14 @@
 type TestimonialItem = {
   id: number | string;
   rate: number;
-  name: string;
-  comment: string;
+  name: {
+    ar: string;
+    en: string;
+  };
+  comment: {
+    ar: string;
+    en: string;
+  };
   jobTitle: string;
   customerProfileImage: {
     url: string;

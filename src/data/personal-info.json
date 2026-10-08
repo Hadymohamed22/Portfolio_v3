@@ -1,78 +1,83 @@
 {
   "testimonials": [
     {
+      "id": "ahmed-samir",
       "rate": 5,
       "name": {
         "en": "Ahmed Samir",
         "ar": "أحمد سمير"
       },
-      "jobTitle": {
-        "en": "Business Owner",
-        "ar": "CEO شركة تسويق"
-      },
+      "jobTitle": "Business Owner",
       "comment": {
         "en": "Great experience overall. The website is fast, clean, and actually helped us get more inquiries. Communication was smooth the whole time.",
         "ar": "اشتغلت معاه في موقع لشركتنا وكان ملتزم جدًا في المواعيد، وسرعة الموقع بعد الشغل بقت ممتازة. فرق معانا فعلًا في عدد العملاء اللي بيكلمونا."
+      },
+      "customerProfileImage": {
+        "url": "https://ui-avatars.com/api/?name=Ahmed+Samir&background=0f172a&color=ffffff&size=256"
       }
     },
     {
+      "id": "fahad-al-qahtani",
       "rate": 5,
       "name": {
         "en": "Fahad Al-Qahtani",
         "ar": "فهد القحطاني"
       },
-      "jobTitle": {
-        "en": "E-commerce Owner",
-        "ar": "صاحب متجر إلكتروني"
-      },
+      "jobTitle": "E-commerce Owner",
       "comment": {
         "en": "Very professional and easy to work with. He built a landing page for our campaign and the conversion rate was noticeably better.",
         "ar": "تعامل راقي واحترافية عالية، سوا لنا صفحة هبوط لحملة إعلانية وكانت النتائج فوق المتوقع. أنصح بالتعامل معه."
+      },
+      "customerProfileImage": {
+        "url": "https://ui-avatars.com/api/?name=Fahad+Al-Qahtani&background=1d4ed8&color=ffffff&size=256"
       }
     },
     {
+      "id": "abdullah-al-anzi",
       "rate": 5,
       "name": {
         "en": "Abdullah Al-Anzi",
         "ar": "عبدالله العنزي"
       },
-      "jobTitle": {
-        "en": "Entrepreneur",
-        "ar": "رائد أعمال"
-      },
+      "jobTitle": "Entrepreneur",
       "comment": {
         "en": "Fast delivery and great attention to detail. He also suggested improvements that made the final result even better.",
         "ar": "سرعة التنفيذ كانت ممتازة، وكمان كان بيقترح تحسينات أنا ماكنتش واخد بالي منها. حسيت إني شغال مع حد فاهم مش بس بينفذ."
+      },
+      "customerProfileImage": {
+        "url": "https://ui-avatars.com/api/?name=Abdullah+Al-Anzi&background=16a34a&color=ffffff&size=256"
       }
     },
     {
+      "id": "nora-al-subaie",
       "rate": 5,
       "name": {
         "en": "Nora Al-Subaie",
         "ar": "نورة السبيعي"
       },
-      "jobTitle": {
-        "en": "Brand Owner",
-        "ar": "صاحبة براند"
-      },
+      "jobTitle": "Brand Owner",
       "comment": {
         "en": "Very responsive and flexible with changes. The whole process was smooth and stress-free.",
         "ar": "متعاون جدًا وسهل في التواصل، وأي تعديل كنا بنطلبه كان بيتنفذ بسرعة. تجربة مريحة جدًا."
+      },
+      "customerProfileImage": {
+        "url": "https://ui-avatars.com/api/?name=Nora+Al-Subaie&background=ec4899&color=ffffff&size=256"
       }
     },
     {
-      "rate": 5,
+      "id": "omar-salah",
+      "rate": 4,
       "name": {
         "en": "Omar Salah",
         "ar": "عمر صلاح"
       },
-      "jobTitle": {
-        "en": "Startup Founder",
-        "ar": "Startup Founder"
-      },
+      "jobTitle": "Startup Founder",
       "comment": {
         "en": "What I appreciated most is the attention to small details. The final product felt polished and professional.",
         "ar": "أكتر حاجة عجبتني إنه بيهتم بالتفاصيل الصغيرة، وده اللي فرق في شكل الموقع النهائي."
+      },
+      "customerProfileImage": {
+        "url": "https://ui-avatars.com/api/?name=Omar+Salah&background=f59e0b&color=ffffff&size=256"
       }
     }
   ],

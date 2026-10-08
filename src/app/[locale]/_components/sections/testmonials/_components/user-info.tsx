@@ -15,7 +15,12 @@ export default function UserInfo({
     <div className="user flex items-center gap-4 mt-auto">
       {/* Image Container */}
       <div className="user-image size-8 md:size-10 rounded-full relative outline-2 outline-cyan-500 dark:outline-cyan-400 overflow-hidden">
-        <Image src={image} alt={`${name} profile image`} fill />
+        <Image
+          src={image}
+          alt={`${name} profile image`}
+          fill
+          sizes="(max-width: 767px) 32px, 40px"
+        />
       </div>
 
       {/* User Info */}

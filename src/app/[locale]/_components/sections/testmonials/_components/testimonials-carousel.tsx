@@ -41,8 +41,8 @@ export default function TestimonialsCarousel({ clients = [] }: Props) {
             className="ps-6 md:pl-8 md:basis-1/2 lg:basis-1/3 flex"
           >
             <TestimonialBox
-              comment={client.comment}
-              username={client.name}
+              comment={client.comment[locale as "en" | "ar"]}
+              username={client.name[locale as "en" | "ar"]}
               jobTitle={client.jobTitle}
               starsNum={client.rate}
               image={client.customerProfileImage.url}
