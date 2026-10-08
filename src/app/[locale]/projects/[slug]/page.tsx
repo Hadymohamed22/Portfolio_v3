@@ -1,11 +1,11 @@
 import { getLocale } from "next-intl/server";
-import getProjectBySlug from "./_actions/get-product-by-slug.action";
 import CaseStudy from "./_components/case-study";
 import Collaboration from "./_components/collaboration";
 import ContactMeNow from "./_components/contact-me-now";
 import ProjectGallery from "./_components/project-gallery";
 import ProjectHero from "./_components/project-hero";
 import TechStack from "./_components/tech-stack";
+import { getProject, Locale } from "@/data/projects";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -17,49 +17,46 @@ export default async function Page({ params }: Props) {
 
   // Variables
   const { slug } = await params;
-  const payload = await getProjectBySlug(slug, locale);
-  const currentProject = payload.ok && payload.data[0];
+  const project = getProject(slug, locale as Locale);
 
   return (
     <main>
       {/* Hero */}
-      {currentProject && (
+      {project && (
         <ProjectHero
-          title={currentProject.title}
-          description={currentProject.description}
-          repoLink={currentProject.repoLink}
-          imgSrc={currentProject.mainImage?.url}
-          imgAlt={currentProject.mainImage?.alternativeText}
-          liveLink={currentProject.siteLink}
+          title={project.title}
+          description={project.description}
+          repoLink={project.repoLink}
+          imgSrc={project.mainImage?.url}
+          imgAlt={project.mainImage?.alternativeText}
+          liveLink={project.siteLink}
         />
       )}
 
       {/* is A Collaborator */}
-      {currentProject && currentProject.isACollaborator && (
+      {project && project.isACollaborator && (
         <Collaboration
-          role={currentProject.collaborationRole}
-          collaborations={currentProject.collaborations}
+          role={project.collaborationRole}
+          collaborations={project.collaborations}
         />
       )}
 
       {/* Case Study */}
-      {currentProject && (
+      {project && (
         <CaseStudy
-          bugs={currentProject.bugs}
-          motivation={currentProject.purpose}
-          solution={currentProject.solutation}
-          efficiencyPercentage={currentProject.IncreasedEfficiencyPercentage}
-          accuracyPercentage={currentProject.accuracyPercentage}
+          bugs={project.bugs}
+          motivation={project.purpose}
+          solution={project.solutation}
+          efficiencyPercentage={project.IncreasedEfficiencyPercentage}
+          accuracyPercentage={project.accuracyPercentage}
         />
       )}
 
       {/* Tech Stack */}
-      {currentProject && <TechStack skills={currentProject.technologies} />}
+      {project && <TechStack skills={project.technologies} />}
 
       {/* Project Gallery */}
-      {currentProject && (
-        <ProjectGallery projectGallery={currentProject.projectGallary} />
-      )}
+      {project && <ProjectGallery projectGallery={project.projectGallary} />}
 
       {/* Contact Me */}
       <ContactMeNow />

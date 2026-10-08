@@ -2,8 +2,9 @@ import { Building, Code, Gauge, PencilRuler, Rocket } from "lucide-react";
 import ServiceInfoBoxFeat from "./service-info-box-feat";
 import CTA from "../../_components/sections/about/_components/cta";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ServiceFeature } from "../_types/all-services";
+import { Locale } from "@/data/projects";
 
 const ServicesInfoBoxsIcons = {
   buildings: (
@@ -49,6 +50,7 @@ export default function ServiceInfoBox({
 }: Props) {
   // Translations
   const t = useTranslations("services.all-services");
+  const locale = useLocale();
 
   return (
     <div
@@ -81,7 +83,10 @@ export default function ServiceInfoBox({
         {/* Service Info Feature Box */}
         <div className="features flex flex-wrap gap-x-6 gap-y-2 mt-4 mb-2">
           {features.map((feat) => (
-            <ServiceInfoBoxFeat key={feat.id} text={feat.text} />
+            <ServiceInfoBoxFeat
+              key={feat.id}
+              text={feat.text[locale as Locale]}
+            />
           ))}
         </div>
 

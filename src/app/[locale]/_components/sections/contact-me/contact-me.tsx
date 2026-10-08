@@ -1,18 +1,15 @@
-import getContactInfo from "@/shared/lib/actions/get-contact-info.action";
 import ContactInfo from "./_components/contact-info";
 import { Badge } from "@/shared/ui/badge";
-import { getTranslations } from "next-intl/server";
 import SocialLinks from "./_components/social-links";
-import { Suspense } from "react";
-import ContactInfoSkeleton from "./_skeleton/contact-info.skeleton";
-import SocialLinksSkeleton from "./_skeleton/social-links.skeleton";
+import site from "@/data/site.json";
+import { useTranslations } from "next-intl";
 
-export default async function ContactMe() {
+export default function ContactMe() {
   // Translation
-  const t = await getTranslations("home.contact-me");
+  const t = useTranslations("home.contact-me");
 
   // Variables
-  const contactMeInfo = await getContactInfo();
+  const contactMeInfo = site["contact"];
 
   return (
     <section
@@ -31,7 +28,7 @@ export default async function ContactMe() {
     >
       <div className="container mx-auto shadow-sm bg-white/70 dark:bg-white/3 border border-zinc-200 dark:border-white/5 px-12 py-16 md:p-20 lg:p-24 rounded-[3rem] backdrop-blur-lg">
         {/* Available In Cairo */}
-        {contactMeInfo.ok && contactMeInfo.data.availableInCairo && (
+        {contactMeInfo.availableInCairo && (
           <Badge variant={"full-time"} className="mb-4">
             {t("available-in-cairo")}
           </Badge>
@@ -54,14 +51,10 @@ export default async function ContactMe() {
         </p>
 
         {/* Contact Info */}
-        <Suspense fallback={<ContactInfoSkeleton />}>
-          <ContactInfo />
-        </Suspense>
+        <ContactInfo />
 
         {/* Social Links */}
-        <Suspense fallback={<SocialLinksSkeleton />}>
-          <SocialLinks />
-        </Suspense>
+        <SocialLinks />
       </div>
     </section>
   );

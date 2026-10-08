@@ -1,13 +1,10 @@
-import getPersonalInfo from "@/shared/lib/actions/get-personal-info.action";
+import site from "@/data/site.json";
 import { Badge } from "@/shared/ui/badge";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export default async function CoreStack() {
+export default function CoreStack() {
   // Translation
-  const t = await getTranslations("home.about-me");
-
-  // Variables
-  const stacks = await getPersonalInfo();
+  const t = useTranslations("home.about-me");
 
   return (
     <div className="core-stack mt-4">
@@ -18,9 +15,9 @@ export default async function CoreStack() {
 
       {/* Stack */}
       <div className="content flex items-center gap-3 flex-wrap">
-        {stacks.ok ? (
-          stacks.data.coreStack.map((tech) => (
-            <Badge variant={tech.badgeVariant} key={tech.id}>
+        {site.coreStack ? (
+          site.coreStack.map((tech) => (
+            <Badge variant={tech.badgeVariant as BadgeVariant} key={tech.id}>
               {tech.name}
             </Badge>
           ))

@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import getContactInfo from "@/shared/lib/actions/get-contact-info.action";
+import site from "@/data/site.json";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
 import { Button } from "@/shared/ui/button";
 import { MessageCircleCode } from "lucide-react";
@@ -11,7 +11,7 @@ type Props = {
 
 export default async function CTA({ talkText, className }: Props) {
   // Variables
-  const contactInfo = await getContactInfo();
+  const contactMeInfo = site["contact"];
 
   return (
     <Button
@@ -22,7 +22,7 @@ export default async function CTA({ talkText, className }: Props) {
       asChild
     >
       <Link
-        href={`https://wa.me/${contactInfo.ok ? contactInfo.data.phone : "+201029379363"}`}
+        href={`https://wa.me/${contactMeInfo.phone}`}
         className="flex items-center gap-2"
       >
         <MessageCircleCode />

@@ -1,7 +1,5 @@
 import SectionHeader from "@/shared/components/section-header";
 import ServicesContent from "./_components/services-content";
-import { Suspense } from "react";
-import ServicesContentSkeleton from "./_skeleton/services-content.skeleton";
 import { useTranslations } from "next-intl";
 
 export default function Services() {
@@ -24,9 +22,7 @@ export default function Services() {
         />
 
         {/* Content */}
-        <Suspense fallback={<ServicesContentSkeleton />}>
-          <ServicesContent />
-        </Suspense>
+        <ServicesContent />
       </div>
     </section>
   );

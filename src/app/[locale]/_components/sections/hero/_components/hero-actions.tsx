@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import getContactInfo from "@/shared/lib/actions/get-contact-info.action";
+import site from "@/data/site.json";
 import { Button } from "@/shared/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -10,7 +10,7 @@ type Props = {
 
 export default async function HeroActions({ talkText, projectsText }: Props) {
   // Variables
-  const contactInfo = await getContactInfo();
+  const contactMeInfo = site["contact"];
 
   return (
     <div className="mt-10 md:mt-12 flex gap-4 items-center">
@@ -27,11 +27,7 @@ export default async function HeroActions({ talkText, projectsText }: Props) {
         className="font-inter rtl:font-tajawal animate-pulse"
         variant={"outline"}
       >
-        <Link
-          href={`https://wa.me/${contactInfo.ok ? contactInfo.data.phone : "+201029379363"}`}
-        >
-          {talkText}
-        </Link>
+        <Link href={`https://wa.me/${contactMeInfo.phone}`}>{talkText}</Link>
       </Button>
     </div>
   );

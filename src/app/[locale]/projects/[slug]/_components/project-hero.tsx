@@ -98,6 +98,7 @@ export default function ProjectHero({
               src={imgSrc}
               alt={imgAlt ?? ""}
               fill
+              sizes="(min-width: 1024px) 520px, 0px"
               className="relative! rounded-xl"
             />
           </div>

@@ -2,7 +2,10 @@ import { ServicesInfoBoxsIconType } from "../_components/service-info-box";
 
 export type ServiceFeature = {
   id: number;
-  text: string;
+  text: {
+    en: string;
+    ar: string;
+  };
 };
 
 export type AllService = {
