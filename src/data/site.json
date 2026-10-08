@@ -91,6 +91,7 @@
   ],
   "allServices": [
     {
+      "id": 1,
       "icon": "buildings",
       "title": {
         "en": "Business Websites",
@@ -102,24 +103,37 @@
       },
       "features": [
         {
-          "en": "CMS Integration",
-          "ar": "لوحة تحكم متكاملة"
+          "id": 1,
+          "text": {
+            "en": "CMS Integration",
+            "ar": "لوحة تحكم متكاملة"
+          }
         },
         {
-          "en": "Multi-page Architecture",
-          "ar": "بنية متعددة الصفحات"
+          "id": 2,
+          "text": {
+            "en": "Multi-page Architecture",
+            "ar": "بنية متعددة الصفحات"
+          }
         },
         {
-          "en": "SEO Strategy",
-          "ar": "استراتيجية تحسين محركات البحث"
+          "id": 3,
+          "text": {
+            "en": "SEO Strategy",
+            "ar": "استراتيجية تحسين محركات البحث"
+          }
         },
         {
-          "en": "Advanced Analytics",
-          "ar": "التحليلات المتقدمة"
+          "id": 4,
+          "text": {
+            "en": "Advanced Analytics",
+            "ar": "التحليلات المتقدمة"
+          }
         }
       ]
     },
     {
+      "id": 2,
       "icon": "rocket",
       "title": {
         "en": "High-Conversion Landing Pages",
@@ -131,16 +145,23 @@
       },
       "features": [
         {
-          "en": "Optimized Funnels",
-          "ar": "مسارات تحويل مُحسّنة"
+          "id": 1,
+          "text": {
+            "en": "Optimized Funnels",
+            "ar": "مسارات تحويل مُحسّنة"
+          }
         },
         {
-          "en": "Business Suitable",
-          "ar": "مناسبة لهوية البيزنس"
+          "id": 2,
+          "text": {
+            "en": "Business Suitable",
+            "ar": "مناسبة لهوية البيزنس"
+          }
         }
       ]
     },
     {
+      "id": 3,
       "icon": "pen",
       "title": {
         "en": "UI Design to Code",
@@ -152,16 +173,23 @@
       },
       "features": [
         {
-          "en": "Component-driven architecture for rapid scaling.",
-          "ar": "بنية قائمة على المكونات تتيح التوسع السريع."
+          "id": 1,
+          "text": {
+            "en": "Component-driven architecture for rapid scaling.",
+            "ar": "بنية قائمة على المكونات تتيح التوسع السريع."
+          }
         },
         {
-          "en": "Responsive fluid typography & spacing systems.",
-          "ar": "أنظمة مرنة ومتجاوبة."
+          "id": 2,
+          "text": {
+            "en": "Responsive fluid typography & spacing systems.",
+            "ar": "أنظمة مرنة ومتجاوبة."
+          }
         }
       ]
     },
     {
+      "id": 4,
       "icon": "speed",
       "title": {
         "en": "Website Optimization",
@@ -173,16 +201,25 @@
       },
       "features": [
         {
-          "en": "LIGHTHOUSE 100",
-          "ar": "LIGHTHOUSE 100"
+          "id": 1,
+          "text": {
+            "en": "LIGHTHOUSE 100",
+            "ar": "LIGHTHOUSE 100"
+          }
         },
         {
-          "en": "ASSET MINIFICATION",
-          "ar": "تقليص حجم الملفات"
+          "id": 2,
+          "text": {
+            "en": "ASSET MINIFICATION",
+            "ar": "تقليص حجم الملفات"
+          }
         },
         {
-          "en": "CACHING STRATEGY",
-          "ar": "استراتيجية التخزين المؤقت"
+          "id": 3,
+          "text": {
+            "en": "CACHING STRATEGY",
+            "ar": "استراتيجية التخزين المؤقت"
+          }
         }
       ]
     }
