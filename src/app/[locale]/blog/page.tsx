@@ -27,10 +27,10 @@ export default function Page() {
             strokeLinejoin="round"
           />
         </svg>
-        <span className="text-zinc-800 dark:text-white text-2xl md:text-3xl font-extrabold font-jetbrains-mono">
+        <span className="text-zinc-800 dark:text-white text-2xl md:text-3xl font-extrabold font-jetbrains-mono rtl:font-tajawal">
           {t("in-progress")}
         </span>
-        <span className="text-zinc-500 dark:text-zinc-300 text-base mt-2 font-inter text-center max-w-md">
+        <span className="text-zinc-500 dark:text-zinc-300 text-base mt-2 text-center max-w-md font-jetbrains-mono">
           🚧 This section is still under construction. Please check back soon!
         </span>
       </div>

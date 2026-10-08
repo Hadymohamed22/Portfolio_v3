@@ -1,49 +1,45 @@
-import getContactInfoDetails from "../_actions/get-contact-info-details.action";
+import { useTranslations } from "next-intl";
 import ContactDetailsBox from "./contact-details-box";
-import { getLocale, getTranslations } from "next-intl/server";
+import site from "@/data/site.json";
 
-export default async function ContactInfoDetails() {
+export default function ContactInfoDetails() {
   // Translations
-  const t = await getTranslations("contact.contact-details-boxs");
-  const locale = await getLocale();
+  const t = useTranslations("contact.contact-details-boxs");
 
   // Variables
-  const contactInfo = await getContactInfoDetails(locale);
-  const INITIAL_DATA = (
-    <>
-      {/* Email */}
-      <ContactDetailsBox
-        iconVariant="mail"
-        title={t("email")}
-        content="hadysapry60@gmail.com"
-        link="mailto:hadysapry60@gmail.com"
-      />
-
-      {/* LinkedIn */}
-      <ContactDetailsBox
-        iconVariant="linkedin"
-        title={t("linkedin-profile")}
-        content="linkedin.com/in/hady-elnifaly"
-        link="https://linkedin.com/in/hady-elnifaly"
-      />
-
-      {/* WhatsApp */}
-      <ContactDetailsBox
-        iconVariant="whatsapp"
-        title={t("whatsapp-direct")}
-        content="+201200253203"
-        link="https://wa.me/+201200253203"
-      />
-    </>
-  );
+  const contactMeInfo = [
+    ...(site.contact?.email
+      ? [{ id: "email", iconVariant: "mail", info: site.contact.email }]
+      : []),
+    ...(site.contact?.linkedin
+      ? [
+          {
+            id: "linkedin",
+            iconVariant: "linkedin",
+            info: site.contact.linkedin.replace(/^https?:\/\//, ""),
+          },
+        ]
+      : []),
+    ...(site.contact?.whatsapp
+      ? [
+          {
+            id: "whatsapp",
+            iconVariant: "whatsapp",
+            info: site.contact.whatsapp
+              .replace(/^https?:\/\/wa\.me\//i, "")
+              .replace(/[^+\d]/g, ""),
+          },
+        ]
+      : []),
+  ];
 
   return (
     <div className="contact-info-details flex flex-col gap-4">
-      {contactInfo.ok
-        ? contactInfo.data.map((ci) => (
+      {contactMeInfo.length > 0
+        ? contactMeInfo.map((ci) => (
             <ContactDetailsBox
               key={ci.id}
-              iconVariant={ci.iconVariant}
+              iconVariant={ci.iconVariant as "mail" | "linkedin" | "whatsapp"}
               title={t(
                 ci.iconVariant === "mail"
                   ? "email"
@@ -61,7 +57,7 @@ export default async function ContactInfoDetails() {
               }
             />
           ))
-        : INITIAL_DATA}
+        : null}
     </div>
   );
 }
