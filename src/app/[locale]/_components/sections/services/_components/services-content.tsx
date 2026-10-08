@@ -1,21 +1,21 @@
-import { getLocale } from "next-intl/server";
-import getServices from "../_actions/get-services.action";
-import ServicesCarousel from "@/shared/components/services-carousel";
+import ServicesCarousel, {
+  IconVariantsType,
+} from "@/shared/components/services-carousel";
+import site from "@/data/site.json";
 
-export default async function ServicesContent() {
-  // Translation
-  const locale = await getLocale();
-
+export default function ServicesContent() {
   // Variables
-  const services = await getServices(locale);
+  const services = site.services;
+  const slides = site.services.map((s) => ({
+    ...s,
+    icon: s.icon as IconVariantsType,
+  }));
 
   return (
     <div className="services-section-content">
       {/* Services Carousel */}
-      {services.ok &&
-      Array.isArray(services.data) &&
-      services.data.length > 0 ? (
-        <ServicesCarousel slides={services.data} />
+      {services && Array.isArray(services) && services.length > 0 ? (
+        <ServicesCarousel slides={slides} />
       ) : (
         <ServicesCarousel />
       )}

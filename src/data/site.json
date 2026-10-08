@@ -41,6 +41,7 @@
   },
   "services": [
     {
+      "id": 1,
       "icon": "rocket",
       "name": {
         "en": "Business Websites",
@@ -52,6 +53,7 @@
       }
     },
     {
+      "id": 2,
       "icon": "plane-landing",
       "name": {
         "en": "Landing Page",
@@ -63,6 +65,7 @@
       }
     },
     {
+      "id": 3,
       "icon": "code",
       "name": {
         "en": "UI Design to Code",
@@ -74,6 +77,7 @@
       }
     },
     {
+      "id": 4,
       "icon": "circle-gauge",
       "name": {
         "en": "Optimization",
