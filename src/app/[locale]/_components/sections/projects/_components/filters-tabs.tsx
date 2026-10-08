@@ -37,7 +37,7 @@ export default function FiltersTabs({ tabListVariant = "default" }: Props) {
 
   return (
     <Tabs value={activeTab} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <TabsList variant={tabListVariant} className="flex-col md:flex-row">
+      <TabsList variant={tabListVariant} className="md:flex-row">
         <TabsTrigger value="all" onClick={() => setCategory()}>
           {t("all")}
         </TabsTrigger>

@@ -65,7 +65,7 @@ function TabsTrigger({
       data-slot="tabs-trigger"
       className={cn(
         // base styles
-        "cursor-pointer relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 py-1 px-3 md:py-1.5 md:px-4 rounded-full text-xs md:text-sm font-medium whitespace-nowrap transition-all group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 has-data-[icon=inline-end]:pe-1 has-data-[icon=inline-start]:ps-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "cursor-pointer relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1 md:gap-1.5 py-1 px-1.5 md:py-1.5 md:px-4 rounded-full text-xs md:text-sm font-medium whitespace-nowrap transition-all group-data-vertical/tabs:w-full group-data-vertical/tabs:justify-start hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-1 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 has-data-[icon=inline-end]:pe-1 has-data-[icon=inline-start]:ps-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
         // default border, but remove border in tabs variant
         "border border-transparent group-data-[variant=tabs]/tabs-list:border-0",
         // base unactive color
