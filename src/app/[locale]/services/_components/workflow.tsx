@@ -16,7 +16,7 @@ export default function Workflow() {
         {/* Image */}
         <div className="image-container w-full lg:w-xl h-120 lg:h-90 rounded-2xl shadow-xl relative overflow-hidden">
           <Image
-            src="/assets/images/workflow-img.png"
+            src="/assets/images/workflow-img.webp"
             alt="Workflow process illustration"
             fill
             objectFit="cover"

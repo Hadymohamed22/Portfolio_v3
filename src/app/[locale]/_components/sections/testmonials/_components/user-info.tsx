@@ -8,7 +8,7 @@ type Props = {
 
 export default function UserInfo({
   name,
-  image = "/assets/images/default-user-image.png",
+  image = "/assets/images/default-user-image.webp",
   jobTitle,
 }: Props) {
   return (

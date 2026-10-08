@@ -110,7 +110,7 @@
     "contributions": [],
     "images": {
       "main": {
-        "src": "/assets/images/exam-app/exam-app-cover.png",
+        "src": "/assets/images/exam-app/exam-app-cover.webp",
         "alt": {
           "en": "Exam App — main screenshot",
           "ar": "تطبيق امتحانات تفاعلى — لقطة الشاشة الرئيسية"
@@ -119,7 +119,7 @@
         "height": 4375
       },
       "sub": {
-        "src": "/assets/images/exam-app/exam-app-cover.png",
+        "src": "/assets/images/exam-app/exam-app-cover.webp",
         "alt": {
           "en": "Exam App — preview screenshot",
           "ar": "تطبيق امتحانات تفاعلى — لقطة معاينة"
@@ -129,7 +129,7 @@
       },
       "gallery": [
         {
-          "src": "/assets/images/exam-app/exam-app-1.png",
+          "src": "/assets/images/exam-app/exam-app-1.webp",
           "alt": {
             "en": "Exam App — screenshot 1 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 1 من 7"
@@ -138,7 +138,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/exam-app/exam-app-2.png",
+          "src": "/assets/images/exam-app/exam-app-2.webp",
           "alt": {
             "en": "Exam App — screenshot 2 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 2 من 7"
@@ -147,7 +147,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/exam-app/exam-app-3.png",
+          "src": "/assets/images/exam-app/exam-app-3.webp",
           "alt": {
             "en": "Exam App — screenshot 3 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 3 من 7"
@@ -156,7 +156,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/exam-app/exam-app-4.png",
+          "src": "/assets/images/exam-app/exam-app-4.webp",
           "alt": {
             "en": "Exam App — screenshot 4 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 4 من 7"
@@ -165,7 +165,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/exam-app/exam-app-5.png",
+          "src": "/assets/images/exam-app/exam-app-5.webp",
           "alt": {
             "en": "Exam App — screenshot 5 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 5 من 7"
@@ -174,7 +174,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/exam-app/exam-app-6.png",
+          "src": "/assets/images/exam-app/exam-app-6.webp",
           "alt": {
             "en": "Exam App — screenshot 6 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 6 من 7"
@@ -183,7 +183,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/exam-app/exam-app-7.png",
+          "src": "/assets/images/exam-app/exam-app-7.webp",
           "alt": {
             "en": "Exam App — screenshot 7 of 7",
             "ar": "تطبيق امتحانات تفاعلى — لقطة 7 من 7"
@@ -378,7 +378,7 @@
     ],
     "images": {
       "main": {
-        "src": "/assets/images/rose-app/main.png",
+        "src": "/assets/images/rose-app/main.webp",
         "alt": {
           "en": "Rose App — main screenshot",
           "ar": "متجر هدايا الكترونى — لقطة الشاشة الرئيسية"
@@ -387,7 +387,7 @@
         "height": 4375
       },
       "sub": {
-        "src": "/assets/images/rose-app/main.png",
+        "src": "/assets/images/rose-app/main.webp",
         "alt": {
           "en": "Rose App — preview screenshot",
           "ar": "متجر هدايا الكترونى — لقطة معاينة"
@@ -397,7 +397,7 @@
       },
       "gallery": [
         {
-          "src": "/assets/images/rose-app/1.png",
+          "src": "/assets/images/rose-app/1.webp",
           "alt": {
             "en": "Rose App — screenshot 1 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 1 من 8"
@@ -406,7 +406,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/2.png",
+          "src": "/assets/images/rose-app/2.webp",
           "alt": {
             "en": "Rose App — screenshot 2 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 2 من 8"
@@ -415,7 +415,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/3.png",
+          "src": "/assets/images/rose-app/3.webp",
           "alt": {
             "en": "Rose App — screenshot 3 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 3 من 8"
@@ -424,7 +424,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/4.png",
+          "src": "/assets/images/rose-app/4.webp",
           "alt": {
             "en": "Rose App — screenshot 4 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 4 من 8"
@@ -433,7 +433,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/5.png",
+          "src": "/assets/images/rose-app/5.webp",
           "alt": {
             "en": "Rose App — screenshot 5 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 5 من 8"
@@ -442,7 +442,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/6.png",
+          "src": "/assets/images/rose-app/6.webp",
           "alt": {
             "en": "Rose App — screenshot 6 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 6 من 8"
@@ -451,7 +451,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/7.png",
+          "src": "/assets/images/rose-app/7.webp",
           "alt": {
             "en": "Rose App — screenshot 7 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 7 من 8"
@@ -460,7 +460,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/rose-app/8.png",
+          "src": "/assets/images/rose-app/8.webp",
           "alt": {
             "en": "Rose App — screenshot 8 of 8",
             "ar": "متجر هدايا الكترونى — لقطة 8 من 8"
@@ -633,7 +633,7 @@
     ],
     "images": {
       "main": {
-        "src": "/assets/images/fitness-app/fit-main.png",
+        "src": "/assets/images/fitness-app/fit-main.webp",
         "alt": {
           "en": "Fitness Tracking App — main screenshot",
           "ar": "تطبيق تتبع اللياقة البدنية — لقطة الشاشة الرئيسية"
@@ -642,7 +642,7 @@
         "height": 4375
       },
       "sub": {
-        "src": "/assets/images/fitness-app/fit-main.png",
+        "src": "/assets/images/fitness-app/fit-main.webp",
         "alt": {
           "en": "Fitness Tracking App — preview screenshot",
           "ar": "تطبيق تتبع اللياقة البدنية — لقطة معاينة"
@@ -652,7 +652,7 @@
       },
       "gallery": [
         {
-          "src": "/assets/images/fitness-app/fit1.png",
+          "src": "/assets/images/fitness-app/fit1.webp",
           "alt": {
             "en": "Fitness Tracking App — screenshot 1 of 5",
             "ar": "تطبيق تتبع اللياقة البدنية — لقطة 1 من 5"
@@ -661,7 +661,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/fitness-app/fit2.png",
+          "src": "/assets/images/fitness-app/fit2.webp",
           "alt": {
             "en": "Fitness Tracking App — screenshot 2 of 5",
             "ar": "تطبيق تتبع اللياقة البدنية — لقطة 2 من 5"
@@ -670,7 +670,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/fitness-app/fit3.png",
+          "src": "/assets/images/fitness-app/fit3.webp",
           "alt": {
             "en": "Fitness Tracking App — screenshot 3 of 5",
             "ar": "تطبيق تتبع اللياقة البدنية — لقطة 3 من 5"
@@ -679,7 +679,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/fitness-app/fit4.png",
+          "src": "/assets/images/fitness-app/fit4.webp",
           "alt": {
             "en": "Fitness Tracking App — screenshot 4 of 5",
             "ar": "تطبيق تتبع اللياقة البدنية — لقطة 4 من 5"
@@ -688,7 +688,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/fitness-app/fit5.png",
+          "src": "/assets/images/fitness-app/fit5.webp",
           "alt": {
             "en": "Fitness Tracking App — screenshot 5 of 5",
             "ar": "تطبيق تتبع اللياقة البدنية — لقطة 5 من 5"
@@ -788,7 +788,7 @@
     "contributions": [],
     "images": {
       "main": {
-        "src": "/assets/images/education-platform/pla-main.png",
+        "src": "/assets/images/education-platform/pla-main.webp",
         "alt": {
           "en": "Chemistry Learning Platform — main screenshot",
           "ar": "منصة تعليم الكمياء — لقطة الشاشة الرئيسية"
@@ -797,7 +797,7 @@
         "height": 4375
       },
       "sub": {
-        "src": "/assets/images/education-platform/pla-main.png",
+        "src": "/assets/images/education-platform/pla-main.webp",
         "alt": {
           "en": "Chemistry Learning Platform — preview screenshot",
           "ar": "منصة تعليم الكمياء — لقطة معاينة"
@@ -807,7 +807,7 @@
       },
       "gallery": [
         {
-          "src": "/assets/images/education-platform/pla-1.png",
+          "src": "/assets/images/education-platform/pla-1.webp",
           "alt": {
             "en": "Chemistry Learning Platform — screenshot 1 of 4",
             "ar": "منصة تعليم الكمياء — لقطة 1 من 4"
@@ -816,7 +816,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/education-platform/pla-2.png",
+          "src": "/assets/images/education-platform/pla-2.webp",
           "alt": {
             "en": "Chemistry Learning Platform — screenshot 2 of 4",
             "ar": "منصة تعليم الكمياء — لقطة 2 من 4"
@@ -825,7 +825,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/education-platform/pla-3.png",
+          "src": "/assets/images/education-platform/pla-3.webp",
           "alt": {
             "en": "Chemistry Learning Platform — screenshot 3 of 4",
             "ar": "منصة تعليم الكمياء — لقطة 3 من 4"
@@ -834,7 +834,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/education-platform/pla-4.png",
+          "src": "/assets/images/education-platform/pla-4.webp",
           "alt": {
             "en": "Chemistry Learning Platform — screenshot 4 of 4",
             "ar": "منصة تعليم الكمياء — لقطة 4 من 4"
@@ -954,7 +954,7 @@
     "contributions": [],
     "images": {
       "main": {
-        "src": "/assets/images/cars-ecommerce/main.png",
+        "src": "/assets/images/cars-ecommerce/main.webp",
         "alt": {
           "en": "Cars E-Commerce — main screenshot",
           "ar": "منصة بيع وتأجير العربيات — لقطة الشاشة الرئيسية"
@@ -963,7 +963,7 @@
         "height": 4375
       },
       "sub": {
-        "src": "/assets/images/cars-ecommerce/main.png",
+        "src": "/assets/images/cars-ecommerce/main.webp",
         "alt": {
           "en": "Cars E-Commerce — preview screenshot",
           "ar": "منصة بيع وتأجير العربيات — لقطة معاينة"
@@ -973,7 +973,7 @@
       },
       "gallery": [
         {
-          "src": "/assets/images/cars-ecommerce/1.png",
+          "src": "/assets/images/cars-ecommerce/1.webp",
           "alt": {
             "en": "Cars E-Commerce — screenshot 1 of 4",
             "ar": "منصة بيع وتأجير العربيات — لقطة 1 من 4"
@@ -982,7 +982,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/cars-ecommerce/2.png",
+          "src": "/assets/images/cars-ecommerce/2.webp",
           "alt": {
             "en": "Cars E-Commerce — screenshot 2 of 4",
             "ar": "منصة بيع وتأجير العربيات — لقطة 2 من 4"
@@ -991,7 +991,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/cars-ecommerce/3.png",
+          "src": "/assets/images/cars-ecommerce/3.webp",
           "alt": {
             "en": "Cars E-Commerce — screenshot 3 of 4",
             "ar": "منصة بيع وتأجير العربيات — لقطة 3 من 4"
@@ -1000,7 +1000,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/cars-ecommerce/4.png",
+          "src": "/assets/images/cars-ecommerce/4.webp",
           "alt": {
             "en": "Cars E-Commerce — screenshot 4 of 4",
             "ar": "منصة بيع وتأجير العربيات — لقطة 4 من 4"
@@ -1116,7 +1116,7 @@
     "contributions": [],
     "images": {
       "main": {
-        "src": "/assets/images/blog-ai-app/main.png",
+        "src": "/assets/images/blog-ai-app/main.webp",
         "alt": {
           "en": "Blog AI App — main screenshot",
           "ar": "مدونة الذكاء الاصطناعي — لقطة الشاشة الرئيسية"
@@ -1125,7 +1125,7 @@
         "height": 4375
       },
       "sub": {
-        "src": "/assets/images/blog-ai-app/main.png",
+        "src": "/assets/images/blog-ai-app/main.webp",
         "alt": {
           "en": "Blog AI App — preview screenshot",
           "ar": "مدونة الذكاء الاصطناعي — لقطة معاينة"
@@ -1135,7 +1135,7 @@
       },
       "gallery": [
         {
-          "src": "/assets/images/blog-ai-app/1.png",
+          "src": "/assets/images/blog-ai-app/1.webp",
           "alt": {
             "en": "Blog AI App — screenshot 1 of 5",
             "ar": "مدونة الذكاء الاصطناعي — لقطة 1 من 5"
@@ -1144,7 +1144,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/blog-ai-app/2.png",
+          "src": "/assets/images/blog-ai-app/2.webp",
           "alt": {
             "en": "Blog AI App — screenshot 2 of 5",
             "ar": "مدونة الذكاء الاصطناعي — لقطة 2 من 5"
@@ -1153,7 +1153,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/blog-ai-app/3.png",
+          "src": "/assets/images/blog-ai-app/3.webp",
           "alt": {
             "en": "Blog AI App — screenshot 3 of 5",
             "ar": "مدونة الذكاء الاصطناعي — لقطة 3 من 5"
@@ -1162,7 +1162,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/blog-ai-app/4.png",
+          "src": "/assets/images/blog-ai-app/4.webp",
           "alt": {
             "en": "Blog AI App — screenshot 4 of 5",
             "ar": "مدونة الذكاء الاصطناعي — لقطة 4 من 5"
@@ -1171,7 +1171,7 @@
           "height": 3000
         },
         {
-          "src": "/assets/images/blog-ai-app/5.png",
+          "src": "/assets/images/blog-ai-app/5.webp",
           "alt": {
             "en": "Blog AI App — screenshot 5 of 5",
             "ar": "مدونة الذكاء الاصطناعي — لقطة 5 من 5"
