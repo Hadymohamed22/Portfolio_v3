@@ -1,6 +1,5 @@
 import SectionHeader from "@/shared/components/section-header";
 import FiltersTabs from "../_components/sections/projects/_components/filters-tabs";
-import ProjectsFiltersTabsSkeleton from "./_skeletons/projects-filters-tabs.skeleton";
 import { useTranslations } from "next-intl";
 import ProjectsContent from "./_components/projects-content";
 
@@ -26,10 +25,7 @@ export default function Page() {
 
         {/* Filters Container */}
         <div className="filter-container flex justify-start">
-          <FiltersTabs
-            tabListVariant="tabs"
-            filtersSkeleton={<ProjectsFiltersTabsSkeleton />}
-          />
+          <FiltersTabs tabListVariant="tabs" />
         </div>
 
         {/* Project Content */}

@@ -1,8 +1,5 @@
 import CoreStack from "./_components/core-stack";
-import { Suspense } from "react";
-import CoreStackSkeleton from "./_skeleton/core-stack.skeleton";
 import Statistics from "./_components/statistics";
-import StatisticsSkeleton from "./_skeleton/statistics.skeleton";
 import Advantages from "./_components/advantages";
 import { useTranslations } from "next-intl";
 import CTA from "./_components/cta";
@@ -45,14 +42,10 @@ export default function About() {
           </p>
 
           {/* Core Stack */}
-          <Suspense fallback={<CoreStackSkeleton />}>
-            <CoreStack />
-          </Suspense>
+          <CoreStack />
 
           {/* Statistics */}
-          <Suspense fallback={<StatisticsSkeleton />}>
-            <Statistics />
-          </Suspense>
+          <Statistics />
 
           <div className="journey-advantages-cta flex flex-col md:flex-row gap-4">
             {/* Journey */}

@@ -1,0 +1,1199 @@
+[
+  {
+    "id": 1,
+    "slug": "exam-app",
+    "order": 1,
+    "category": "education",
+    "title": {
+      "en": "Exam App",
+      "ar": "تطبيق امتحانات تفاعلى"
+    },
+    "summary": {
+      "en": "Modern full-stack online exam and digital diploma platform.",
+      "ar": "منصة حديثة للامتحانات الأونلاين والشهادات الديجيتال."
+    },
+    "description": {
+      "en": "Exam App is a modern online assessment platform where users can register, log in, take timed subject-based exams, and instantly see detailed results with charts. It includes protected dashboards, a full password recovery flow, and a diplomas gallery with infinite scrolling.",
+      "ar": "تطبيق الامتحانات ده منصة تقييم شاملة أونلاين بتدي المطورين فرصة يطوروا مهاراتهم في البرمجة من خلال امتحانات متظمة. المنصة بتقدم مسارات متخصصة في الـ Frontend والـ Backend وتطوير الموبايل والذكاء الاصطناعي وغيره. المستخدمين يقدروا يمتحنوا في مواضيع معينة، ويتابعوا مستواهم بالرسومات البيانية، وياخدوا شهادات ديجيتال لما ينجحوا. التطبيق مبني بـ Next.js 14 وأحدث تقنيات الويب، عشان يقدم تجربة سلسة وسريعة مع نظام حماية قوي وميزة الامتحانات في الوقت الفعلي."
+    },
+    "purpose": {
+      "en": "The goal was to provide developers with a structured way to practice across multiple tech tracks, complete exams under time constraints, and track achievements through shareable digital diplomas.",
+      "ar": "عشان نشجع المطورين يحسنوا مهاراتهم في البرمجة من خلال امتحانات متظمة وشهادات ديجيتال."
+    },
+    "solution": {
+      "en": "I implemented a secure credentials-based authentication flow using NextAuth with JWT sessions, enforced access control with Next.js middleware, and integrated the app with an external REST API using bearer tokens. Exam delivery is handled through dynamic routes for subjects/exams, a real-time timer UI, and server-side answer checking via a POST to the questions check endpoint; results are then visualized with chart components and the diplomas list is optimized with paginated fetching and infinite scroll.",
+      "ar": "عملنا واجهة مستخدم (Frontend) سريعة وتستحمل باستخدام Next.js 14 App Router، وربطناها بـ React Query عشان ندير الداتا بكفاءة، و NextAuth عشان نوفر تسجيل دخول آمن."
+    },
+    "metrics": {
+      "efficiency": 88,
+      "accuracy": 94
+    },
+    "links": {
+      "live": "https://exam-app1.netlify.app/login",
+      "repo": "https://github.com/Hadymohamed22/Exam_App"
+    },
+    "collaboration": {
+      "isCollaborator": false,
+      "role": {
+        "en": null,
+        "ar": null
+      }
+    },
+    "technologies": [
+      {
+        "title": "Next.js",
+        "icon": "app-window-mac",
+        "usedFor": {
+          "en": "Secure & Optimized Apps",
+          "ar": "Secure & Optimized Apps"
+        }
+      },
+      {
+        "title": "NextAuth",
+        "icon": "lock-keyhole",
+        "usedFor": {
+          "en": "Secure Authentication",
+          "ar": "Secure Authentication"
+        }
+      },
+      {
+        "title": "TypeScript",
+        "icon": "type-outline",
+        "usedFor": {
+          "en": "Typing Safety",
+          "ar": "Typing Safety"
+        }
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "square-round-corner",
+        "usedFor": {
+          "en": "Modern Styling",
+          "ar": "Modern Styling"
+        }
+      },
+      {
+        "title": "RHF",
+        "icon": "square-mouse-pointer",
+        "usedFor": {
+          "en": "Collecting Data",
+          "ar": "Collecting Data"
+        }
+      },
+      {
+        "title": "Zod",
+        "icon": "ticket-check",
+        "usedFor": {
+          "en": "Data Validation",
+          "ar": "Data Validation"
+        }
+      },
+      {
+        "title": "React Query",
+        "icon": "database-search",
+        "usedFor": {
+          "en": "Data Fetching & Caching",
+          "ar": "Data Fetching & Caching"
+        }
+      }
+    ],
+    "challenges": [
+      {
+        "en": "Implemented infinite scrolling for the diplomas gallery to prevent performance bottlenecks when loading large numbers of certificates.",
+        "ar": "عملنا خاصية الـ infinite scrolling في معرض الشهادات عشان نمنع أي بطء في الأداء لما نيجي نحمل عدد كبير من الشهادات."
+      },
+      {
+        "en": "Used React Hook Form and Zod to provide instant, real-time validation feedback to users during registration and password reset flows.",
+        "ar": "استخدمنا React Hook Form و Zod عشان ندي للمستخدمين تنبيهات فورية لو في أي غلطة وهما بيسجلوا حساب جديد أو بيغيروا الباسورد."
+      }
+    ],
+    "contributions": [],
+    "images": {
+      "main": {
+        "src": "/assets/images/exam-app/exam-app-cover.webp",
+        "alt": {
+          "en": "Exam App — main screenshot",
+          "ar": "تطبيق امتحانات تفاعلى — لقطة الشاشة الرئيسية"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "sub": {
+        "src": "/assets/images/exam-app/exam-app-cover.webp",
+        "alt": {
+          "en": "Exam App — preview screenshot",
+          "ar": "تطبيق امتحانات تفاعلى — لقطة معاينة"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "gallery": [
+        {
+          "src": "/assets/images/exam-app/exam-app-1.webp",
+          "alt": {
+            "en": "Exam App — screenshot 1 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 1 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/exam-app/exam-app-2.webp",
+          "alt": {
+            "en": "Exam App — screenshot 2 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 2 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/exam-app/exam-app-3.webp",
+          "alt": {
+            "en": "Exam App — screenshot 3 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 3 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/exam-app/exam-app-4.webp",
+          "alt": {
+            "en": "Exam App — screenshot 4 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 4 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/exam-app/exam-app-5.webp",
+          "alt": {
+            "en": "Exam App — screenshot 5 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 5 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/exam-app/exam-app-6.webp",
+          "alt": {
+            "en": "Exam App — screenshot 6 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 6 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/exam-app/exam-app-7.webp",
+          "alt": {
+            "en": "Exam App — screenshot 7 of 7",
+            "ar": "تطبيق امتحانات تفاعلى — لقطة 7 من 7"
+          },
+          "width": 4000,
+          "height": 3000
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "Next.js",
+        "variant": "Next.js"
+      },
+      {
+        "title": "React Query",
+        "variant": "React Query"
+      },
+      {
+        "title": "NextAuth",
+        "variant": "NextAuth"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "rose-app",
+    "order": 2,
+    "category": "e-commerce",
+    "title": {
+      "en": "Rose App",
+      "ar": "متجر هدايا الكترونى"
+    },
+    "summary": {
+      "en": "Modern e-commerce platform for special gifts and beautiful flowers.",
+      "ar": "منصة تجارة إلكترونية حديثة للهدايا المميزة والورد الجميل."
+    },
+    "description": {
+      "en": "Rose App is a modern e-commerce web application dedicated to selling special gifts and flowers. It provides users with a seamless shopping experience with features such as internationalization, secure authentication, and an interactive UI built with Radix UI and Tailwind CSS. The app also includes an integrated shopping cart, product carousels, and Google Maps integration for precise delivery location services.",
+      "ar": "برمجت الأقسام المهمة في خطوات الدفع، وتحديداً عناوين الشحن وطرق الدفع. ده شمل عمل فورمات قوية للمستخدمين عشان يدخلوا عناوين التوصيل ويختاروا طريقة الدفع المناسبة ليهم بشكل آمن، مع ضمان إن عملية الانتقال لتأكيد الطلب تكون سهلة وسريعة."
+    },
+    "purpose": {
+      "en": "To provide a seamless, localized e-commerce experience for purchasing gifts and flowers online, making it easy for people to celebrate special occasions.",
+      "ar": "توفير تجربة تسوق إلكترونية سلسة ومحلية عشان الناس تقدر تشتري هدايا وورد أونلاين بسهولة، ونساعدهم يحتفلوا بمناسباتهم الخاصة."
+    },
+    "solution": {
+      "en": "Built a responsive and accessible web application using Next.js App Router, integrating Next-Intl for Arabic/English localization, React Hook Form for robust inputs, and Tailwind CSS for a beautiful, responsive design.",
+      "ar": "بنيت تطبيق ويب متجاوب وسهل الاستخدام باستخدام Next.js App Router، ودمجت Next-Intl عشان يدعم عربي وإنجليزي، واستخدمت React Hook Form عشان أظبط الفورمات، و Tailwind CSS عشان أعمل تصميم حلو يشتغل على كل الشاشات."
+    },
+    "metrics": {
+      "efficiency": 85,
+      "accuracy": 98
+    },
+    "links": {
+      "live": null,
+      "repo": "https://github.com/Hadymohamed22/Rose-App-Team2"
+    },
+    "collaboration": {
+      "isCollaborator": true,
+      "role": {
+        "en": "Frontend Developer",
+        "ar": "مطور واجهات أمامية (Frontend Developer)"
+      }
+    },
+    "technologies": [
+      {
+        "title": "Next.js",
+        "icon": "app-window-mac",
+        "usedFor": {
+          "en": "robust web applications",
+          "ar": "بناء تطبيق متكامل"
+        }
+      },
+      {
+        "title": "React",
+        "icon": "app-window",
+        "usedFor": {
+          "en": "building interactive UIs",
+          "ar": "واجهات مستخدم تفاعلية"
+        }
+      },
+      {
+        "title": "TypeScript",
+        "icon": "type-outline",
+        "usedFor": {
+          "en": "reliable type checking",
+          "ar": "كود منظم وآمن"
+        }
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "square-round-corner",
+        "usedFor": {
+          "en": "rapid responsive styling",
+          "ar": "تصميم سريع ومتجاوب"
+        }
+      },
+      {
+        "title": "Shadcn",
+        "icon": "component",
+        "usedFor": {
+          "en": "reusable and modern components",
+          "ar": "مكونات انيقة وقابلة لإعادة الاستخدام"
+        }
+      },
+      {
+        "title": "NextAuth",
+        "icon": "lock-keyhole",
+        "usedFor": {
+          "en": "secure user authentication",
+          "ar": "تسجيل دخول آمن"
+        }
+      }
+    ],
+    "challenges": [
+      {
+        "en": "Fixed layout shifts during carousel auto-play.",
+        "ar": "حليت مشكلة لخبطة التصميم (Layout shifts) وقت تشغيل الكاروسيل أوتوماتيك."
+      },
+      {
+        "en": "Resolved hydration mismatch issues related to Next-Intl localization.",
+        "ar": "عالجت مشاكل الـ Hydration mismatch اللي كانت بتحصل بسبب تغيير اللغات مع Next-Intl."
+      }
+    ],
+    "contributions": [
+      {
+        "icon": "star",
+        "title": {
+          "en": "Testimonials Section",
+          "ar": "قسم آراء العملاء"
+        },
+        "description": {
+          "en": "Designed and developed the interactive testimonials section on the home page. This involved building a responsive carousel layout to display user reviews elegantly, fetching the review data, and ensuring smooth auto-scrolling animations to enhance the user experience and build trust.",
+          "ar": "صممت وبرمجت قسم آراء العملاء في الصفحة الرئيسية بشكل تفاعلي ومميز. استخدمت كاروسيل متجاوب عشان يعرض التقييمات بشكل شيك، وظبطت الأنيميشن والتحريك التلقائي عشان يدي تجربة مستخدم سلسة وتزود ثقة العملاء في المنتجات."
+        }
+      },
+      {
+        "icon": "layout",
+        "title": {
+          "en": "Auth Layout",
+          "ar": "تصميم الهيكل المشترك لصفحات التسجيل"
+        },
+        "description": {
+          "en": "Created a secure and visually appealing authentication layout for both the login and registration pages. This includes implementing a centralized container for user interactions, integrating form validation for smooth data entry, and providing a cohesive user interface that aligns perfectly with the application's overall design system.",
+          "ar": "عملت الـ Layout الأساسي لصفحات تسجيل الدخول وإنشاء الحساب بتصميم جذاب وآمن. ركزت على إن الواجهة تكون متناسقة مع باقي التطبيق، وضفت أنظمة للتحقق من صحة البيانات عشان أسهل على المستخدمين عملية التسجيل بدون أي أخطاء."
+        }
+      },
+      {
+        "icon": "grid",
+        "title": {
+          "en": "Products Grid & Box",
+          "ar": "واجهة المنتجات"
+        },
+        "description": {
+          "en": "Built a dynamic and highly responsive products grid layout along with individual, reusable product box components for the main products page. This feature includes optimized image rendering, clean typography for product details, and interactive hover effects, ensuring that customers can effortlessly browse and discover items across various screen sizes.",
+          "ar": "بنيت شبكة المنتجات ومكونات كروت المنتجات بطريقة متجاوبة بالكامل لصفحة المنتجات الأساسية. الكروت دي بتعرض الصور بجودة عالية مع تفاصيل المنتج بشكل واضح، وفيها تأثيرات حركية عند التفاعل عشان تسهل على العميل تصفح المنتجات على أي شاشة."
+        }
+      },
+      {
+        "icon": "database",
+        "title": {
+          "en": "Guest Cart & Wishlist Sync",
+          "ar": "مزامنة السلة والمفضلة"
+        },
+        "description": {
+          "en": "Engineered an intelligent state management solution to handle the wishlist and shopping cart for unauthenticated users. By leveraging the browser's local storage, the system seamlessly saves guest interactions. Once the user logs in or registers, all locally saved data is automatically synchronized and merged into their permanent user account.",
+          "ar": "عملت نظام ذكي لإدارة السلة والمفضلة للزوار اللي مش مسجلين دخول. النظام بيحفظ كل اختياراتهم في الـ LocalStorage في المتصفح، وأول ما الزائر يسجل دخول أو يعمل حساب جديد، بتتعمل مزامنة تلقائية لكل الحاجات دي وتتنقل لحسابه الشخصي فوراً."
+        }
+      },
+      {
+        "icon": "cart",
+        "title": {
+          "en": "Cart Summary Component",
+          "ar": "ملخص السعر"
+        },
+        "description": {
+          "en": "Developed a comprehensive cart summary component for the shopping cart page. This interactive component dynamically calculates and displays real-time pricing information, including subtotal, taxes, and applied discounts, providing the user with complete transparency and a clear breakdown of their order before proceeding to checkout.",
+          "ar": "صممت وبرمجت مكون ملخص الطلب في صفحة سلة المشتريات. المكون ده بيحسب وبيعرض كل تفاصيل الأسعار بشكل لحظي، زي الإجمالي الفرعي، الضرائب، والخصومات، عشان يدي العميل شفافية كاملة ورؤية واضحة لتكلفة الطلب قبل ما يروح لصفحة الدفع."
+        }
+      },
+      {
+        "icon": "credit-card",
+        "title": {
+          "en": "Shipping & Payment",
+          "ar": "طرق الدفع والشحن"
+        },
+        "description": {
+          "en": "Implemented the crucial checkout flow sections, specifically focusing on shipping addresses and payment method selections. This task involved creating robust forms for users to input or select their delivery details, integrating various payment options securely, and ensuring a frictionless transition to the final order confirmation step.",
+          "ar": "برمجت الأقسام المهمة في خطوات الدفع، وتحديداً عناوين الشحن وطرق الدفع. ده شمل عمل فورمات قوية للمستخدمين عشان يدخلوا عناوين التوصيل ويختاروا طريقة الدفع المناسبة ليهم بشكل آمن، مع ضمان إن عملية الانتقال لتأكيد الطلب تكون سهلة وسريعة."
+        }
+      }
+    ],
+    "images": {
+      "main": {
+        "src": "/assets/images/rose-app/main.webp",
+        "alt": {
+          "en": "Rose App — main screenshot",
+          "ar": "متجر هدايا الكترونى — لقطة الشاشة الرئيسية"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "sub": {
+        "src": "/assets/images/rose-app/main.webp",
+        "alt": {
+          "en": "Rose App — preview screenshot",
+          "ar": "متجر هدايا الكترونى — لقطة معاينة"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "gallery": [
+        {
+          "src": "/assets/images/rose-app/1.webp",
+          "alt": {
+            "en": "Rose App — screenshot 1 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 1 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/2.webp",
+          "alt": {
+            "en": "Rose App — screenshot 2 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 2 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/3.webp",
+          "alt": {
+            "en": "Rose App — screenshot 3 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 3 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/4.webp",
+          "alt": {
+            "en": "Rose App — screenshot 4 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 4 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/5.webp",
+          "alt": {
+            "en": "Rose App — screenshot 5 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 5 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/6.webp",
+          "alt": {
+            "en": "Rose App — screenshot 6 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 6 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/7.webp",
+          "alt": {
+            "en": "Rose App — screenshot 7 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 7 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/rose-app/8.webp",
+          "alt": {
+            "en": "Rose App — screenshot 8 of 8",
+            "ar": "متجر هدايا الكترونى — لقطة 8 من 8"
+          },
+          "width": 4000,
+          "height": 3000
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "Next.js",
+        "variant": "Next.js"
+      },
+      {
+        "title": "Tailwind CSS",
+        "variant": "Tailwind CSS"
+      },
+      {
+        "title": "TypeScript",
+        "variant": "TypeScript"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "fitness-tracking-app",
+    "order": 3,
+    "category": "sport",
+    "title": {
+      "en": "Fitness Tracking App",
+      "ar": "تطبيق تتبع اللياقة البدنية"
+    },
+    "summary": {
+      "en": "A comprehensive fitness application offering personalized workouts and meal plans.",
+      "ar": "تطبيق متكامل للياقة بيقدم لك تمارين ووجبات مخصصة ليك تماما."
+    },
+    "description": {
+      "en": "This is a full-stack fitness application designed to help users track their health, discover tailored workout routines, and find suitable meal plans. It leverages modern web technologies including React, TypeScript, and Vite, while utilizing Tailwind CSS for a fully responsive and aesthetic UI. The application features an AI integration for intelligent health recommendations, internationalization for broader reach, and robust state management for a seamless user experience.",
+      "ar": "ده تطبيق كامل للياقة البدنية معمول عشان يساعد الناس تتابع صحتها وتلاقي التمارين والوجبات اللي تناسبها. التطبيق مبني بأحدث التقنيات زي React و TypeScript و Vite، وبيستخدم Tailwind CSS عشان الواجهة تكون متجاوبة وشكلها شيك جدا. كمان فيه دمج للذكاء الاصطناعي عشان يديك نصايح صحية ذكية، وبيدعم لغات مختلفة، وفيه إدارة حالة قوية عشان تجربة المستخدم تكون سلسة ومريحة."
+    },
+    "purpose": {
+      "en": "To provide an intuitive and smart platform for users to manage their fitness journeys efficiently.",
+      "ar": "إننا نقدم منصة ذكية وسهلة الاستخدام للناس عشان يظبطوا مشوارهم الرياضي بكل سهولة."
+    },
+    "solution": {
+      "en": "By integrating AI-driven insights with a user-friendly interface, the app simplifies the process of finding the right workouts and healthy meals, keeping users motivated.",
+      "ar": "من خلال دمج الذكاء الاصطناعي مع واجهة سهلة، التطبيق بيسهل عليك تلاقي التمارين والوجبات الصحية المظبوطة، وبيشجعك تكمل في طريقك."
+    },
+    "metrics": {
+      "efficiency": 80,
+      "accuracy": 95
+    },
+    "links": {
+      "live": null,
+      "repo": "https://github.com/ASalem020/Fitness-App-2"
+    },
+    "collaboration": {
+      "isCollaborator": true,
+      "role": {
+        "en": "As a frontend developer in the team, I was responsible for architecting and building the user interface using React and Tailwind CSS. I integrated modern libraries like React Query for state management and collaborated closely to implement AI-driven features, ensuring a seamless, responsive, and engaging user experience throughout the fitness application.",
+        "ar": "بصفتي مطور واجهات أمامية في الفريق، كنت مسؤول عن تصميم وبناء واجهة المستخدم باستخدام React و Tailwind CSS. وكمان دمجت مكتبات حديثة زي React Query عشان إدارة حالة التطبيق، واشتغلت مع الفريق خطوة بخطوة عشان نضيف الميزات اللي بتعتمد على الذكاء الاصطناعي، وده عشان نضمن إن تجربة المستخدم تكون سلسة وسريعة ومريحة على كل الأجهزة."
+      }
+    },
+    "technologies": [
+      {
+        "title": "React",
+        "icon": "react",
+        "usedFor": {
+          "en": "Interactive UIs",
+          "ar": "Interactive UIs"
+        }
+      },
+      {
+        "title": "React Router",
+        "icon": "react-router",
+        "usedFor": {
+          "en": "Application Routing",
+          "ar": "Application Routing"
+        }
+      },
+      {
+        "title": "React Query",
+        "icon": "react-query",
+        "usedFor": {
+          "en": "Data Fetching & State Management",
+          "ar": "Data Fetching & State Management"
+        }
+      },
+      {
+        "title": "Zod",
+        "icon": "zod",
+        "usedFor": {
+          "en": "Schema Validation",
+          "ar": "Schema Validation"
+        }
+      },
+      {
+        "title": "Shadcn UI",
+        "icon": "shadcn",
+        "usedFor": {
+          "en": "Re-usable & Modern Components",
+          "ar": "Re-usable & Modern Components"
+        }
+      },
+      {
+        "title": "Use-Intl",
+        "icon": "use-intl",
+        "usedFor": {
+          "en": "Translation for all Locales",
+          "ar": "Translation for all Locales"
+        }
+      }
+    ],
+    "challenges": [
+      {
+        "en": "Handling state synchronization across multiple tabs.",
+        "ar": "تظبيط تزامن البيانات لو فتحت التطبيق في كذا تاب."
+      },
+      {
+        "en": "Managing complex AI API rate limits gracefully.",
+        "ar": "التعامل مع حدود استهلاك واجهات برمجة الذكاء الاصطناعي من غير ما التطبيق يقع."
+      }
+    ],
+    "contributions": [
+      {
+        "icon": "layout",
+        "title": {
+          "en": "Header & Responsive Navigation",
+          "ar": "الهيدر والتنقل المتجاوب"
+        },
+        "description": {
+          "en": "Developed the main header component, ensuring full responsiveness and a seamless mobile menu experience.",
+          "ar": "عملت مكون الهيدر الأساسي، واهتميت إنه يكون متجاوب بالكامل وشغال على الموبايلات."
+        }
+      },
+      {
+        "icon": "users",
+        "title": {
+          "en": "Who-Us Section",
+          "ar": "قسم من نحن (Who-Us)"
+        },
+        "description": {
+          "en": "Designed and implemented the 'Who-Us' section, optimizing layout and assets for both desktop and mobile views.",
+          "ar": "صممت وبرمجت قسم 'من نحن'، وظبطت التصميم والصور عشان تظهر بشكل ممتاز على الكمبيوتر والموبايل."
+        }
+      },
+      {
+        "icon": "keyround",
+        "title": {
+          "en": "Password Recovery Flow",
+          "ar": "خطوات استرجاع كلمة المرور"
+        },
+        "description": {
+          "en": "Built the multi-step 'Forget Password' flow, including email verification, resend code logic, and setting a new password.",
+          "ar": "بنيت خطوات 'نسيت كلمة المرور' بالكامل، واللي بتشمل إدخال الإيميل، ومنطق إعادة إرسال الكود، وتعيين كلمة مرور جديدة."
+        }
+      },
+      {
+        "icon": "bot",
+        "title": {
+          "en": "AI Chat Integration",
+          "ar": "دمج شات الذكاء الاصطناعي"
+        },
+        "description": {
+          "en": "Integrated Google GenAI to power an intelligent chat feature, including the logic to create new chats and save conversation history.",
+          "ar": "دمجت Google GenAI عشان نعمل ميزة شات ذكية، وعملت المنطق الخاص بإنشاء محادثات جديدة وحفظ المحادثات القديمة عشان ترجعلها في أي وقت."
+        }
+      }
+    ],
+    "images": {
+      "main": {
+        "src": "/assets/images/fitness-app/fit-main.webp",
+        "alt": {
+          "en": "Fitness Tracking App — main screenshot",
+          "ar": "تطبيق تتبع اللياقة البدنية — لقطة الشاشة الرئيسية"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "sub": {
+        "src": "/assets/images/fitness-app/fit-main.webp",
+        "alt": {
+          "en": "Fitness Tracking App — preview screenshot",
+          "ar": "تطبيق تتبع اللياقة البدنية — لقطة معاينة"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "gallery": [
+        {
+          "src": "/assets/images/fitness-app/fit1.webp",
+          "alt": {
+            "en": "Fitness Tracking App — screenshot 1 of 5",
+            "ar": "تطبيق تتبع اللياقة البدنية — لقطة 1 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/fitness-app/fit2.webp",
+          "alt": {
+            "en": "Fitness Tracking App — screenshot 2 of 5",
+            "ar": "تطبيق تتبع اللياقة البدنية — لقطة 2 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/fitness-app/fit3.webp",
+          "alt": {
+            "en": "Fitness Tracking App — screenshot 3 of 5",
+            "ar": "تطبيق تتبع اللياقة البدنية — لقطة 3 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/fitness-app/fit4.webp",
+          "alt": {
+            "en": "Fitness Tracking App — screenshot 4 of 5",
+            "ar": "تطبيق تتبع اللياقة البدنية — لقطة 4 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/fitness-app/fit5.webp",
+          "alt": {
+            "en": "Fitness Tracking App — screenshot 5 of 5",
+            "ar": "تطبيق تتبع اللياقة البدنية — لقطة 5 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "React",
+        "variant": "react"
+      },
+      {
+        "title": "Typescript",
+        "variant": "TypeScript"
+      },
+      {
+        "title": "Tailwind CSS",
+        "variant": "Tailwind CSS"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "chemistry-learning-platform",
+    "order": 4,
+    "category": "education",
+    "title": {
+      "en": "Chemistry Learning Platform",
+      "ar": "منصة تعليم الكمياء"
+    },
+    "summary": {
+      "en": "An educational platform with video classes and an admin dashboard.",
+      "ar": "منصة تعليمية فيها فيديوهات للدروس ولوحة تحكم للمديرين."
+    },
+    "description": {
+      "en": "A comprehensive web application designed to facilitate online education. It provides structured video content for different grade levels and features a robust administrative dashboard for managing teachers, admins, and course materials. The platform is built with React, Redux Toolkit, and TailwindCSS for a seamless user experience.",
+      "ar": "تطبيق ويب متكامل معمول عشان يسهل التعليم الأونلاين. بيقدم فيديوهات متقسمة حسب الصفوف الدراسية وفيه لوحة تحكم قوية عشان تدير المدرسين والمديرين والمحتوى التعليمي. المنصة مبنية بـ React و Redux Toolkit و TailwindCSS عشان تدي تجربة مستخدم سريعة وسهلة."
+    },
+    "purpose": {
+      "en": "To create a centralized and interactive platform for students to access educational videos and for administrators to manage content efficiently.",
+      "ar": "عشان نعمل مكان واحد ومريح للطلاب يوصلوا فيه لفيديوهات الدروس، والمديرين يقدروا يرفعوا ويديروا المحتوى بسهولة."
+    },
+    "solution": {
+      "en": "Developed a responsive React application with a dedicated admin dashboard, utilizing Firebase for backend services and TailwindCSS for modern styling.",
+      "ar": " تطبيق ريسبونسيف بـ React وفيه لوحة تحكم للمديرين، واستخدمت Firebase كباك إند و TailwindCSS عشان التصميم يكون مودرن."
+    },
+    "metrics": {
+      "efficiency": 80,
+      "accuracy": 95
+    },
+    "links": {
+      "live": "https://chemistry-education-platform.web.app/",
+      "repo": "https://github.com/Hadymohamed22/Chemistry-education-platform"
+    },
+    "collaboration": {
+      "isCollaborator": false,
+      "role": {
+        "en": null,
+        "ar": null
+      }
+    },
+    "technologies": [
+      {
+        "title": "React",
+        "icon": "app-window",
+        "usedFor": {
+          "en": "building interactive UIs",
+          "ar": "تصميم واجهات مستخدم تفاعلية"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "icon": "square-round-corner",
+        "usedFor": {
+          "en": "rapid responsive styling",
+          "ar": "تصميم سريع الاستجابة"
+        }
+      },
+      {
+        "title": "Redux Toolkit",
+        "icon": "component",
+        "usedFor": {
+          "en": "State Management",
+          "ar": "ادارة الحالة"
+        }
+      }
+    ],
+    "challenges": [
+      {
+        "en": "Initial load time optimization needed for large video files.",
+        "ar": "محتاجين نحسن وقت التحميل المبدئي للفيديوهات الكبيرة."
+      }
+    ],
+    "contributions": [],
+    "images": {
+      "main": {
+        "src": "/assets/images/education-platform/pla-main.webp",
+        "alt": {
+          "en": "Chemistry Learning Platform — main screenshot",
+          "ar": "منصة تعليم الكمياء — لقطة الشاشة الرئيسية"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "sub": {
+        "src": "/assets/images/education-platform/pla-main.webp",
+        "alt": {
+          "en": "Chemistry Learning Platform — preview screenshot",
+          "ar": "منصة تعليم الكمياء — لقطة معاينة"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "gallery": [
+        {
+          "src": "/assets/images/education-platform/pla-1.webp",
+          "alt": {
+            "en": "Chemistry Learning Platform — screenshot 1 of 4",
+            "ar": "منصة تعليم الكمياء — لقطة 1 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/education-platform/pla-2.webp",
+          "alt": {
+            "en": "Chemistry Learning Platform — screenshot 2 of 4",
+            "ar": "منصة تعليم الكمياء — لقطة 2 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/education-platform/pla-3.webp",
+          "alt": {
+            "en": "Chemistry Learning Platform — screenshot 3 of 4",
+            "ar": "منصة تعليم الكمياء — لقطة 3 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/education-platform/pla-4.webp",
+          "alt": {
+            "en": "Chemistry Learning Platform — screenshot 4 of 4",
+            "ar": "منصة تعليم الكمياء — لقطة 4 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "React",
+        "variant": "react"
+      },
+      {
+        "title": "Redux",
+        "variant": "bootstrap"
+      },
+      {
+        "title": "Tailwind CSS",
+        "variant": "Tailwind CSS"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "cars-e-commerce",
+    "order": 5,
+    "category": "e-commerce",
+    "title": {
+      "en": "Cars E-Commerce",
+      "ar": "منصة بيع وتأجير العربيات"
+    },
+    "summary": {
+      "en": "Modern car rental and e-commerce platform using Next.js.",
+      "ar": "موقع حديث لبيع وتأجير العربيات باستخدام Next.js."
+    },
+    "description": {
+      "en": "A comprehensive car e-commerce and rental platform built with Next.js and Tailwind CSS. It features a modern user interface to browse cars, view popular and recommended vehicles, manage a wishlist, and handle a shopping cart. Redux is used for robust state management along with Context API for complex filtering. The project ensures a responsive design and fast load times for an optimal user experience.",
+      "ar": "منصة متكاملة لبيع وتأجير العربيات مبنية باستخدام Next.js و Tailwind CSS. بتوفر واجهة مستخدم عصرية عشان تتصفح العربيات، وتشوف العربيات المشهورة والمقترحة، وتدير قائمة الأمنيات وعربة التسوق. استخدمنا Redux عشان ندير حالة التطبيق مع Context API عشان الفلاتر المعقدة. الموقع متجاوب وسريع جداً في التحميل عشان يدي تجربة ممتازة للمستخدم."
+    },
+    "purpose": {
+      "en": "To provide a seamless and visually appealing online experience for users to browse, compare, and rent or purchase cars efficiently.",
+      "ar": "عشان نوفر تجربة سلسة وشكلها حلو على النت للناس اللي عايزة تتصفح وتقارن وتأجر أو تشتري عربيات بسهولة."
+    },
+    "solution": {
+      "en": "Implemented a responsive Next.js application with server-side rendering for optimal performance, utilized Redux Toolkit for robust global state management, and applied Tailwind CSS for rapid, consistent, and responsive UI development.",
+      "ar": "عملنا تطبيق Next.js متجاوب مع رندر من ناحية السيرفر عشان الأداء يكون أحسن حاجة، واستخدمنا Redux Toolkit عشان إدارة الحالة تكون قوية ومظبوطة، و Tailwind CSS عشان نخلص التصميم بسرعة وبشكل متناسق ومتجاوب."
+    },
+    "metrics": {
+      "efficiency": 45,
+      "accuracy": 98
+    },
+    "links": {
+      "live": "https://cars-ecommerce-phi.vercel.app/",
+      "repo": "https://github.com/Hadymohamed22/Cars-Ecommerce"
+    },
+    "collaboration": {
+      "isCollaborator": false,
+      "role": {
+        "en": null,
+        "ar": null
+      }
+    },
+    "technologies": [
+      {
+        "title": "Next.js",
+        "icon": "app-window-mac",
+        "usedFor": {
+          "en": "robust web applications",
+          "ar": "robust web applications"
+        }
+      },
+      {
+        "title": "React",
+        "icon": "app-window",
+        "usedFor": {
+          "en": "building interactive UIs",
+          "ar": "building interactive UIs"
+        }
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "square-round-corner",
+        "usedFor": {
+          "en": "rapid responsive styling",
+          "ar": "rapid responsive styling"
+        }
+      },
+      {
+        "title": "Redux Toolkit",
+        "icon": "component",
+        "usedFor": {
+          "en": "state management ",
+          "ar": "state management "
+        }
+      },
+      {
+        "title": "Swiper",
+        "icon": "ticket-check",
+        "usedFor": {
+          "en": "Carousels & Sliders",
+          "ar": "Carousels & Sliders"
+        }
+      }
+    ],
+    "challenges": [
+      {
+        "en": "Hydration errors occurred initially due to incorrect HTML nesting in some client-side components.",
+        "ar": "كان فيه شوية مشاكل في الـ Hydration في الأول بسبب تداخل HTML غلط في بعض مكونات الكلاينت."
+      },
+      {
+        "en": "Faced state synchronization delays between local storage and Redux store for the shopping cart persistence.",
+        "ar": "واجهنا شوية تأخير في مزامنة الحالة بين الـ local storage والـ Redux store عشان نحفظ بيانات عربة التسوق."
+      }
+    ],
+    "contributions": [],
+    "images": {
+      "main": {
+        "src": "/assets/images/cars-ecommerce/main.webp",
+        "alt": {
+          "en": "Cars E-Commerce — main screenshot",
+          "ar": "منصة بيع وتأجير العربيات — لقطة الشاشة الرئيسية"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "sub": {
+        "src": "/assets/images/cars-ecommerce/main.webp",
+        "alt": {
+          "en": "Cars E-Commerce — preview screenshot",
+          "ar": "منصة بيع وتأجير العربيات — لقطة معاينة"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "gallery": [
+        {
+          "src": "/assets/images/cars-ecommerce/1.webp",
+          "alt": {
+            "en": "Cars E-Commerce — screenshot 1 of 4",
+            "ar": "منصة بيع وتأجير العربيات — لقطة 1 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/cars-ecommerce/2.webp",
+          "alt": {
+            "en": "Cars E-Commerce — screenshot 2 of 4",
+            "ar": "منصة بيع وتأجير العربيات — لقطة 2 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/cars-ecommerce/3.webp",
+          "alt": {
+            "en": "Cars E-Commerce — screenshot 3 of 4",
+            "ar": "منصة بيع وتأجير العربيات — لقطة 3 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/cars-ecommerce/4.webp",
+          "alt": {
+            "en": "Cars E-Commerce — screenshot 4 of 4",
+            "ar": "منصة بيع وتأجير العربيات — لقطة 4 من 4"
+          },
+          "width": 4000,
+          "height": 3000
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "Next.js",
+        "variant": "Next.js"
+      },
+      {
+        "title": "React",
+        "variant": "react"
+      },
+      {
+        "title": "Tailwind CSS",
+        "variant": "Tailwind CSS"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "ai-app",
+    "order": 6,
+    "category": "blogs",
+    "title": {
+      "en": "Blog AI App",
+      "ar": "مدونة الذكاء الاصطناعي"
+    },
+    "summary": {
+      "en": "Modern React SPA for content-rich blogs, news, and podcasts.",
+      "ar": "تطبيق رياكت حديث وسريع للمدونات والأخبار والبودكاست."
+    },
+    "description": {
+      "en": "Blog AI App is a frontend single-page application that organizes content into Home, News, Products (podcasts), Resources (reports/whitepapers), and Blog detail pages. It uses react-router-dom for nested routes, SCSS modules for component-level styling, and Tailwind CSS v4 for utility styles. Media assets are shipped locally for an offline-friendly dev experience.",
+      "ar": "تطبيق Blog AI هو تطبيق ويب حديث مبني بـ React و Vite. بيقدم تجربة غنية للمحتوى زي الأخبار، البودكاست، المصادر، ومقالات المدونة. بيتميز بتنقل سريع في المتصفح، تصميم متجاوب، واستخدام Tailwind CSS v4 مع حركات أنيميشن ناعمة عشان يحسن تجربة المستخدم."
+    },
+    "purpose": {
+      "en": "To provide a modern, fast, and responsive single-page application for organizing and consuming blog posts, news, podcasts, and resources using the latest React and Vite tooling.",
+      "ar": "عشان نوفر تطبيق ويب حديث وسريع وسهل الاستخدام لعرض المدونات والأخبار والمصادر باستخدام أحدث تقنيات رياكت."
+    },
+    "solution": {
+      "en": "Implemented a fully responsive SPA using React 19, Vite 7, and Tailwind CSS v4. Added fluid animations with motion and managed client-side routing efficiently with React Router.",
+      "ar": "عملنا تطبيق متجاوب بالكامل باستخدام React 19 و Vite 7 مع Tailwind CSS v4 عشان التصميم، وضفنا أنيميشن لذيذة عشان نحسن تجربة المستخدم ونسهل التنقل بين الصفحات."
+    },
+    "metrics": {
+      "efficiency": 85,
+      "accuracy": 100
+    },
+    "links": {
+      "live": "https://blog-ai-app-theta.vercel.app/",
+      "repo": "https://github.com/Hadymohamed22/Blog_AI_APP"
+    },
+    "collaboration": {
+      "isCollaborator": false,
+      "role": {
+        "en": null,
+        "ar": null
+      }
+    },
+    "technologies": [
+      {
+        "title": "React",
+        "icon": "app-window-mac",
+        "usedFor": {
+          "en": "building interactive UIs",
+          "ar": "واجهات مستخدم تفاعلية"
+        }
+      },
+      {
+        "title": "Vite",
+        "icon": "component",
+        "usedFor": {
+          "en": "Build Tool",
+          "ar": "أداة إنشاء"
+        }
+      },
+      {
+        "title": "Tailwind CSS",
+        "icon": "square-round-corner",
+        "usedFor": {
+          "en": "rapid responsive styling",
+          "ar": "تصميم سريع الاستجابة"
+        }
+      },
+      {
+        "title": "SCSS",
+        "icon": "coffee",
+        "usedFor": {
+          "en": "component styling",
+          "ar": "تصميم مكونات منظم"
+        }
+      },
+      {
+        "title": "Motion",
+        "icon": "towel-rack",
+        "usedFor": {
+          "en": "smooth animations",
+          "ar": "انميشن سلسة"
+        }
+      }
+    ],
+    "challenges": [
+      {
+        "en": "Embed the videos in the code and set them to a custom style for play and pause",
+        "ar": "إضافة مقاطع الفيديو في الكود وتعيين نمط مخصص لها للتشغيل والإيقاف المؤقت"
+      }
+    ],
+    "contributions": [],
+    "images": {
+      "main": {
+        "src": "/assets/images/blog-ai-app/main.webp",
+        "alt": {
+          "en": "Blog AI App — main screenshot",
+          "ar": "مدونة الذكاء الاصطناعي — لقطة الشاشة الرئيسية"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "sub": {
+        "src": "/assets/images/blog-ai-app/main.webp",
+        "alt": {
+          "en": "Blog AI App — preview screenshot",
+          "ar": "مدونة الذكاء الاصطناعي — لقطة معاينة"
+        },
+        "width": 5000,
+        "height": 4375
+      },
+      "gallery": [
+        {
+          "src": "/assets/images/blog-ai-app/1.webp",
+          "alt": {
+            "en": "Blog AI App — screenshot 1 of 5",
+            "ar": "مدونة الذكاء الاصطناعي — لقطة 1 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/blog-ai-app/2.webp",
+          "alt": {
+            "en": "Blog AI App — screenshot 2 of 5",
+            "ar": "مدونة الذكاء الاصطناعي — لقطة 2 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/blog-ai-app/3.webp",
+          "alt": {
+            "en": "Blog AI App — screenshot 3 of 5",
+            "ar": "مدونة الذكاء الاصطناعي — لقطة 3 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/blog-ai-app/4.webp",
+          "alt": {
+            "en": "Blog AI App — screenshot 4 of 5",
+            "ar": "مدونة الذكاء الاصطناعي — لقطة 4 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        },
+        {
+          "src": "/assets/images/blog-ai-app/5.webp",
+          "alt": {
+            "en": "Blog AI App — screenshot 5 of 5",
+            "ar": "مدونة الذكاء الاصطناعي — لقطة 5 من 5"
+          },
+          "width": 4000,
+          "height": 3000
+        }
+      ]
+    },
+    "badges": [
+      {
+        "title": "React",
+        "variant": "react"
+      },
+      {
+        "title": "Vite",
+        "variant": "NextAuth"
+      },
+      {
+        "title": "Tailwind CSS",
+        "variant": "Tailwind CSS"
+      }
+    ]
+  }
+]

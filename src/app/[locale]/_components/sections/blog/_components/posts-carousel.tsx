@@ -1,15 +1,10 @@
-import { getLocale } from "next-intl/server";
-import getPosts from "../_actions/get-posts.action";
 import PostsCarouselContent from "./posts-carousel-content";
 
 export default async function PostsCarousel() {
-  // Translations
-  const locale = await getLocale();
-
   // Variables
   const INITIAL_POSTS: Posts = [
     {
-      id: 11,
+      id: 15,
       title: "Mastering React Performance in 2026",
       description: null,
       publishedAt: "2026-04-18T09:56:06.671Z",
@@ -26,7 +21,7 @@ export default async function PostsCarousel() {
       paragraphs: [],
     },
     {
-      id: 11,
+      id: 12,
       title: "Mastering React Performance in 2026",
       description: null,
       publishedAt: "2026-04-18T09:56:06.671Z",
@@ -43,7 +38,7 @@ export default async function PostsCarousel() {
       paragraphs: [],
     },
     {
-      id: 11,
+      id: 31,
       title: "Mastering React Performance in 2026",
       description: null,
       publishedAt: "2026-04-18T09:56:06.671Z",
@@ -60,11 +55,6 @@ export default async function PostsCarousel() {
       paragraphs: [],
     },
   ];
-  const posts = await getPosts(locale);
 
-  return posts.ok ? (
-    <PostsCarouselContent posts={posts.data} />
-  ) : (
-    <PostsCarouselContent posts={INITIAL_POSTS} />
-  );
+  return <PostsCarouselContent posts={INITIAL_POSTS} />;
 }

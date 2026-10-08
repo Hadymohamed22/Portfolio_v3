@@ -1,0 +1,419 @@
+{
+  "coreStack": [
+    {
+      "id": "react",
+      "name": "React.js",
+      "badgeVariant": "react-default"
+    },
+    {
+      "id": "next",
+      "name": "Next.js",
+      "badgeVariant": "next-default"
+    },
+    {
+      "id": "typescript",
+      "name": "Typescript",
+      "badgeVariant": "typescript-default"
+    },
+    {
+      "id": "tailwindcss",
+      "name": "Tailwindcss",
+      "badgeVariant": "tailwind-default"
+    },
+    {
+      "id": "node-js-basics",
+      "name": "Node.js Basics",
+      "badgeVariant": "node-default"
+    }
+  ],
+  "contact": {
+    "email": "hadysapry60@gmail.com",
+    "phone": "+201029379363",
+    "location": "Egypt , Dakahlia , Al Mansurah",
+    "github": "https://github.com/Hadymohamed22",
+    "linkedin": "https://www.linkedin.com/in/hady-elnifaly/",
+    "whatsapp": "https://wa.me/+201029379363",
+    "availableInCairo": false
+  },
+  "availability": {
+    "isAvailable": true,
+    "workType": "full-time"
+  },
+  "services": [
+    {
+      "id": 1,
+      "icon": "rocket",
+      "name": {
+        "en": "Business Websites",
+        "ar": "مواقع الشركات"
+      },
+      "description": {
+        "en": "Scalable, fast, and SEO-optimized sites designed to convert visitors into loyal customers.",
+        "ar": "مواقع قابلة للتوسع وسريعة ومحسّنة لمحركات البحث، مصممة لتحويل الزوار إلى عملاء مخلصين."
+      }
+    },
+    {
+      "id": 2,
+      "icon": "plane-landing",
+      "name": {
+        "en": "Landing Page",
+        "ar": "صفحة هبوط"
+      },
+      "description": {
+        "en": "High-performance landing pages optimized for marketing campaigns and product launches.",
+        "ar": "صفحات هبوط عالية الأداء محسنة للحملات التسويقية وإطلاق المنتجات."
+      }
+    },
+    {
+      "id": 3,
+      "icon": "code",
+      "name": {
+        "en": "UI Design to Code",
+        "ar": "تحويل تصميم واجهة المستخدم إلى كود"
+      },
+      "description": {
+        "en": "Pixel-perfect translation of complex Figma designs into clean, responsive, and interactive code.",
+        "ar": "ترجمة دقيقة تمامًا لتصاميم Figma المعقدة إلى كود نظيف، متجاوب، وتفاعلي."
+      }
+    },
+    {
+      "id": 4,
+      "icon": "circle-gauge",
+      "name": {
+        "en": "Optimization",
+        "ar": "تحسين الموقع"
+      },
+      "description": {
+        "en": "Performance audits and speed optimization to ensure 99+ Lighthouse scores and instant loads.",
+        "ar": "تدقيقات الأداء وتحسين السرعة لضمان درجات Lighthouse تتجاوز 99 وتحميل فوري."
+      }
+    }
+  ],
+  "allServices": [
+    {
+      "id": 1,
+      "icon": "buildings",
+      "title": {
+        "en": "Business Websites",
+        "ar": "مواقع البيزنس"
+      },
+      "description": {
+        "en": "Scalable, secure, and professional ecosystems designed for established enterprises seeking a digital transformation that reflects their market authority.",
+        "ar": "أنظمة بيئية قابلة للتطوير وآمنة واحترافية مصممة خصيصًا للمؤسسات الراسخة التي تسعى إلى تحقيق تحول رقمي يعكس مكانتها الرائدة في السوق."
+      },
+      "features": [
+        {
+          "id": 1,
+          "text": {
+            "en": "CMS Integration",
+            "ar": "لوحة تحكم متكاملة"
+          }
+        },
+        {
+          "id": 2,
+          "text": {
+            "en": "Multi-page Architecture",
+            "ar": "بنية متعددة الصفحات"
+          }
+        },
+        {
+          "id": 3,
+          "text": {
+            "en": "SEO Strategy",
+            "ar": "استراتيجية تحسين محركات البحث"
+          }
+        },
+        {
+          "id": 4,
+          "text": {
+            "en": "Advanced Analytics",
+            "ar": "التحليلات المتقدمة"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "rocket",
+      "title": {
+        "en": "High-Conversion Landing Pages",
+        "ar": "صفحات هبوط"
+      },
+      "description": {
+        "en": "Laser-focused single-page experiences built for performance and lead\ngeneration.",
+        "ar": "تجارب مركزة للغاية تتألف من صفحة واحدة، مصممة لتحقيق الأداء المتميز وجذب العملاء المحتملين."
+      },
+      "features": [
+        {
+          "id": 1,
+          "text": {
+            "en": "Optimized Funnels",
+            "ar": "مسارات تحويل مُحسّنة"
+          }
+        },
+        {
+          "id": 2,
+          "text": {
+            "en": "Business Suitable",
+            "ar": "مناسبة لهوية البيزنس"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "pen",
+      "title": {
+        "en": "UI Design to Code",
+        "ar": "تطوير الواجهات"
+      },
+      "description": {
+        "en": "Pixel-perfect translation of Figma designs into clean, responsive, and maintainable Tailwind CSS & React\ncodebases.",
+        "ar": "ترجمة دقيقة لتصميمات Figma إلى قواعد برمجية Tailwind CSS و React تتميز بالبساطة وسرعة الاستجابة وسهولة الصيانة."
+      },
+      "features": [
+        {
+          "id": 1,
+          "text": {
+            "en": "Component-driven architecture for rapid scaling.",
+            "ar": "بنية قائمة على المكونات تتيح التوسع السريع."
+          }
+        },
+        {
+          "id": 2,
+          "text": {
+            "en": "Responsive fluid typography & spacing systems.",
+            "ar": "أنظمة مرنة ومتجاوبة."
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "icon": "speed",
+      "title": {
+        "en": "Website Optimization",
+        "ar": "تحسين المواقع الإلكترونية"
+      },
+      "description": {
+        "en": "Performance auditing and tuning to achieve perfect Lighthouse scores, faster load times, and superior Core Web Vitals.",
+        "ar": "تدقيق الأداء وضبطه لتحقيق درجات مثالية في Lighthouse، وأوقات تحميل أسرع، ومؤشرات Core Web Vitals متميزة"
+      },
+      "features": [
+        {
+          "id": 1,
+          "text": {
+            "en": "LIGHTHOUSE 100",
+            "ar": "LIGHTHOUSE 100"
+          }
+        },
+        {
+          "id": 2,
+          "text": {
+            "en": "ASSET MINIFICATION",
+            "ar": "تقليص حجم الملفات"
+          }
+        },
+        {
+          "id": 3,
+          "text": {
+            "en": "CACHING STRATEGY",
+            "ar": "استراتيجية التخزين المؤقت"
+          }
+        }
+      ]
+    }
+  ],
+  "skillGroups": [
+    {
+      "id": "ui-styling-skill-group",
+      "name": {
+        "en": "UI & Styling",
+        "ar": "التصميم والتنسيقات"
+      },
+      "items": [
+        {
+          "id": "tailwind_css_7xk2m9p4",
+          "name": "Tailwindcss",
+          "icon": "square-round-corner",
+          "lightColor": "#00D4FF",
+          "darkColor": "#00D4FF",
+          "note": {
+            "en": "Modern Styles",
+            "ar": "تنسيقات حديثة"
+          }
+        },
+        {
+          "id": "shadcn_ui_3r8n1v6q",
+          "name": "Shadcn",
+          "icon": "component",
+          "lightColor": "#6C63FF",
+          "darkColor": "#6C63FF",
+          "note": {
+            "en": "Reusable Components ",
+            "ar": "مكونات قابلة لإعادة الاستخدام"
+          }
+        },
+        {
+          "id": "framer_motion_l4y7q2x8",
+          "name": "Framer Motion",
+          "icon": "towel-rack",
+          "lightColor": "#EB7BB8",
+          "darkColor": "#EB7BB8",
+          "note": {
+            "en": "Smooth Animations ",
+            "ar": "حركات سلسة"
+          }
+        },
+        {
+          "id": "responsive_design_h9v2c6m4",
+          "name": "Responsive Design",
+          "icon": "tablet-smartphone",
+          "lightColor": "#475569",
+          "darkColor": "#a1acbd",
+          "note": {
+            "en": "For All Screens",
+            "ar": "لجميع الشاشات"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frontend-development-skill-group",
+      "name": {
+        "en": "Frontend Development",
+        "ar": "تطوير الواجهة الأمامية"
+      },
+      "items": [
+        {
+          "id": "javascript_js_2k6p8n4t",
+          "name": "Javascript",
+          "icon": "braces",
+          "lightColor": "rgb(202 138 4)",
+          "darkColor": "rgb(255 236 117)",
+          "note": {
+            "en": "Smart Interactivity ",
+            "ar": "تفاعل ذكي"
+          }
+        },
+        {
+          "id": "typescript_ts_9m3v7r1c",
+          "name": "Typescript",
+          "icon": "type-outline",
+          "lightColor": "#2563EB",
+          "darkColor": "#ceebe9",
+          "note": {
+            "en": "Type Safety",
+            "ar": "سلامة الأنواع"
+          }
+        },
+        {
+          "id": "react_ui_5x1p7w9k",
+          "name": "React",
+          "icon": "app-window",
+          "lightColor": "#6C63FF",
+          "darkColor": "#ada9bb",
+          "note": {
+            "en": "Dynamic Interfaces",
+            "ar": "شاشات تفاعلية"
+          }
+        },
+        {
+          "id": "nextjs_app_4v8n2c7s",
+          "name": "Next.js",
+          "icon": "layout-panel-left",
+          "lightColor": "#0F172A",
+          "darkColor": "#538ff8",
+          "note": {
+            "en": "Integrated Applications ",
+            "ar": "تطبيقات متكاملة"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tools-skill-group",
+      "name": {
+        "en": "Tools",
+        "ar": "أدوات سير العمل"
+      },
+      "items": [
+        {
+          "id": "postman_api_1p9w6m3d",
+          "name": "Postman",
+          "icon": "file-check",
+          "lightColor": "#6C63FF",
+          "darkColor": "#be91b7",
+          "note": {
+            "en": "Check APIs",
+            "ar": "فحص الـ APIs"
+          }
+        },
+        {
+          "id": "vite_build_8n4r2v7x",
+          "name": "Vite",
+          "icon": "gauge",
+          "lightColor": "#9333EA",
+          "darkColor": "#b093c5",
+          "note": {
+            "en": "Fast Build",
+            "ar": "بناء سريع"
+          }
+        },
+        {
+          "id": "cli_terminal_2k7m5c8r",
+          "name": "CLI",
+          "icon": "terminal",
+          "lightColor": "#0F172A",
+          "darkColor": "#e6efff",
+          "note": {
+            "en": "CLI Commands",
+            "ar": "أوامر CLI"
+          }
+        },
+        {
+          "id": "git_versioning_6t3x9q1w",
+          "name": "Git",
+          "icon": "git-branch",
+          "lightColor": "#EA580C",
+          "darkColor": "#ffab60",
+          "note": {
+            "en": "Versions Control",
+            "ar": "التحكم بالاصدارات"
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend-development-skill-group",
+      "name": {
+        "en": "Backend Development",
+        "ar": "تطوير الواجهات الخلفية"
+      },
+      "items": [
+        {
+          "id": "nodejs_backend_4m7h2r8c",
+          "name": "Node.js",
+          "icon": "hexagon",
+          "lightColor": "#83b84c",
+          "darkColor": "#c9cb5f",
+          "note": {
+            "en": "Node.js Basics",
+            "ar": "أساسيات Node.js"
+          }
+        },
+        {
+          "id": "strapi_cms_3w9p6l2n",
+          "name": "Strapi",
+          "icon": "coffee",
+          "lightColor": "#4945FF",
+          "darkColor": "#A175EC",
+          "note": {
+            "en": "Headless CMS",
+            "ar": "لوحات ادارة محتوي جاهزة"
+          }
+        }
+      ]
+    }
+  ]
+}

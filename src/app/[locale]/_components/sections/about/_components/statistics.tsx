@@ -1,24 +1,21 @@
+import { useLocale } from "next-intl";
 import StatisticItem from "./statistic-item";
-import getPersonalInfo from "@/shared/lib/actions/get-personal-info.action";
-import { getLocale } from "next-intl/server";
+import personalInfo from "@/data/personal-info.json";
 
-export default async function Statistics() {
+export default function Statistics() {
   // Translation
-  const locale = await getLocale();
-
-  // Variables
-  const stacks = await getPersonalInfo(locale);
+  const locale = useLocale();
 
   return (
     <div className="statistics flex flex-nowrap shadow-sm bg-white/70 dark:bg-white/3 border border-zinc-200 dark:border-white/5 rounded-3xl py-6 md:py-8 gap-0.5 mt-6">
-      {stacks.ok ? (
-        stacks.data.statistics.map((statistic, i) => (
+      {personalInfo.statistics ? (
+        personalInfo.statistics.map((statistic, i) => (
           <StatisticItem
             key={statistic.id}
-            num={statistic.text}
-            text={statistic.description}
-            type={statistic.type}
-            isEnd={i === stacks.data.statistics.length - 1}
+            num={statistic.value}
+            text={statistic.label[locale as "en" | "ar"]}
+            type={statistic.type as "projects" | "clients" | "exp"}
+            isEnd={i === personalInfo.statistics.length - 1}
           />
         ))
       ) : (

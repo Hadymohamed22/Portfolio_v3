@@ -1,8 +1,5 @@
-import { Suspense } from "react";
 import SkillsGroupTitle from "./skills-group-title";
-import SkillsGroupSkeleton from "../_skeleton/skills-group.skeleton";
 import SkillsContent from "./skills-content";
-import { SKILLS_CATEGORIES } from "../_constants/skills-categories.constant";
 import { useTranslations } from "next-intl";
 
 export default function UIAndStylingSkills() {
@@ -18,9 +15,7 @@ export default function UIAndStylingSkills() {
       />
 
       {/* Content */}
-      <Suspense fallback={<SkillsGroupSkeleton />}>
-        <SkillsContent skillCategory={SKILLS_CATEGORIES.UI_AND_STYLES} />
-      </Suspense>
+      <SkillsContent skillGroupName="ui-styling-skill-group" />
     </>
   );
 }
